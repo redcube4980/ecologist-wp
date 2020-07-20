@@ -1,0 +1,720 @@
+@charset "UTF-8";
+#wrapper {
+    height: auto;
+}
+main #page-title{
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+main #page-title-inner{
+    display: block;
+    position: relative;
+    width: 862px;
+    text-align: center;
+    margin: 0 auto;
+}
+main #page-title-inner-icon {
+	position: absolute;
+	z-index: 2;
+	left: 30px;
+	top: 60px;
+	width: 160px;
+	transform: scale(1);
+	transition: all 1s;
+	cursor: pointer;
+}
+main #page-title-inner-icon:hover {
+    transform-origin: center;
+    transform: scale(1.2);
+    transition: all 1s;
+}
+main #page-title-aminal01 {
+    position: absolute;
+    z-index: 2;
+    right: 90px;
+    top: 60px;
+    width: 130px;
+    transform: scale(1);
+    transition: all 1s;
+    cursor: pointer;
+}
+main #page-title-aminal01:hover {
+	transform-origin: center;
+	transform: scale(1.2);
+	transition: all 1s;
+}
+main #page-title-aminal02 {
+    position: absolute;
+    z-index: 2;
+    left: 80px;
+    bottom: 60px;
+    width: 100px;
+    transform: scale(1);
+    transition: all 1s;
+    cursor: pointer;
+}
+main #page-title-aminal02:hover {
+	transform-origin: center;
+	transform: scale(1.2);
+	transition: all 1s;
+}
+main #page-title-inner-bg{
+    position: relative;
+}
+main #page-title-inner-bg-text{
+	position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 80px;
+	display: flex;
+	flex-flow: column;
+}
+main #page-title-inner-bg h1 {
+    font-size: 38px;
+    font-weight: bold;
+    color: #4a9143;
+    letter-spacing: 5px;
+	line-height: 1;
+}
+main #page-title-inner-bg span {
+    font-size: 14px;
+    color: #513813;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+main #page-title-inner-bg-sentences {
+    height: 50px;
+}
+main .container h3{
+	font-size: 24px;
+    font-weight: bold;
+    color: #4a9143;
+    letter-spacing: 5px;
+	margin-bottom: 30px;
+}
+main .container #page-content-inner {
+    width: 100%;
+    margin-top: 50px;
+}
+main .container #page-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+	height: auto;
+	background-blend-mode: multiply;
+	position: relative;
+	padding: 100px 0;
+	margin: 0 auto 136px;
+}
+main .page-content-inner-block {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    margin: 30px 0 0 0;
+}
+main .page-content-inner-text {
+    text-align: center;
+    line-height: 2;
+    font-size: 20px;
+    font-weight: bold;
+}
+#tab-content {
+    position: relative;
+    width: 100%;
+	height: 1500px;
+}
+#performance {
+    display: flex;
+    flex-flow: column;
+}
+#performance-button {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    justify-content: space-between;
+}
+.tab {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    background-blend-mode: multiply;
+    position: relative;
+    padding: 100px 0;
+}
+.tab::before {
+    content: "";
+    position: absolute;
+    width: 960px;
+    height: 50px;
+    top: 0;
+    background-image: url("../images/top-about-overline.svg");
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.tab::after {
+    content: "";
+    position: absolute;
+    width: 960px;
+    height: 50px;
+    bottom: 0;
+    background-image: url("../images/top-about-underline.svg");
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/*******************************
+			ボタン1
+*******************************/
+.active .performance-button-name01 {
+    width: 300px;
+	height: 50px;
+	border-radius: 31px;
+	border: 2px solid #fff;
+	background-color: #418b8e;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+}
+.active .btn-link01 {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+	background-color: #418b8e;
+	text-decoration: none;
+}
+.performance-button-name01 {
+    width: 300px;
+	height: 50px;
+	border-radius: 31px;
+	border: 2px solid #418b8e;
+	transition: background-color 2s;
+	background-color: transparent;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+	transform-origin: 0 0 0;
+	cursor: pointer;
+}
+.performance-button-name01:hover {
+    border-radius: 31px;
+    border: 2px solid #fff;
+}
+.performance-button-name01::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform-origin: right top;
+    transform: skewX(0deg) scale(0, 1);
+    transition: transform 0.5s;
+}
+.performance-button-name01:hover::before {
+    transform-origin: left top;
+    transform: skewX(0deg) scale(1, 1);
+    background-color: #fff;
+}
+.performance-button-name01 a span {
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 2.5;
+    position: relative;
+    overflow: hidden;
+}
+.performance-button-name01 a {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    color: #418b8e;
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+	background-color: #fff;
+	text-decoration: none;
+}
+.performance-button-name01:hover a {
+    color: #fff;
+}
+.performance-button-name01 a:hover {
+    opacity: 1;
+    background-color: #418b8e;
+}
+.btn-link01 {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    color: #418b8e;
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+/*******************************
+			ボタン2
+*******************************/
+.active .performance-button-name02 {
+    width: 300px;
+	height: 50px;
+	border-radius: 31px;
+	border: 2px solid #fff;
+	background-color: #418b8e;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+}
+.active .btn-link02 {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+	background-color: #418b8e;
+	text-decoration: none;
+}
+.performance-button-name02 {
+    width: 300px;
+	height: 50px;
+	border-radius: 31px;
+	border: 2px solid #418b8e;
+	transition: background-color 2s;
+	background-color: transparent;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+	transform-origin: 0 0 0;
+	cursor: pointer;
+}
+.performance-button-name02:hover {
+    border-radius: 31px;
+    border: 2px solid #fff;
+}
+.performance-button-name02::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform-origin: right top;
+    transform: skewX(0deg) scale(0, 1);
+    transition: transform 0.5s;
+}
+.performance-button-name02:hover::before {
+    transform-origin: left top;
+    transform: skewX(0deg) scale(1, 1);
+    background-color: #fff;
+}
+.performance-button-name02 a span {
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 2.5;
+    position: relative;
+    overflow: hidden;
+}
+.performance-button-name02 a {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    color: #418b8e;
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+	background-color: #fff;
+	text-decoration: none;
+}
+.performance-button-name02:hover a {
+    color: #fff;
+}
+.performance-button-name02 a:hover {
+    opacity: 1;
+    background-color: #418b8e;
+}
+.btn-link02 {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    color: #418b8e;
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+/*******************************
+			ボタン3
+*******************************/
+.active .performance-button-name03 {
+    width: 300px;
+	height: 50px;
+	border-radius: 31px;
+	border: 2px solid #fff;
+	background-color: #418b8e;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+}
+.active .btn-link03 {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+	background-color: #418b8e;
+}
+.performance-button-name03 {
+    width: 300px;
+	height: 50px;
+	border-radius: 31px;
+	border: 2px solid #418b8e;
+	transition: background-color 2s;
+	background-color: transparent;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+	transform-origin: 0 0 0;
+	cursor: pointer;
+}
+.performance-button-name03:hover {
+    border-radius: 31px;
+    border: 2px solid #fff;
+}
+.performance-button-name03::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform-origin: right top;
+    transform: skewX(0deg) scale(0, 1);
+    transition: transform 0.5s;
+}
+.performance-button-name03:hover::before {
+    transform-origin: left top;
+    transform: skewX(0deg) scale(1, 1);
+    background-color: #fff;
+}
+.performance-button-name03 a span {
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 2.5;
+    position: relative;
+    overflow: hidden;
+}
+.performance-button-name03 a {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    color: #418b8e;
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+	background-color: #fff;
+	text-decoration: none;
+}
+.performance-button-name03:hover a {
+    color: #fff;
+}
+.performance-button-name03 a:hover {
+    opacity: 1;
+    background-color: #418b8e;
+}
+.btn-link03 {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    color: #418b8e;
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+	text-decoration: none;
+}
+/*******************************
+	ボタンスタイルここまで
+*******************************/
+@keyframes bubble {
+0% {
+	transform:translateY(-30px)rotate(0deg);
+	opacity:1;
+}
+10% {
+	transform:translateY(-30px)rotate(5deg);
+	opacity:1;
+}
+20% {
+	transform:translateY(-30px)rotate(0deg);
+	opacity:1;
+}
+30% {
+	transform:translateY(-30px)rotate(-5deg);
+	opacity:1;
+}
+40% {
+	transform:translateY(-30px)rotate(0deg);
+	opacity:1;
+}
+100% {
+	transform:translateY(-30px)rotate(0deg);
+	opacity:1;
+}
+}
+/*******************************
+			タブ設定
+*******************************/
+.page-performance-content01 {
+    padding: 100px 0;
+}
+.page-performance-block-title {
+    text-align: center;
+}
+.page-performance-block-contents {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    align-content: center;
+}
+.page-performance-text {
+    width: 750px;
+    height: auto;
+    line-height: 1.6;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: justify;
+}
+person-box {
+    display: flex;
+    flex-flow: column;
+}
+.page-performance-content-img {
+    margin: 0 0 10px 0;
+}
+.name {
+    text-align: center;
+    line-height: 1.5;
+}
+.name p {
+    font-size: 16px;
+    font-weight: bold;
+}
+.name p span {
+    font-size: 18px;
+}
+#page-performance-block02 {
+    display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	align-items: center;
+	height: auto;
+	background-blend-mode: multiply;
+	position: relative;
+	padding: 200px 0 100px 0;
+}
+#page-performance-block02::before {
+    content: "";
+    position: absolute;
+    width: 960px;
+    height: 50px;
+    top: 0;
+    background-image: url("../images/top-about-overline.svg");
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#page-performance-block02::after {
+    content: "";
+    position: absolute;
+    width: 960px;
+    height: 50px;
+    bottom: 0;
+    background-image: url("../images/top-about-underline.svg");
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.page-performance-content-history {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin: 0 0 80px 0;
+}
+.page-performance-content02 {
+    margin: 30px 0 0 0;
+}
+.page-performance-year {
+    width: 100px;
+}
+.page-performance-history-title {
+    margin: 0 0 10px 0;
+}
+.page-performance-history-title h2 {
+    font-size: 18px;
+    line-height: 1.3;
+    font-weight: bold;
+    color: #418b8e;
+}
+.page-performance-history-text {
+    width: 800px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+.page-performance-history-text p {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+.position-list h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #418b8e;
+}
+#page-performance-block03 {
+    padding: 136px 0;
+}
+#page-performance-block03 h3 {
+    margin-bottom: 50px;
+}
+.page-performance-block03-list ul li {
+    display: flex;
+    flex-flow: nowrap;
+    margin: 0 0 30px 0;
+    justify-content: space-around;
+}
+.position-list {
+    width: 120px;
+}
+.position-list h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #418b8e;
+}
+.name-list {
+    width: 340px;
+    line-height: 1.3;
+    font-size: 16px;
+    font-weight: bold;
+}
+.name-list p {
+    margin: 0 0 10px 0;
+}
+.position-list ul li:last-child {
+	margin-bottom: 0;
+}
+#footer-block {
+    text-align: center;
+    padding-top: 1920px;
+}
+@media only screen and (max-width: 600px) {
+main #page-title-inner {
+    width: 435px;
+}
+main #page-title-inner-icon {
+    left: 30px;
+    top: 30px;
+    width: 80px;
+}
+main #page-title-aminal03 {
+    right: 30px;
+    bottom: 30px;
+    width: 60px;
+}
+main #page-title-inner-bg-text {
+    width: 100%;
+    top: 40px;
+}
+main #page-title-inner-bg h1 {
+    font-size: 20px;
+}
+main #page-title-inner-bg span {
+    font-size: 10px;
+	margin-bottom: 10px;
+}
+main #page-title-inner-bg-sentences {
+    height: 40px;
+}
+main #page-title-inner-bg-image {
+    width: 400px;
+}
+}
+@media only screen and (min-width: 1024px) {
+
+}
