@@ -19,6 +19,19 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/swiper.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/lightbox.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/common.js"></script>
+<script type="text/javascript">
+  // ①タブをクリックしたら発動
+  $('#performance-button div').click(function() {
+    // ②クリックされたタブの順番を変数に格納
+    var index = $('#performance-button div').index(this);
+    // ③クリック済みタブのデザインを設定したcssのクラスを一旦削除
+    $('#performance-button div').removeClass('active');
+    // ④クリックされたタブにクリック済みデザインを適用する
+    $(this).addClass('active');
+    // ⑤コンテンツを一旦非表示にし、クリックされた順番のコンテンツのみを表示
+    $('#tab-content .content-inner').removeClass('show').fadeOut(375).eq(index).addClass('show').fadeIn(375); 
+  });
+</script>
 <?php wp_footer(); ?>
 </body>
 </html>

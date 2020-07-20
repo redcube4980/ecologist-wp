@@ -1,0 +1,880 @@
+@charset "UTF-8";
+#wrapper {
+    height: auto;
+}
+main #page-title{
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+main #page-title-inner{
+    display: block;
+    position: relative;
+    width: 862px;
+    text-align: center;
+    margin: 0 auto;
+}
+main #page-title-inner-icon {
+	position: absolute;
+	z-index: 2;
+	left: 30px;
+	top: 60px;
+	width: 160px;
+	transform: scale(1);
+	transition: all 1s;
+	cursor: pointer;
+}
+main #page-title-inner-icon:hover {
+    transform-origin: center;
+    transform: scale(1.2);
+    transition: all 1s;
+}
+main #page-title-aminal03 {
+    position: absolute;
+	z-index: 2;
+	right: 50px;
+	bottom: 80px;
+	width: 200px;
+	transform: scale(1);
+	transition: all 1s;
+	cursor: pointer;
+}
+main #page-title-aminal03:hover {
+	transform-origin:center;
+	transform:scale(1.2);
+	transition: all 1s;
+}
+main #page-title-inner-bg{
+    position: relative;
+}
+main #page-title-inner-bg-text{
+	position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 80px;
+	display: flex;
+	flex-flow: column;
+}
+main #page-title-inner-bg h1 {
+    font-size: 38px;
+    font-weight: bold;
+    color: #4a9143;
+    letter-spacing: 5px;
+	line-height: 1;
+}
+main #page-title-inner-bg span {
+    font-size: 14px;
+    color: #513813;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+main #page-title-inner-bg-sentences {
+    height: 50px;
+}
+main .container h3{
+	font-size: 24px;
+    font-weight: bold;
+    color: #4a9143;
+    letter-spacing: 5px;
+}
+main .container #page-content-inner {
+    width: 100%;
+    margin-top: 50px;
+}
+main .container #page-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+	height: auto;
+	background-blend-mode: multiply;
+	position: relative;
+	padding: 100px 0;
+	margin: 0 auto 136px;
+}
+main .container #page-content::before{
+	content: "";
+	position: absolute;
+	width: 960px;
+	height: 50px;
+	top:0;
+	background-image: url("../images/top-about-overline.svg");
+	left: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+main .container #page-content::after{
+	content: "";
+	position: absolute;
+	width: 960px;
+	height: 50px;
+	bottom:0;
+	background-image: url("../images/top-about-underline.svg");
+	left: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+main .page-content-inner-block {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    margin: 30px 0 0 0;
+}
+main .page-content-inner-text {
+    text-align: center;
+    line-height: 2;
+    font-size: 20px;
+    font-weight: bold;
+}
+#tab-content {
+    position: relative;
+    width: 100%;
+	height: 1500px;
+}
+#performance {
+    display: flex;
+    flex-flow: column;
+}
+#performance-button {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    justify-content: space-between;
+}
+/*******************************
+			ボタン1
+*******************************/
+.active .performance-button-name01 {
+    width: 300px;
+	height: 50px;
+	border-radius: 31px;
+	border: 2px solid #fff;
+	background-color: #418b8e;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+}
+.active .btn-link01 {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+	background-color: #418b8e;
+}
+.performance-button-name01 {
+    width: 300px;
+	height: 50px;
+	border-radius: 31px;
+	border: 2px solid #418b8e;
+	transition: background-color 2s;
+	background-color: transparent;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+	transform-origin: 0 0 0;
+	cursor: pointer;
+}
+.performance-button-name01:hover {
+    border-radius: 31px;
+    border: 2px solid #fff;
+}
+.performance-button-name01::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform-origin: right top;
+    transform: skewX(0deg) scale(0, 1);
+    transition: transform 0.5s;
+}
+.performance-button-name01:hover::before {
+    transform-origin: left top;
+    transform: skewX(0deg) scale(1, 1);
+    background-color: #fff;
+}
+.performance-button-name01 a span {
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 2.5;
+    position: relative;
+    overflow: hidden;
+}
+.performance-button-name01 a {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    color: #418b8e;
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+	background-color: #fff;
+}
+.performance-button-name01:hover a {
+    color: #fff;
+}
+.performance-button-name01 a:hover {
+    opacity: 1;
+    background-color: #418b8e;
+}
+.btn-link01 {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    color: #418b8e;
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+/*******************************
+			ボタン2
+*******************************/
+.active .performance-button-name02 {
+    width: 300px;
+	height: 50px;
+	border-radius: 31px;
+	border: 2px solid #fff;
+	background-color: #418b8e;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+}
+.active .btn-link02 {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+	background-color: #418b8e;
+}
+.performance-button-name02 {
+    width: 300px;
+	height: 50px;
+	border-radius: 31px;
+	border: 2px solid #418b8e;
+	transition: background-color 2s;
+	background-color: transparent;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+	transform-origin: 0 0 0;
+	cursor: pointer;
+}
+.performance-button-name02:hover {
+    border-radius: 31px;
+    border: 2px solid #fff;
+}
+.performance-button-name02::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform-origin: right top;
+    transform: skewX(0deg) scale(0, 1);
+    transition: transform 0.5s;
+}
+.performance-button-name02:hover::before {
+    transform-origin: left top;
+    transform: skewX(0deg) scale(1, 1);
+    background-color: #fff;
+}
+.performance-button-name02 a span {
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 2.5;
+    position: relative;
+    overflow: hidden;
+}
+.performance-button-name02 a {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    color: #418b8e;
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+	background-color: #fff;
+}
+.performance-button-name02:hover a {
+    color: #fff;
+}
+.performance-button-name02 a:hover {
+    opacity: 1;
+    background-color: #418b8e;
+}
+.btn-link02 {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    color: #418b8e;
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+/*******************************
+			ボタン3
+*******************************/
+.active .performance-button-name03 {
+    width: 300px;
+	height: 50px;
+	border-radius: 31px;
+	border: 2px solid #fff;
+	background-color: #418b8e;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+}
+.active .btn-link03 {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+	background-color: #418b8e;
+}
+.performance-button-name03 {
+    width: 300px;
+	height: 50px;
+	border-radius: 31px;
+	border: 2px solid #418b8e;
+	transition: background-color 2s;
+	background-color: transparent;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+	transform-origin: 0 0 0;
+	cursor: pointer;
+}
+.performance-button-name03:hover {
+    border-radius: 31px;
+    border: 2px solid #fff;
+}
+.performance-button-name03::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform-origin: right top;
+    transform: skewX(0deg) scale(0, 1);
+    transition: transform 0.5s;
+}
+.performance-button-name03:hover::before {
+    transform-origin: left top;
+    transform: skewX(0deg) scale(1, 1);
+    background-color: #fff;
+}
+.performance-button-name03 a span {
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 2.5;
+    position: relative;
+    overflow: hidden;
+}
+.performance-button-name03 a {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    color: #418b8e;
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+	background-color: #fff;
+}
+.performance-button-name03:hover a {
+    color: #fff;
+}
+.performance-button-name03 a:hover {
+    opacity: 1;
+    background-color: #418b8e;
+}
+.btn-link03 {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    color: #418b8e;
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+/*******************************
+	ボタンスタイルここまで
+*******************************/
+.page-performance-block {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-flow: column;
+	margin-bottom: 10px;
+}
+.page-performance-content-block {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    width: 100%;
+	margin: 0 0 10px 0;
+	height: 330px;
+}
+.page-performance-title {
+    width: 450px;
+	margin: 0;
+}
+.page-performance-title h2 {
+font-size: 24px;
+font-weight: bold;
+color: #418b8e;
+letter-spacing: 3px;
+line-height: 1.2;
+}
+.page-performance-title-text {
+    margin-bottom: 10px;
+}
+.page-performance-text {
+    line-height: 1.8;
+	text-align: justify;
+}
+.page-performance-img-block-title {
+	background-color: #513813;
+	text-align: center;
+	padding: 6px;
+	height: auto;
+}
+.page-performance-img-block h2 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	margin: 30px 0;
+}
+.page-performance-img-block {
+    display: flex;
+    flex-flow: column;
+}
+.page-performance-img-block ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.page-performance-img-ex {
+    width: 280px;
+    text-align: justify;
+    margin-top: 10px;
+	line-height: 1.6;
+}
+.page-performance-img-text01 {
+    width: 200px;
+    margin: 0 40px 10px;
+}
+.page-performance-img-text02 {
+    width: 200px;
+    margin: 0 40px 10px;
+}
+.page-performance-img-text03 {
+    width: 260px;
+    margin: 0 10px 10px;
+}
+
+/*選択されているタブのコンテンツのみを表示*/
+.page-performance-block01,
+.page-performance-block02,
+.page-performance-block03 {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: auto;
+}
+.page-performance-block01.show,
+.page-performance-block02.show,
+.page-performance-block03.show {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: auto;
+}
+@keyframes icon {
+0% {
+	transform:translateY(0);
+	opacity:1;
+}
+10% {
+	transform:translateY(-5px);
+	opacity:1;
+}
+20% {
+	transform:translateY(0px);
+	opacity:1;
+}
+30% {
+	transform:translateY(5px);
+	opacity:1;
+}
+40% {
+	transform:translateY(0);
+	opacity:1;
+}
+100% {
+	transform:translateY(0);
+	opacity:1;
+}
+}
+main .container #page-content-inner li .page-content-inner-block .page-content-speechbubble {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+	z-index: 2;
+	transform: translateY(-30px);
+}
+main .container #page-content-inner li:hover .page-content-inner-block .page-content-speechbubble {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+	z-index: 2;
+	transform: translateY(-30px);
+	transform-origin:center;
+	animation:bubble 1s both infinite;
+}
+@keyframes bubble {
+0% {
+	transform:translateY(-30px)rotate(0deg);
+	opacity:1;
+}
+10% {
+	transform:translateY(-30px)rotate(5deg);
+	opacity:1;
+}
+20% {
+	transform:translateY(-30px)rotate(0deg);
+	opacity:1;
+}
+30% {
+	transform:translateY(-30px)rotate(-5deg);
+	opacity:1;
+}
+40% {
+	transform:translateY(-30px)rotate(0deg);
+	opacity:1;
+}
+100% {
+	transform:translateY(-30px)rotate(0deg);
+	opacity:1;
+}
+}
+#location {
+    padding: 100px 0;
+    margin: 0 auto 136px;
+}
+.location-title {
+    text-align: center;
+	margin: 0 0 30px;
+}
+.location-contener {
+    display: flex;
+    flex-flow: wrap;
+}
+.location-content {
+    margin: 0 60px 20px 0;
+}
+.location-content:last-child {
+    margin-bottom: 0;
+}
+.location-content:nth-child(2) {
+    margin-bottom: 0;
+}
+.location-content:nth-child(3) {
+    margin-right: 0;
+}
+.location-content-title {
+    background-color: #513813;
+    text-align: center;
+    padding: 6px;
+    height: auto;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+.location-content-title-text {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.location-content-title-text span {
+    font-size: 18px;
+}
+#award {
+    padding: 100px 0;
+    margin: 0 auto 136px;
+}
+.award-title {
+    text-align: center;
+	margin: 0 0 30px;
+}
+.award-title-text {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0 0 30px 0;
+}
+.award-contener {
+    display: flex;
+    flex-flow: column;
+	margin-bottom: 100px;
+}
+.award-content {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+.aword-contener-img {
+    width: 200px;
+	margin-bottom: 10px;
+}
+#award .button{
+	width: 100%;
+	height: auto;
+	transition: background-color 2s;
+	display: block;
+	background-color: transparent;
+	overflow: hidden;
+	position: relative;
+	max-width: 600px;
+	margin: 0 auto;
+	transform-origin: 0 0 0;
+	z-index: 1;
+	border-radius: 31px;
+	border: 2px solid #fff;
+	cursor: pointer;
+}
+#award .button:hover{
+	border-radius: 31px;
+	border: 2px solid #fd9945;
+}
+#award .button:hover::before {
+    transform-origin: left top;
+    transform: skewX(0deg) scale(1, 1);
+}
+#award .button::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform-origin: right top;
+    transform: skewX(0deg) scale(0, 1);
+    transition: transform 0.5s;
+}
+#award .button:hover::before {
+    transform-origin: left top;
+    transform: skewX(0deg) scale(1, 1);
+	background-color: #fff;
+}
+#award .button a{
+	width: 100%;
+	height: 60px;
+	max-width: 600px;
+	color: #fff;
+	display: block;
+	margin: 0 auto;
+	font-size: 24px;
+    font-weight: bold;
+	position: relative;
+	background-color: #fd9945;
+	overflow: hidden;
+	text-align: center;
+	text-decoration: none;
+}
+#award .button:hover a {
+    color: #fd9945;
+}
+#award .button a:hover{
+	opacity: 1;
+	background-color: transparent;
+}
+#award .button a span {
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 2.5;
+	position: relative;
+	overflow: hidden;
+}
+#award .button a span::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 0px;
+    border-top: solid 2px #fff;
+    border-right: solid 2px #fff;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+	right: 30px;
+	transition: border 2s;
+}
+#award .button a:hover span::after {
+    border-top: solid 2px #fd9945;
+    border-right: solid 2px #fd9945;
+	transition: border 2s;
+}
+.page-performance-img-text01-2 {
+    width: 200px;
+    margin: 0 40px 10px;
+}
+.page-performance-img-text02-2 {
+    width: 220px;
+    margin: 0 20px 10px;
+}
+.page-performance-img-text03-2 {
+    width: 200px;
+    margin: 0 40px 10px;
+}
+.page-performance-block03 {
+    margin: 0 0 136px;
+}
+.page-performance-img-text01-3 {
+    width: 220px;
+    margin: 0 20px 10px;
+}
+.page-performance-img-text02-3 {
+    width: 260px;
+    margin: 0 10px 10px;
+}
+.page-performance-img-text03-3 {
+    margin: 0 0 10px 0;
+}
+/*******************************
+			タブ設定
+*******************************/
+.tab-content {
+    display: none;
+}
+.tab-switch:checked+.tab-label+.tab-content {
+    display: block;
+}
+.tab-wrap { 
+    display: flex;
+    flex-wrap: wrap;
+}
+.tab-label {
+    order: -1;
+}
+@media only screen and (max-width: 600px) {
+main #page-title-inner {
+    width: 435px;
+}
+main #page-title-inner-icon {
+    left: 30px;
+    top: 30px;
+    width: 80px;
+}
+main #page-title-aminal03 {
+    right: 30px;
+    bottom: 30px;
+    width: 60px;
+}
+main #page-title-inner-bg-text {
+    width: 100%;
+    top: 40px;
+}
+main #page-title-inner-bg h1 {
+    font-size: 20px;
+}
+main #page-title-inner-bg span {
+    font-size: 10px;
+	margin-bottom: 10px;
+}
+main #page-title-inner-bg-sentences {
+    height: 40px;
+}
+main #page-title-inner-bg-image {
+    width: 400px;
+}
+}
+@media only screen and (min-width: 1024px) {
+
+}
