@@ -1,7 +1,7 @@
 <div id="footer-block">
 		<nav id="footer-menu">
 			<ul id="footer-menu-inner">
-				<li><a href="<?php echo esc_url( home_url( '/information/' ) ); ?>">法人概要</a></li>
+				<li><a href="<?php echo esc_url( home_url( '/overview/' ) ); ?>">法人概要</a></li>
 				<li><a href="<?php echo esc_url( home_url( '/news/' ) ); ?>">ニュース・トピックス</a></li>
 				<li><a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">問い合わせ</a></li>
 				<li><a href="<?php echo esc_url( home_url( '/privacy/' ) ); ?>">プライバシーポリシー</a></li>

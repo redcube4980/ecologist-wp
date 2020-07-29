@@ -12,7 +12,7 @@ Template Name: lecture
 	<div id="page-title-inner-bg">
 		<div id="page-title-inner-bg-text">
 		<h1 class=""><?php echo get_the_title(); ?></h1>
-		<span>INFORMETION</span>
+		<span>OVERVIEW</span>
 		<img id="page-title-inner-bg-sentences" src="<?php echo get_template_directory_uri(); ?>/images/information/title-sentences.svg" alt="NPO法人 日本エコロジスト支援協会の活動実績をご紹介します。">
 		</div>
 		<img id="page-title-inner-bg-image" src="<?php echo get_template_directory_uri(); ?>/images/information/title-bg.png" alt="">
