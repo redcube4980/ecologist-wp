@@ -10,19 +10,18 @@ main #page-title{
 main #page-title-inner{
     display: block;
     position: relative;
-    width: 862px;
+    width: 435px;
     text-align: center;
     margin: 0 auto;
 }
 main #page-title-inner-icon {
-	position: absolute;
-	z-index: 2;
-	left: 30px;
-	top: 60px;
-	width: 160px;
-	transform: scale(1);
-	transition: all 1s;
-	cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    left: 40px;
+    top: 30px;
+    width: 80px;
+    transform: scale(1);
+    transition: all 1s;
 }
 main #page-title-inner-icon:hover {
     transform-origin: center;
@@ -33,11 +32,10 @@ main #page-title-aminal03 {
     position: absolute;
     z-index: 2;
     right: 60px;
-	bottom: 50px;
-	width: 111px;
-	transform:scale(1);
-	transition: all 1s;
-	cursor: pointer;
+    bottom: 20px;
+    width: 50px;
+    transform: scale(1);
+    transition: all 1s;
 }
 main #page-title-aminal03:hover {
 	transform-origin:center;
@@ -47,20 +45,23 @@ main #page-title-aminal03:hover {
 main #page-title-inner-bg{
     position: relative;
 }
+#page-title-inner-bg-image {
+    width: 400px;
+}
 main #page-title-inner-bg-text{
 	position: absolute;
     text-align: center;
     width: 100%;
-    top: 80px;
+    top: 40px;
 	display: flex;
 	flex-flow: column;
 }
 main #page-title-inner-bg h1 {
-    font-size: 38px;
+    font-size: 20px;
     font-weight: bold;
     color: #4a9143;
     letter-spacing: 5px;
-	line-height: 1;
+    line-height: 1;
 }
 main #page-title-inner-bg span {
     font-size: 14px;
@@ -68,16 +69,18 @@ main #page-title-inner-bg span {
     letter-spacing: 2px;
     font-weight: bold;
     margin-top: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 main #page-title-inner-bg-sentences {
-    height: 84px;
+    height: 40px;
 }
-main .container h3{
-	font-size: 24px;
+main .container h3 {
+    font-size: 20px;
     font-weight: bold;
     color: #4a9143;
     letter-spacing: 5px;
+    text-align: center;
+    line-height: 1.2;
 }
 main .container #page-content-inner {
     width: 100%;
@@ -91,13 +94,13 @@ main .container #page-content {
 	height: auto;
 	background-blend-mode: multiply;
 	position: relative;
-	padding: 100px 0;
-	margin: 0 auto 136px;
+	padding: 50px 0;
+	margin: 0 auto 50px;
 }
 main .container #page-content::before{
 	content: "";
 	position: absolute;
-	width: 960px;
+	width: 405px;
 	height: 50px;
 	top:0;
 	background-image: url("../images/top-about-overline.svg");
@@ -119,7 +122,7 @@ main .container #page-content::after{
 	background-size: cover;
 }
 main .container #page-content-inner ul {
-	flex-flow: nowrap;
+	flex-flow: column;
 	display: flex;
 	justify-content: space-between;
 }
@@ -136,17 +139,17 @@ main .container #page-content-inner li .page-content-inner-block {
 	height: 400px;
 }
 .content-main-image {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .page-content-text-box {
     display: flex;
-    width: 440px;
+    width: 405px;
     justify-content: space-between;
     bottom: 55px;
     position: inherit;
 }
 .content-image-circle {
-    width: 102px;
+    width: 95px;
     vertical-align: bottom;
 	transform: translateY(0px);
 	transition-duration: 0.5s;
@@ -167,7 +170,7 @@ main .container #page-content-inner li .page-collabo-content-image {
 main .page-content-inner-bg-sentences {
     margin-bottom: 10px;
     height: auto;
-	width: 118px;
+	width: 100px;
 }
 main .container #page-content-inner li .page-content-inner-block .page-content-icon {
     width: 80px;
@@ -259,12 +262,12 @@ main .container #page-content-inner li .page-content-inner-block .page-content-i
     width: 230px;
 }
 main .container #page-content-inner li p.page-content-inner-text{
-	font-size: 20px;
+	font-size: 15px;
 	font-weight: bold;
 	color: #000;
 	letter-spacing: 0;
 	line-height: 1.6;
-	margin-top: 20px;
+	margin-bottom: 50px;
 }
 main .container #performance #performance-title {
     background-color: #418b8e;
@@ -289,16 +292,13 @@ main .container #performance ul li {
 	margin-bottom: 65px;
 }
 main .page-performance-block {
-	width: 444px;
+	width: 405px;
 	height: auto;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
 	margin-bottom: 10px;
 	align-items: center;
-}
-main .container #performance ul li:nth-last-child(2) {
-	margin-bottom: 0;
 }
 main .container #performance ul li:last-child{
 	margin-bottom: 0;
@@ -348,11 +348,10 @@ main .container #performance .page-performance-img-block ul {
 	margin-top: 10px;
 }
 .page-performance-img-slide {
-    width: 145px;
+    width: 130px;
 }
 main .container #performance ul li .page-performance-image {
-    width: 220px;
-	height: 180px;
+    width: 180px;
 }
 main .container #performance ul li h3 {
     font-size: 16px;
@@ -374,24 +373,24 @@ main .container #performance ul li p.page-performance-subtitle {
 }
 main .container #cta {
     margin: 110px auto auto;
-    text-align: center;
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
+	text-align: center;
 }
 main .container #cta h2{
-	font-size: 24px;
+	font-size: 18px;
     font-weight: bold;
     color: #f04f4c;
     letter-spacing: 4px;
 }
 main .container #cta img{
 	height: 54px;
-	width: auto;
+	width: 60%;
 	margin: 20px auto 30px;
 }
 main .container #cta .button{
-	width: 100%;
+	width: 60%;
 	height: auto;
 	transition: background-color 2s;
 	display: block;
@@ -434,12 +433,12 @@ main .container #cta .button:hover::before {
 }
 main .container #cta .button a{
 	width: 100%;
-	height: 60px;
+	height: auto;
+	font-size: 15px;
 	max-width: 320px;
 	color: #fff;
 	display: block;
 	margin: 0 auto;
-	font-size: 24px;
     font-weight: bold;
 	position: relative;
 	background-color: #fd9945;
@@ -462,8 +461,9 @@ main .container #cta .button a span {
 }
 main .container #cta .button a span::after {
     content: "";
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
+    right: 20px;
     border: 0px;
     border-top: solid 2px #fff;
     border-right: solid 2px #fff;
@@ -473,7 +473,6 @@ main .container #cta .button a span::after {
     position: absolute;
     top: 50%;
     margin-top: -7px;
-	right: 20px;
 	transition: border 2s;
 }
 main .container #cta .button a:hover span::after {
@@ -485,8 +484,518 @@ main .container #cta .button a:hover span::after {
 
 }
 @media only screen and (min-width: 1024px) {
-
+main #page-title-inner{
+    width: 862px;
+}
+main #page-title-inner-icon {
+	left: 30px;
+	top: 60px;
+	width: 160px;
+}
+main #page-title-aminal03 {
+    right: 60px;
+	bottom: 50px;
+	width: 111px;
+}
+main #page-title-inner-bg{
+    position: relative;
+}
+#page-title-inner-bg-image {
+    width: 861px;
+}
+main #page-title-inner-bg-text{
+    width: 100%;
+    top: 80px;
+	display: flex;
+	flex-flow: column;
+}
+main #page-title-inner-bg h1 {
+    font-size: 38px;
+}
+main #page-title-inner-bg span {
+    font-size: 14px;
+}
+main #page-title-inner-bg-sentences {
+    height: 84px;
+}
+main .container h3{
+	font-size: 24px;
+}
+main .container #page-content-inner {
+    width: 100%;
+    margin-top: 50px;
+}
+main .container #page-content {
+    display: flex;
+    flex-flow: column;
+	padding: 100px 0;
+	margin: 0 auto 136px;
+}
+main .container #page-content::before{
+	width: 960px;
+	height: 50px;
+}
+main .container #page-content::after{
+	width: 960px;
+	height: 50px;
+}
+main .container #page-content-inner ul {
+    flex-flow: row wrap;
+    display: flex;
+}
+main .container #page-content-inner li {
+	margin-bottom: 0;
+	display: flex;
+	flex-flow: column;
+}
+main .container #page-content-inner li .page-content-inner-block {
+	height: 400px;
+}
+.content-main-image {
+    margin-top: 20px;
+}
+.page-content-text-box {
+    display: flex;
+    width: 440px;
+    bottom: 55px;
+}
+.content-image-circle {
+    width: 102px;
+}
+main .container #page-content-inner li .page-collabo-content-image {
+    width: 280px;
+}
+main .page-content-inner-bg-sentences {
+	width: 118px;
+}
+main .container #page-content-inner li .page-content-inner-block .page-content-icon {
+    width: 80px;
+    bottom: 0;
+    left: 0;
+}
+main .container #page-content-inner li:hover .page-content-inner-block .page-content-icon {
+    width: 80px;
+    bottom: 0;
+    left: 0;
+}
+main .container #page-content-inner li .page-content-inner-block .page-content-speechbubble {
+    left: 0;
+    top: 0;
+    width: 200px;
+}
+main .container #page-content-inner li:hover .page-content-inner-block .page-content-speechbubble {
+    left: 0;
+    top: 0;
+    width: 200px;
+}
+main .container #page-content-inner li .page-content-inner-block .page-content-image {
+    width: 230px;
+}
+main .container #page-content-inner li p.page-content-inner-text{
+	font-size: 20px;
+	line-height: 1.6;
+	margin-top: 20px;
+}
+main .container #performance #performance-title {
+    padding: 13px;
+}
+main .container #performance #performance-title span{
+	font-size: 14px;
+}
+main .container #performance ul {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+	margin-top: 50px;
+}
+main .container #performance ul li {
+	display: flex;
+	flex-flow: column;
+	margin-bottom: 65px;
+}
+main .page-performance-block {
+	width: 444px;
+	height: auto;
+	display: flex;
+	flex-flow: row wrap;
+}
+main .container #performance ul li:nth-last-child(2) {
+	margin-bottom: 0;
+}
+main .container #performance ul li:last-child{
+	margin-bottom: 0;
+}
+main .container #performance ul li .page-performance-title-block {
+    display: flex;
+	justify-content: flex-start;
+	flex-flow: column;
+	align-items: flex-start;
+	height: auto;
+	width: 200px;
+}
+.container #performance ul li:nth-last-child(2) {
+    margin-bottom: 0;
+}
+main .container #performance ul li .page-performance-title-block img{
+	height: 120px;
+}
+main .container #performance ul li .page-performance-title-block img.page-performance-title-aichi{
+	height: 110px;
+}
+main .container #performance ul li .page-performance-title-block h2 {
+    font-size: 24px;
+	letter-spacing: 1px;
+	margin: 0 0 0 0px;
+	line-height: 1.2;
+	width: 200px;
+}
+.page-performance-right-block {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column;
+    align-items: flex-start;
+}
+.page-performance-ex {
+    font-size: 0.9rem;
+	margin-top: 10px;
+}
+main .container #performance .page-performance-img-block-title span {
+    font-size: 14px;
+}
+main .container #performance .page-performance-img-block ul {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+	margin-top: 10px;
+}
+.page-performance-img-slide {
+    width: 145px;
+}
+main .container #performance ul li .page-performance-image {
+    width: 220px;
+	height: 180px;
+}
+main .container #performance ul li h3 {
+    font-size: 16px;
+    margin-top: 15px;
+	height: 50px;
+	line-height: 1.2;
+}
+main .container #performance ul li p.page-performance-subtitle {
+    font-size: 13px;
+	line-height: 1.6;
+	text-align: justify;
+	margin: 10px 0 0 0px;
+	width: 200px;
+}
+main .container #cta {
+    margin: 110px auto auto;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+main .container #cta h2{
+	font-size: 24px;
+    letter-spacing: 4px;
+}
+main .container #cta img{
+	height: 54px;
+	width: auto;
+	margin: 20px auto 30px;
+}
+main .container #cta .button{
+	width: 100%;
+	height: auto;
+	max-width: 320px;
+	margin: 0 auto;
+}
+main .container #cta .button::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+main .container #cta .button a{
+	width: 100%;
+	height: 60px;
+	max-width: 320px;
+	margin: 0 auto;
+	font-size: 24px;
+}
+main .container #cta .button a span {
+    width: 100%;
+    height: 100%;
+    line-height: 2.5;
+}
+main .container #cta .button a span::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 0px;
+    top: 50%;
+    margin-top: -7px;
+	right: 20px;
+}
+.sp-br {
+    display: none;
+}
 }
 @media only screen and (min-width: 1281px) {
-
+main #page-title-inner{
+    width: 862px;
+}
+main #page-title-inner-icon {
+	left: 30px;
+	top: 60px;
+	width: 160px;
+}
+main #page-title-aminal03 {
+    right: 60px;
+	bottom: 50px;
+	width: 111px;
+}
+main #page-title-inner-bg{
+    position: relative;
+}
+#page-title-inner-bg-image {
+    width: 861px;
+}
+main #page-title-inner-bg-text{
+    width: 100%;
+    top: 80px;
+	display: flex;
+	flex-flow: column;
+}
+main #page-title-inner-bg h1 {
+    font-size: 38px;
+}
+main #page-title-inner-bg span {
+    font-size: 14px;
+}
+main #page-title-inner-bg-sentences {
+    height: 84px;
+}
+main .container h3{
+	font-size: 24px;
+}
+main .container #page-content-inner {
+    width: 100%;
+    margin-top: 50px;
+}
+main .container #page-content {
+    display: flex;
+    flex-flow: column;
+	padding: 100px 0;
+	margin: 0 auto 136px;
+}
+main .container #page-content::before{
+	width: 960px;
+	height: 50px;
+}
+main .container #page-content::after{
+	width: 960px;
+	height: 50px;
+}
+main .container #page-content-inner ul {
+    flex-flow: row wrap;
+    display: flex;
+}
+main .container #page-content-inner li {
+	margin-bottom: 0;
+	display: flex;
+	flex-flow: column;
+}
+main .container #page-content-inner li .page-content-inner-block {
+	height: 400px;
+}
+.content-main-image {
+    margin-top: 20px;
+}
+.page-content-text-box {
+    display: flex;
+    width: 440px;
+    bottom: 55px;
+}
+.content-image-circle {
+    width: 102px;
+}
+main .container #page-content-inner li .page-collabo-content-image {
+    width: 280px;
+}
+main .page-content-inner-bg-sentences {
+	width: 118px;
+}
+main .container #page-content-inner li .page-content-inner-block .page-content-icon {
+    width: 80px;
+    bottom: 0;
+    left: 0;
+}
+main .container #page-content-inner li:hover .page-content-inner-block .page-content-icon {
+    width: 80px;
+    bottom: 0;
+    left: 0;
+}
+main .container #page-content-inner li .page-content-inner-block .page-content-speechbubble {
+    left: 0;
+    top: 0;
+    width: 200px;
+}
+main .container #page-content-inner li:hover .page-content-inner-block .page-content-speechbubble {
+    left: 0;
+    top: 0;
+    width: 200px;
+}
+main .container #page-content-inner li .page-content-inner-block .page-content-image {
+    width: 230px;
+}
+main .container #page-content-inner li p.page-content-inner-text{
+	font-size: 20px;
+	line-height: 1.6;
+	margin-top: 20px;
+}
+main .container #performance #performance-title {
+    padding: 13px;
+}
+main .container #performance #performance-title span{
+	font-size: 14px;
+}
+main .container #performance ul {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+	margin-top: 50px;
+}
+main .container #performance ul li {
+	display: flex;
+	flex-flow: column;
+	margin-bottom: 65px;
+}
+main .page-performance-block {
+	width: 444px;
+	height: auto;
+	display: flex;
+	flex-flow: row wrap;
+}
+main .container #performance ul li:nth-last-child(2) {
+	margin-bottom: 0;
+}
+main .container #performance ul li:last-child{
+	margin-bottom: 0;
+}
+main .container #performance ul li .page-performance-title-block {
+    display: flex;
+	justify-content: flex-start;
+	flex-flow: column;
+	align-items: flex-start;
+	height: auto;
+	width: 200px;
+}
+.container #performance ul li:nth-last-child(2) {
+    margin-bottom: 0;
+}
+main .container #performance ul li .page-performance-title-block img{
+	height: 120px;
+}
+main .container #performance ul li .page-performance-title-block img.page-performance-title-aichi{
+	height: 110px;
+}
+main .container #performance ul li .page-performance-title-block h2 {
+    font-size: 24px;
+	letter-spacing: 1px;
+	margin: 0 0 0 0px;
+	line-height: 1.2;
+	width: 200px;
+}
+.page-performance-right-block {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column;
+    align-items: flex-start;
+}
+.page-performance-ex {
+    font-size: 0.9rem;
+	margin-top: 10px;
+}
+main .container #performance .page-performance-img-block-title span {
+    font-size: 14px;
+}
+main .container #performance .page-performance-img-block ul {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+	margin-top: 10px;
+}
+.page-performance-img-slide {
+    width: 145px;
+}
+main .container #performance ul li .page-performance-image {
+    width: 220px;
+	height: 180px;
+}
+main .container #performance ul li h3 {
+    font-size: 16px;
+    margin-top: 15px;
+	height: 50px;
+	line-height: 1.2;
+}
+main .container #performance ul li p.page-performance-subtitle {
+    font-size: 13px;
+	line-height: 1.6;
+	text-align: justify;
+	margin: 10px 0 0 0px;
+	width: 200px;
+}
+main .container #cta {
+    margin: 110px auto auto;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+main .container #cta h2{
+	font-size: 24px;
+    letter-spacing: 4px;
+}
+main .container #cta img{
+	height: 54px;
+	width: auto;
+	margin: 20px auto 30px;
+}
+main .container #cta .button{
+	width: 100%;
+	height: auto;
+	max-width: 320px;
+	margin: 0 auto;
+}
+main .container #cta .button::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+main .container #cta .button a{
+	width: 100%;
+	height: 60px;
+	max-width: 320px;
+	margin: 0 auto;
+	font-size: 24px;
+}
+main .container #cta .button a span {
+    width: 100%;
+    height: 100%;
+    line-height: 2.5;
+}
+main .container #cta .button a span::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 0px;
+    top: 50%;
+    margin-top: -7px;
+	right: 20px;
+}
+.sp-br {
+    display: none;
+}
 }
