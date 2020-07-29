@@ -27,19 +27,19 @@ Template Name: front-page
 	<div id="overview-logo"><img class="site-logoimage" src="<?php echo( get_stylesheet_directory_uri() ); ?>/images/ecologist-logo.svg" alt="NPO法人 日本エコロジスト支援協会"/></div>
 	<div id="overview-text">
 	<h2>法人概要</h2>
-	<p>日本エコロジスト支援協会は、<br class="tab">環境活動を志す企業・団体・個人を支援する<br class="sp">NPO法人です。<br class="tab">特に若者による環境イベントの支援・プロデュースや、<br class="sp">若者と企業・NPOとのマッチング、<br class="tab">地域住民（ファミリー）向けの環境イベントなどを<br class="sp">得意としています。<br>
+	<a href="/overview/"><p>日本エコロジスト支援協会は、<br class="tab">環境活動を志す企業・団体・個人を支援する<br class="sp">NPO法人です。<br class="tab">特に若者による環境イベントの支援・プロデュースや、<br class="sp">若者と企業・NPOとのマッチング、<br class="tab">地域住民（ファミリー）向けの環境イベントなどを<br class="sp">得意としています。<br>
 普段は別々に活動する様々な団体や個人が<br class="sp">協力し合って奏でるハーモニーが、<br class="tab">生物多様性の向上や地域課題の解決へと<br class="sp">つながっていく……<br class="tab">私たちはそのお手伝いをしています。</p></div>
-	<div id="overview-link"><a href="/information/" class="overview-link"><img class="overview-image" src="<?php echo( get_stylesheet_directory_uri() ); ?>/images/icon-overview.svg" alt="法人概要 OVERVIEW"/></a></div>
+	<div id="overview-link"><a href="/overview/" class="overview-link"><img class="overview-image" src="<?php echo( get_stylesheet_directory_uri() ); ?>/images/icon-overview.svg" alt="法人概要 OVERVIEW"/></a></div>
 	</section>
 	<section id="sns-block">
 		<div id="sns-block-top">
 			<div id="facebook">
 			<h3>facebook</h3>
-			<div class="sns-block-inner"></div>
+			<div class="sns-block-inner"><?php dynamic_sidebar( 'sidebar-1' ); ?></div>
 			</div>
 			<div id="twitter">
 			<h3>twitter</h3>
-			<div class="sns-block-inner"></div>
+			<div class="sns-block-inner"><?php dynamic_sidebar( 'sidebar-2' ); ?></div>
 			</div>
 		</div>
 		<div id="sns-block-bottom">

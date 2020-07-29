@@ -199,6 +199,7 @@ a {
 	color: #005499;
 	transition: all 1s;
 	opacity: 1;
+	text-decoration: none;
 }
 a:hover {
 	transition: all 1s;

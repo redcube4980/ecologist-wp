@@ -1,0 +1,4099 @@
+@charset "UTF-8";
+/*
+Theme Name: クッチャロ湖エコワーカーズ2018
+Theme URI: 
+Author: the redcube
+Author URI: cube-group.jp
+Description: 
+Version: 1.0
+License: 
+License 
+Tags: 
+Text Domain: クッチャロ湖エコワーカーズ2018
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*
+#7FBB1C
+*/
+html {
+  font-size: 62.5%;
+}
+#loading{
+	position: absolute;
+	left: 50%;
+	top: 30%;
+}
+#loader-bg {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background: #FFF;
+	z-index: 1;
+}
+.scroll{
+  overflow-y: auto;
+}
+.modal{
+	display: none;
+}
+body {
+    font-size: 100%;
+    background-color: #fff;
+    margin: 0;
+    position: relative;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    background-image: url(images/bg-circle.svg);
+    background-repeat: left top repeat;
+	background-size: 50px 50px;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+#page{
+	background-color: #fff;
+	background-image: url(images/bg-circle.svg);
+	background-repeat: left top repeat;
+	background-size: 50px 50px;
+}
+#page #text{
+	display: none;
+}
+a[href^="tel"]{
+    color:inherit;
+}
+ul,li,h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+main .contents table td small {
+    font-size: 2.6vw;
+}
+.wf-sawarabimincho { font-family: "Sawarabi Mincho"; }
+.site-description{
+    line-height: 1;
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    text-align: ;
+    margin: 22px auto 0;
+    font-size: 14px;
+    font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif ,"Sawarabi Mincho";
+	font-weight: normal;
+	text-shadow: 0px 0px 8px #000;
+	left: 0;
+	z-index: 100;
+	color: #fff;
+	text-align: center;
+}
+.awesome{
+	font-family: FontAwesome; 
+}
+.sp{
+	display: block;	
+}
+.tab{
+	display: none;		
+}
+.mobile{
+	display: block;		
+}
+.nomobile{
+	display: none;		
+}
+.pc{
+	display: none;		
+}
+.pc2{
+	display: none;	
+}
+/*******************************
+メイン
+*******************************/
+main{
+	width: 100%;
+	height: auto;
+	float: left;
+	padding-bottom: 0px;
+	background-color: transparent;
+}
+header {
+    background: transparent;
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding: 0 0;
+}
+header, main, footer {
+    text-align: center;
+}
+header.fixed{
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.header a {
+    display: block;
+    width: 24px;
+    height: 24px;
+    padding: 12px;
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    background-color: #7FBB1C;
+    border-radius: 24px;	
+}
+header{
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+.mm-wrapper_opened header{
+	position: fixed;
+	left: 0;
+	right: 0;
+}
+header{
+	top: 0;
+}
+/*
+header a
+{
+	display: block;
+	width: 28px;
+	height: 18px;
+	padding: 11px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+header a:before,
+header a:after
+{
+	content: '';
+	display: block;
+	background: #fff;
+	height: 2px;
+}
+*/
+/*******************************
+ハンバーガーメニュー
+*******************************/
+.hamburger {
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+}
+header a{
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin-top: 0px;
+	position: fixed;
+	right: 20px;
+	z-index: 10;
+}
+.mm-wrapper_opened header a{
+	position: fixed;
+}
+header a .hamburger-inner{
+	background: #fff;
+	display: block;
+	height: 2px;
+	margin: 11px 0 0;
+}
+.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 2px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: .15s;
+    transition-timing-function: ease;
+}
+.hamburger-inner::after, .hamburger-inner::before {
+    content: "";
+    display: block;
+}
+.mm-wrapper_opened .hamburger-inner::before {
+    top: 0;
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    transition: top .12s .18s cubic-bezier(.33333,.66667,.33333),transform .15s .42s cubic-bezier(.215,.61,.355,1);
+}
+.hamburger-inner::before {
+    top: 9px;
+}
+.hamburger-inner::after {
+    bottom: 9px;
+}
+.mm-wrapper_opened .hamburger-inner {
+    background: none;
+    display: block;
+    height: 2px;
+    margin: 11px 0 0;
+}
+.mm-wrapper_opened .hamburger-inner::after {
+    top: 0px;
+    opacity: 1;
+    transition: top .3s .3s cubic-bezier(.33333,.66667,.33333),opacity .1s .27s linear;
+}
+.mm-wrapper_opened .hamburger-inner::before  {
+    transform: translate3d(0,0,0) rotate(-45deg);
+    transition-delay: .32s;
+    transition-timing-function: cubic-bezier(.215,.61,.355,1);
+}
+.mm-wrapper_opened .hamburger-inner::after {
+    transform: translate3d(0,0,0) rotate(45deg);
+    transition-delay: .32s;
+    transition-timing-function: cubic-bezier(.215,.61,.355,1);
+}
+.mm-panel_has-navbar .mm-navbar {
+    display: none!important;
+}
+.mm-menu .mm-listitem_selected > a:not(.mm-btn_next), .mm-menu .mm-listitem_selected > span {
+    background: none;
+}
+.site-logo {
+    z-index: 10;
+    position: relative;
+    margin-top: 0px;
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+.site-logo img {
+    width: 60%;
+    margin: 0 20%;
+    padding: 0;
+}
+.site-title{
+	background-color: #000;
+}
+/*******************************
+mm-menu
+*******************************/
+.mm-menu {
+    background-color: rgba(127,187,28,0.70)!important;
+    border-color: rgba(0,0,0,.1)!important;
+    color: #fff!important;
+	mix-blend-mode: multiply!important;
+}
+.mm-searchfield input {
+    background: #FFF!importants;
+    color: rgba(0,0,0,.75);
+}
+.mm-listitem a {
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    padding: 5px 0px 5px 0px;
+}
+.mm-listitem::after {
+    left: 0px;
+    right: 0px;
+	border-color: #fff;
+	border-bottom-width: 2px;
+	transform: scale(0, 1);
+  	transform-origin: left top;
+  	transition: transform .3s;
+	left: 0;
+	position: absolute;
+}
+.mm-listitem:hover::after {
+	transform: scale(1, 1);
+}
+.mm-listitem:first-child::after {
+    left: 20px !important;
+    right: 20px !important;
+    border-color: transparent;
+	border-style: none;
+}
+.mm-listitem:last-child::after {
+    border-color: transparent;
+	border-style: none;
+}
+.mm-listitem a small{
+	font-size: 10px;
+}
+.mm-listview {
+    line-height: 13px;
+}
+.mm-panel {
+    padding: 0 60px;
+}
+.mm-panels > .mm-panel > .mm-listview:first-child, .mm-panels > .mm-panel > .mm-navbar + .mm-listview {
+    margin-top: 00px;
+}
+.mm-panels > .mm-panel > .mm-listview {
+    margin: 0px 0px;
+}
+.mm-panel::after, .mm-panel::before {
+    content: '';
+    display: block;
+    height: 00px;
+}
+.flexbox{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+}
+.snsicon{
+	
+}
+.snsicon :hover{
+
+}
+.svg-inline--fa {
+    font-size: 26px;
+    height: 1em;
+}
+.mm-menu_navbar_bottom-1 .mm-panels {
+    bottom: 00px!important;
+}
+.site-logo2 {
+    position: absolute;
+    width: 40%;
+    z-index: 3;
+    top: 60px;
+    margin: 0 30%;
+}
+.site-logo2 img{
+	filter: drop-shadow(0px 0px 8px #000);
+}
+.hokkaido-map {
+    position: absolute;
+    left: 20px;
+    width: 50%;
+    z-index: 2;
+    top: 240px;
+}
+.hokkaido-map-ie{
+	display: none;
+	position: absolute;
+    left: 20px;
+    width: 50%;
+    z-index: 2;
+    top: 240px;
+}
+*::-ms-backdrop, img[src$=".svg"]{
+	width: 100%!important;
+}
+#scroll-down{
+	position: absolute;
+	right: -18px;
+	top: 300px;
+	z-index: 2;
+	-ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+	border-bottom: thin solid #fff;
+	color: #fff;
+	width: 100px;
+}
+#scroll-down a {
+    float: right;
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 100px;
+    text-align: right;
+    text-decoration: none;
+}
+#scroll-down span{
+	width: 20px;
+	height: 20px;
+	border-bottom: thin solid #fff;
+	-ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+	display: block;
+	float: left;
+	margin-left: -9px;
+	margin-bottom: 3px;
+}
+/*******************************
+top-slider
+*******************************/
+.top-slider .swiper-container {
+    padding: 0 0;
+    width: 100%;
+    height: auto;
+}
+.swiper-container {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+.slider-img {
+    width: auto;
+	height: 400px ;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+    background-color: transparent;
+	left: 0;
+}
+.swiper-slide-active .slider-img {
+	animation: moveimg 200s ease-out 0.1s 2 normal;
+}
+@keyframes moveimg {
+		0% { transform: translate(0px, 0px);}
+		100% { transform: translate(-1500px, 0px); }
+}
+.slider-inner {
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.slider-text {
+    top: 40%;
+}
+.slider-text {
+    display: block;
+    color: white;
+    font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif ,"Sawarabi Mincho";
+    -webkit-writing-mode: horizontal-tb;
+    -ms-writing-mode: horizontal-tb;
+    writing-mode: horizontal-tb;
+    text-shadow: 0 0 1px #fff;
+    position: absolute;
+    font-size: 36px;
+    line-height: 1;
+    letter-spacing: 0;
+    margin: 0;
+    text-align: center;
+    text-shadow: none;
+	width: 100%;
+	margin: 0 auto 0 3%;
+	/*
+	text-shadow: 0 0 8px #000;
+	*/
+}
+.swiper-slide-active .slider-text{
+	animation: textanime 2s ease-in 0s 1 normal;
+}
+@keyframes textanime {
+		0% { opacity: 0;}
+		50% { opacity: 0;}
+		100% { opacity: 1; }
+}
+.slider-text span{
+	font-size: 24px;
+	line-height: 35px
+}
+#jisedai{
+	font-size: 30px;
+}
+.swiper-button-prev{
+	display: none;
+}
+.swiper-button-next{
+	display: none;
+}
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #fff;
+    opacity: 0.6;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #7FBB1C;
+}
+/*******************************
+topics
+*******************************/
+#topics{
+	background-color: rgba(127,187,28,1);
+	mix-blend-mode: multiply;
+	height: 80px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+#topics h3{
+    color: #fff;
+    float: left;
+    text-align: left;
+    width: -webkit-calc(100% - 74px);
+	width: calc(100% - 74px);
+    font-size: 12px;
+    font-weight: bold;
+    border-bottom: thin dotted #fff;
+	margin-top: 8px;
+}
+#topics p {
+    color: #fff;
+    float: left;
+    text-align: left;
+    width: 100%;
+    line-height: 1.1;
+    font-size: 14px;
+    margin-top: 8px;
+    text-decoration: underline;
+}
+#topicslink {
+    position: absolute;
+    right: 20px;
+    float: left;
+    display: flex;
+    width: 74px;
+    text-align: right;
+    color: #fff;
+    font-size: 12px;
+    margin: 0;
+	margin-top: 8px;
+    padding: 0;
+    vertical-align: middle;
+	border-bottom: thin dotted #fff;
+}
+#topicslink .svg-inline--fa{
+	font-size: 18px;
+	margin-right: 2px;
+	margin-top: 2px;
+}
+#topicsfooter{
+	display: none;	
+	}
+/*******************************
+sidebar
+*******************************/
+#sidebar{
+	padding: 20px 20px 20px 20px;
+	width: -webkit-calc(100% - 40px);
+    width: calc(100% - 40px);
+	float: left;
+	text-align: center;
+	background-color: transparent;
+	background-image: none;
+}
+#sidebar .widget{
+	width: 100%;
+    float: left;	
+}
+#em_calendar-2{
+	background-color: #fff;
+	margin-top: 20px;
+	border: thin solid#7FA75D;
+	box-sizing: border-box;
+	padding: 10px;
+}
+.widget .widget-title{
+	width: 100%;
+    float: left;
+	font-size: 16px;
+    font-weight: bold;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	color: #7FA75D;
+}
+.widget .em-calendar{
+	display: flex;
+    flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
+}
+.widget .em-calendar .month_name{
+	width: 60%;
+}
+.widget .em-calendar .days-names{
+	color: #7FA75D;
+	font-weight: bold;
+}
+.widget .em-calendar .days-names td:last-child{
+    color: #E30633;
+}
+.widget .em-calendar .days-names td:nth-last-child(2){
+    color: #0083E5;
+}
+.widget .em-calendar thead{
+	color: #7FA75D;
+}
+.widget .em-calendar thead,.widget .em-calendar tbody{
+	width: 100%;	
+}
+.widget .em-calendar tr{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.widget .em-calendar tr td {
+    font-size: 15px;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    display: block;
+    line-height: 1.5;
+    padding: 3%;
+}
+.widget .em-calendar tr .eventless{
+	color: #000;	
+}
+.widget .em-calendar tr .eventless-today{
+	color: #fff;
+	background-color:#7FA75D; 
+	font-weight: bold;
+}
+#ecotour-appli{
+	float: left;
+	width: 100%;
+	height: auto;
+	background-color: #E2E5D7;
+	display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#ecotour-appli h3{
+    width: -webkit-calc(100% - 20px);
+    width: calc(100% - 20px);
+    height: auto;
+    margin: 10px 10px 10px 10px;
+    background-color: #7FA75D;
+    color: #fff;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+	line-height: 40px;
+	padding: 2px 0;
+}
+#ecotour-appli h3 a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;	
+}
+#ecotour-appli h3 .svg-inline--fa{
+	font-size: 28px;
+    display: inline-block;
+    height: auto;
+    overflow: visible;
+    vertical-align: middle;
+	margin-top: -3px;
+}
+#ecotour-appli ul{
+	width: -webkit-calc(100% - 40%);
+    width: calc(100% - 40%);
+	height: auto;
+	margin: 0px 20% 10px 20%;
+}
+#ecotour-appli ul li{
+	font-size: 4vw;
+    text-align: center;
+    line-height: 1.7;
+}
+#ecotour-appli ul .svg-inline--fa{
+	font-size: 16px;
+	margin-right: 3px;
+	color: #7FA75D;
+}
+#eco-banner{
+	float: left;
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+	margin-top: 20px;
+}
+#eco-banner ul{
+    width: 100%;
+	height: auto;
+	margin: 0px auto;
+}
+#eco-banner ul li{
+    height: auto;
+    border-top: thin solid #7FA75D;
+	align-items: center;
+	display: flex;
+}
+#eco-banner ul li:last-child{
+	height: auto;
+	border-bottom: thin solid #7FA75D;
+}
+#eco-banner ul li img{
+	margin: 0;
+	width: 100%;
+	float: left;
+}
+#eco-banner .bannerimage{
+	width: 40%;
+	height: auto;
+	margin: 0;
+	float: left;
+	padding: 0;
+}
+#eco-banner ul li a {
+    float: left;
+    display: block;
+    text-align: left;
+    font-size: 5vw;
+    color: #7FBB1C;
+    line-height: 1.1;
+    font-weight: bold;
+    margin: 0 5%;
+    width: auto;
+	margin-top: -2%;
+}
+#eco-banner ul li a span{
+	font-size:  3.1vw;
+	color: #666;
+	line-height: 1;
+}
+#supporters-only{
+	float: left;
+	width: 100%;
+	height: auto;
+	background-color: #88AF49;
+	display: flex;
+    align-items: center;
+	display: flex;
+	margin-top: 20px;
+}
+#supporters-only a{
+    font-size: 5vw;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+	padding: 3vw 0;
+}
+#supporters-only a .svg-inline--fa{
+	font-size: 5vw;
+	margin-right: 2px;
+}
+#staff-diary{
+	float: left;
+	width: 100%;
+	height: auto;
+	background-color: #85B972;
+	display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+	margin-top: 20px;
+}
+#staff-diary a {
+    font-size: 4vw;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    padding: 3vw 0;
+    line-height: 1;
+}
+#staff-diary a .svg-inline--fa{
+	font-size: 4vw;
+	margin-right: 2px;
+	transform: scale(-1, 1);
+	
+}
+main section{
+	padding: 20px 20px 20px 20px;
+	width: -webkit-calc(100% - 40px);
+    width: calc(100% - 40px);
+	float: left;
+}
+#ecotour-info{
+	float: left;
+	flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+	width: 100%;
+}
+main section h3{
+    text-align: left;
+    font-size: 18px;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    line-height: 1;
+    font-weight: bold;
+	margin-bottom: 10px;
+	color: #7FBB1C;
+}
+main section h3 a{
+	
+}
+main section h3 span{
+	text-align: left;
+	font-size: 14px;
+}
+main section img{
+	width: 100%;
+}
+#become-supporter,#photo-album{
+	float: left;
+	flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+	margin-top: 20px;
+	width: 100%;
+}
+/*******************************
+footer
+*******************************/
+footer {
+    
+}
+footer .widget h3{
+	text-align: left;
+    font-size: 18px;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    line-height: 1;
+    font-weight: bold;
+	margin-bottom: 10px;
+	color: #7FBB1C;
+}
+#copyright{
+	float: left;
+    font-size: 8px;
+    bottom: 0;
+    height: 30px;
+	width: 100%;
+	background-color: transparent;
+	mix-blend-mode: multiply;
+	display: block;
+	margin-top: -30px;
+	margin-bottom: 0;
+}
+footer section{
+	padding: 20px 20px 20px 20px;
+	width: -webkit-calc(100% - 40px);
+    width: calc(100% - 40px);
+	float: left;
+}
+#address{
+	padding-bottom: 40px;
+}
+.scroll footer {
+    float: left;
+    height: 30px;
+    width: 100%;
+}
+.sns .flexbox {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+.sns .flexbox .svg-inline--fa{
+	color: #7FBB1C;
+	font-size: 36px;
+}
+#sab-navi .flexbox {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+#sab-navi .sabnavi{
+    width: auto;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: bold;
+	font-size: 3.9vw;
+	width: 50%;
+	text-align: left;
+	margin-right: 0%;
+	line-height: 1.8;
+}
+#sab-navi .sabnavi a{
+	text-decoration: none;
+}
+#sab-navi .sabnavi::before{
+	content: "\f105";
+	font-family: FontAwesome;
+	font-size: 4.5vw;
+	color: #7FBB1C;
+	margin-right: 5px;
+}
+#sab-navi2 {
+	padding: 00px 20px 20px 20px;
+}
+#sab-navi2 .flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+#sab-navi2 .sabnavi{
+    width: auto;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: bold;
+	font-size: 2.2vw;
+}
+#address .site-logo3{
+	width: 40%;
+	margin: 0 30%;
+}
+address{
+    font-size: 12px;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+	line-height: 1.5;
+}
+address .tel{
+	font-size: 14px;
+}
+/*******************************
+cta
+*******************************/
+main .contents .cta{
+	width: 100%;
+	float: left;
+	margin-top: 30px;
+}
+main .contents .course01{
+	width: 100%;
+	float: left;
+}
+main .contents .cta .course01{
+	margin-bottom: 10%;
+	border-bottom: 1px dotted #000;
+	padding-bottom: 10%;
+}
+main .contents .cta .contact{
+	margin-bottom: 10%;
+	border-bottom: 0px dotted #000;
+	padding-bottom: 0%;
+}
+main .contents .cta .contact {
+    width: 100%;
+    float: left;
+    border-collapse: collapse;
+    margin-bottom: 0%;
+    padding-right: 0%;
+    border-right: 0px dotted #555;
+    box-sizing: border-box;
+}
+main .contents .cta .contact table{
+	margin-bottom: 20px;
+}
+main .contents .cta .contact table th {
+    padding-bottom: 0%;
+}
+main .contents .cta .contact .buttonarea{
+	margin-bottom: 20px;
+}
+main .contents .cta .contact h4 {
+    margin-bottom: 20px;
+}
+main .contents .course02{
+	width: 100%;
+	float: left;
+}
+main .contents .cta h4{
+	width: 100%;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 4.5vw;
+	text-align: left;
+	float: left;
+	color: #7FBB1C;
+	font-weight: bold;
+	margin-bottom: 3%;
+	line-height: 1.1;
+}
+main .contents .cta h5{
+	width: 100%;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 4vw;
+	text-align: left;
+	float: left;
+	color: #7FBB1C;
+	font-weight: bold;
+}
+main .contents .cta h4::before{
+	content: "\f14a";
+	font-family: FontAwesome;
+	margin-right: 5px;
+	font-weight: normal;
+}
+main .contents .cta h5::before{
+	content: "\f299";
+	font-family: FontAwesome;
+	margin-right: 5px;
+	font-weight: normal;
+}
+main .contents table{
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 20px;
+}
+main .contents table .fishing-sp{
+	display: none;
+}
+main .contents .buttonarea{
+	width: 100%;
+	float: left;
+	margin-bottom: 10%;
+}
+main .contents table th{
+	padding-bottom: 2%;
+}
+main .contents table td{
+    border-top: thin solid rgba(0,0,0,1.00);
+    border-bottom: thin solid rgba(0,0,0,1.00);
+	font-size: 3.75vw;
+	padding: 2% 0;
+}
+main .contents table .td-r{
+	border-left: thin solid rgba(0,0,0,1.00);
+}
+main .contents table .td-l{
+	border-right: thin solid rgba(0,0,0,1.00);
+}
+main .contents table .td-c{
+	border-right: thin solid rgba(0,0,0,1.00);
+	border-left: thin solid rgba(0,0,0,1.00);
+}
+main .contents table .ninzuuprice{
+    background-color: #DBE3CC;
+	mix-blend-mode: multiply;
+    font-weight: bold;
+}
+main .contents table .bold{
+	font-weight: bold;
+}
+main .contents table .bold2{
+	background-color: #7FBB1C;
+	mix-blend-mode: multiply;
+    font-weight: bold;
+	color: #fff;
+}
+main .contents .tabletitle{
+	width: 35%;
+}
+main .contents .cta p{
+	margin-top: 1%;
+	margin-bottom: 5%;
+}
+main .contents .cta ul{
+	float: left;
+	margin-top: 2%;
+	margin-bottom: 5%;
+	width: 100%;
+}
+main .contents .cta li{
+	float: left;
+	font-size: 4vw;
+	width: 100%;
+	line-height: 1.2;
+	margin: 2% 0;
+	font-size: 3.75vw;
+	color: #666;
+	font-weight: bold;
+}
+main .contents .cta li span{
+	color: #7FBB1C;
+}
+main .contents .cta .kashidashi li{
+    font-size: 3.75vw;
+    text-align: left;
+    list-style-position: outside;
+    list-style-type: disc;
+	margin: 2% 0 0 5%;
+	width: auto;
+	font-weight: normal;
+	color: #000;
+}
+main .contents .cta .shochuui li{
+	text-align: left;
+    list-style-position: outside;
+    list-style-type: disc;
+	margin: 2% 0 0 5%;
+	width: auto;
+	line-height: 1.2;
+	font-weight: normal;
+	color: #000;
+}
+main .contents .cta .shugoubasho{
+	float: left;
+	width: 100%;
+	padding-top: 30px;
+	margin-bottom: 30px;
+}
+main .contents .cta .shugoubasho .shugouleft{
+	float: left;
+	width: 100%;
+}
+main .contents .cta .shugoubasho .shugouleft h6{
+	width: 100%;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 4vw;
+	text-align: left;
+	float: left;
+	color: #7FBB1C;
+	font-weight: bold;
+	margin-top: 2%;
+	line-height: 1.1;
+}
+main .contents .cta .buttonarea{
+	margin-bottom: 00px;
+}
+main .contents .cta .course2 .buttonarea{
+	margin-bottom: 30px;
+}
+main .contents .cta .shugoubasho .shugouleft p{
+	font-size: 3vw;
+	text-align: left;
+	line-height: 1.2;
+}
+main .contents .cta .shugoubasho .shugouright{
+	float: left;
+	width: 100%;
+}
+main .contents .cta .shugoubasho .shugoumap{
+	float: left;
+	width: 100%;
+}
+main .contents .cta .shugoubasho img{
+	margin: 0;
+}
+.square_btn{
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+    background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+    color: #fff;
+	transition: .5s;
+    font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
+	overflow: hidden;
+}
+.square_btn2{
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+    background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+    color: #fff;
+	transition: .5s;
+    font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
+	overflow: hidden;
+	margin-left: 15px;
+	margin-bottom: 3%;
+	width: 155px;
+}
+.square_btn:hover {
+	background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+	background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+}
+.square_btn span {
+	transition: .5s;
+	color: #fff;
+	display:inline-block;
+	cursor: pointer;
+}
+.square_btn span::before{
+	content: "\f105";
+	font-family: FontAwesome;
+	margin-right: 5px;
+	display:inline-block;
+}
+.square_btn:hover span{/*ホバーで一周回転*/
+  -webkit-transform: rotateX(360deg);
+  -ms-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+}
+.square_btn2:hover {
+	background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+	background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+}
+.square_btn2 span {
+	transition: .5s;
+	color: #fff;
+	display:inline-block;
+	cursor: pointer;
+}
+.square_btn2 span::before{
+	content: "\f105";
+	font-family: FontAwesome;
+	margin-right: 5px;
+	display:inline-block;
+}
+.square_btn2:hover span{/*ホバーで一周回転*/
+  -webkit-transform: rotateX(360deg);
+  -ms-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+}
+/*******************************
+flow
+*******************************/
+main .contents .cta .flow{
+	float: left;
+	width: 100%;
+}
+main .contents .cta .flow h4 {
+    margin-bottom: 10px;
+}
+main .contents .cta .flow .flexbox{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+main .contents .cta .flow .flexbox li{
+	margin-bottom: 10px;
+	margin-top: 0;
+}
+main .contents .cta .flow .flexbox li:nth-child(odd){
+	width: 25%;
+	border: 2px solid #7FBB1C;
+    box-sizing: border-box;
+   	padding: 3% 0 3%;
+	border-radius: 10px;
+	color: #7FBB1C;
+	font-size: 3vw;
+}
+main .contents .cta .flow .flexbox li:nth-child(even){
+	width: 12.5%;
+	color: #7FBB1C;
+}
+main .contents .cta .flow .flexbox li:nth-child(3),main .contents .cta .flow .flexbox li:nth-child(5){
+	padding: 5% 0 3%;
+}
+main .contents .cta .flow .flexbox li:last-child{
+	padding: 7% 0 3%;
+}
+/*******************************
+aboutecoworkersnavi
+*******************************/
+#aboutecoworkersnavi{
+	padding: 0px 20px 0px 20px;
+    width: -webkit-calc(100% - 40px);
+    width: calc(100% - 40px);
+	margin-left: 0px;
+	float: left;
+	display: block;
+	margin-bottom: 0px;
+}
+#aboutecoworkersnavi ul{
+	font-size: 14px;
+	display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+	width: 100%;
+	overflow: hidden;
+}
+#aboutecoworkersnavi ul li{
+	text-align: center;
+	width: 20%;
+	position: relative;
+	border-radius: 50%;
+	margin-right: 4%;
+	vertical-align: middle;
+  	overflow: hidden;
+  	transition: 0.8s;
+	display: inline-block;
+	cursor: pointer;
+	border: 2px solid #7FBB1C;
+	box-sizing: border-box;
+}
+#aboutecoworkersnavi ul li::before{
+	content: "";
+	padding-top: 100%;
+	display: block;
+	overflow: hidden;
+}
+#aboutecoworkersnavi ul li:nth-child(4){
+	margin-right: 0%;
+}
+#aboutecoworkersnavi ul li:last-child{
+	margin-right: 0%;
+}
+#aboutecoworkersnavi ul li a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 1.2;
+    font-size: 4vw;
+    text-decoration: none;
+    font-weight: bold;
+	color: #7FBB1C;
+	padding: 22% 0;
+	display: inline-block;
+	cursor: pointer;
+	overflow: hidden;
+	height: 100%;
+}
+#aboutecoworkersnavi ul .current-menu-item{
+	color: #fff;
+	background-color: #7FBB1C;
+	display: inline-block;
+	overflow: hidden;
+}
+#aboutecoworkersnavi ul .current-menu-item a{
+	color: #fff;
+	display: inline-block;
+	overflow: hidden;
+}
+#aboutecoworkersnavi ul li:hover {
+	-webkit-transform: rotateX(360deg);
+	-ms-transform: rotateX(360deg);
+	transform: rotateX(360deg);
+	background-color: #7FBB1C;
+	display: inline-block;
+	overflow: hidden;
+	color: #fff;
+}
+
+#aboutecoworkersnavi ul li:hover > a{
+	color: #fff;
+	cursor: pointer;
+	overflow: hidden;
+	background-color: #7FBB1C;
+}
+#aboutecoworkersnavi ul li:first-child a{
+	font-size: 2.8vw;
+	line-height: 1.2;
+}
+#aboutecoworkersnavi ul li:nth-child(2) a{
+	padding-top: 35%;
+}
+#aboutecoworkersnavi ul li:nth-child(5) a{
+	padding-top: 35%;
+}
+/*******************************
+aboutlakekutcharonavi
+*******************************/
+#aboutlakekutcharonavi{
+	padding: 0px 20px 0px 20px;
+    width: -webkit-calc(100% - 40px);
+    width: calc(100% - 40px);
+	margin-left: 0px;
+	float: left;
+	display: block;
+	margin-bottom: 0px;
+}
+#aboutlakekutcharonavi ul{
+	font-size: 14px;
+	display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+	width: 100%;
+	overflow: hidden;
+}
+#aboutlakekutcharonavi ul li{
+	text-align: center;
+	width: 18%;
+	position: relative;
+	border-radius: 50%;
+	margin-right: 2%;
+	vertical-align: middle;
+  	overflow: hidden;
+  	transition: 0.8s;
+	display: inline-block;
+	cursor: pointer;
+	border: 2px solid #4082AE;
+	box-sizing: border-box;
+}
+#aboutlakekutcharonavi ul li::before{
+	content: "";
+	padding-top: 100%;
+	display: block;
+	overflow: hidden;
+}
+#aboutlakekutcharonavi ul li:last-child{
+	margin-right: 0%;
+}
+#aboutlakekutcharonavi ul li a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 1.2;
+    font-size: 4vw;
+    text-decoration: none;
+    font-weight: bold;
+	color: #4082AE;
+	padding: 32% 0;
+	display: inline-block;
+	cursor: pointer;
+	overflow: hidden;
+	height: 100%;
+}
+#aboutlakekutcharonavi ul .current-menu-item{
+	color: #fff;
+	background-color: #4082AE;
+	display: inline-block;
+	overflow: hidden;
+}
+#aboutlakekutcharonavi ul .current-menu-item a{
+	color: #fff;
+	display: inline-block;
+	overflow: hidden;
+}
+#aboutlakekutcharonavi ul li:hover {
+	-webkit-transform: rotateX(360deg);
+	-ms-transform: rotateX(360deg);
+	transform: rotateX(360deg);
+	background-color: #4082AE;
+	display: inline-block;
+	overflow: hidden;
+	color: #fff;
+}
+
+#aboutlakekutcharonavi ul li:hover > a{
+	color: #fff;
+	cursor: pointer;
+	overflow: hidden;
+	background-color: #4082AE;
+}
+#aboutlakekutcharonavi ul li:first-child a{
+	font-size: 2.2vw;
+	line-height: 1.4;
+}
+#aboutlakekutcharonavi ul li:nth-child(2) a{
+	padding-top: 35%;
+}
+#aboutlakekutcharonavi ul li:nth-child(3) a{
+	padding-top: 35%;
+}
+#aboutlakekutcharonavi ul li:nth-child(4) a{
+	padding-top: 28%;
+	font-size: 3vw;
+}
+#aboutlakekutcharonavi ul li:nth-child(5) a{
+	padding-top: 38%;
+	font-size: 3vw;
+}
+/*******************************
+mw_wp_form
+*******************************/
+main .contents .mw_wp_form{
+	margin-top: 5px;
+}
+main .contents .mw_wp_form,main .contents .mw_wp_form form,main .contents .mw_wp_form form table{
+	float: left;
+	width: 100%;
+} 
+main .contents .mw_wp_form form table{
+	border-collapse: collapse;
+	box-sizing: border-box;
+	display: table;
+	margin-bottom: 5%;
+}
+main .contents .mw_wp_form form table tbody{
+	float: left;
+	width: 100%;
+}
+main .contents .mw_wp_form form table tbody .form-group{
+    width: 100%;
+    float: left;
+}
+main .contents .mw_wp_form form table tbody .form-group .control-label{
+
+}
+main .contents .mw_wp_form form table tbody .form-group th{
+    display: block;
+    padding: 15px 0px;
+    font-size: 18px;
+    line-height: 20px;
+    border-top: 1px solid #838383;
+   	border-bottom: 1px dotted #838383;
+    border-left: none;
+	border-right: none;
+    vertical-align: middle;
+    font-weight: normal;
+    box-sizing: border-box;
+    width: 100% !important;
+	text-align: left;
+	align-items: center;
+}
+main .contents .mw_wp_form form table tbody .form-group td{
+	width: 100%;
+	display: flex;
+    padding: 15px 0px;
+    font-size: 18px;
+    line-height: 20px;
+    border: 0px solid #838383;
+        border-right-width: 0px;
+        border-right-style: solid;
+        border-right-color: rgb(131, 131, 131);
+    border-right-width: 0px;
+    border-right-style: solid;
+    border-right-color: rgb(131, 131, 131);
+    border-right: none;
+    box-sizing: border-box;
+	float: none;
+	text-align: left;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: normal;
+}
+main .contents .mw_wp_form .label-required{
+	color: #fff;
+    background-color: #D71C24;
+    display: inline-block;
+    line-height: 1.5;
+    padding: 0 .6em;
+    border-radius: .3em;
+	margin-right: 5px;
+	font-size: 13px;
+	vertical-align: bottom;
+}
+main .contents .mw_wp_form form table tbody .form-group td code{
+	display: none;
+}
+main .contents .mw_wp_form form table tbody .form-group td .name{
+	width: 40px;
+	padding-right: 10px;
+	text-align: right;
+}
+main .contents .mw_wp_form form table tbody .form-group td .name:first-child{
+	margin-bottom: 10px;
+}
+main .contents .mw_wp_form form table tbody .form-group td .name01{
+	width: -webkit-calc(100% - 50px);
+    width: calc(100% - 50px);
+	padding-right: 10px;
+	margin-bottom: 10px;
+}
+main .contents .mw_wp_form form table tbody .form-group td .name02{
+	width: -webkit-calc(100% - 50px);
+    width: calc(100% - 50px);
+	margin-right: 0px;
+}
+main .contents .mw_wp_form form table tbody .form-group td .kana01{
+	width: -webkit-calc(100% - 50px);
+    width: calc(100% - 50px);
+	margin-right: 0px;
+	margin-bottom: 10px;
+}
+main .contents .mw_wp_form form table tbody .form-group td .kana02{
+	width: -webkit-calc(100% - 50px);
+    width: calc(100% - 50px);
+	margin-right: 0px;
+}
+main .contents .mw_wp_form form table tbody #address-group .form-line{
+	margin-bottom: 15px;
+	justify-content: space-between;
+}
+main .contents .mw_wp_form form table tbody #address-group .form-line:last-child{
+	margin-bottom: 0px;
+	font-size: 13px;
+	line-height: 1.1;
+}
+main .contents .mw_wp_form form table tbody #address-group .form-line:nth-child(2){
+	text-align: right;
+}
+main .contents .mw_wp_form form table tbody .form-group #pref{
+    height: 40px;
+	width: 30%;
+    border: 1px solid #838383;
+    font-size: 16px;
+    line-height: 2;
+}
+main .contents .mw_wp_form form table tbody .form-group td #addr01{
+	width: 65%;
+	margin-left: 2%;
+}
+main .contents .mw_wp_form form table tbody .form-group td #addr02{
+	width: 65%;
+	margin-left: 2%;
+}
+main .contents .mw_wp_form form table tbody .form-group td #addr03{
+	width: 65%;
+	margin-left: 2%;
+}
+main .contents .mw_wp_form form table tbody .form-group td .mail{
+	width: 100%;
+	margin-right: 0px;
+}
+main .contents .mw_wp_form form table tbody .form-group td .mail2{
+	width: 100%;
+	margin-right: 0px;
+}
+main .contents .mw_wp_form form table tbody .form-group #birth {
+	justify-content: flex-start;
+}
+main .contents .mw_wp_form form table tbody .form-group #birth .birth-year{
+	height: 40px;
+    width: 75px;
+    border: 1px solid #838383;
+    font-size: 16px;
+    line-height: 2;
+	margin-right: 5px;
+}
+main .contents .mw_wp_form form table tbody .form-group #birth .supporter-course{
+	height: 40px;
+    width: 120px;
+    border: 1px solid #838383;
+    font-size: 16px;
+    line-height: 2;
+	margin-right: 5px;
+}
+main .contents .mw_wp_form form table tbody .form-group #birth .birth-month{
+	height: 40px;
+    width: 55px;
+    border: 1px solid #838383;
+    font-size: 16px;
+    line-height: 2;
+	margin-right: 5px;
+	margin-left: 0px;
+}
+main .contents .mw_wp_form form table tbody .form-group #birth .birth-date{
+	height: 40px;
+    width: 55px;
+    border: 1px solid #838383;
+    font-size: 16px;
+    line-height: 2;
+	margin-right: 5px;
+	margin-left: 0px;
+}
+main .contents .mw_wp_form form table tbody .form-group #ninzuu{
+	justify-content: flex-start;
+}
+main .contents .mw_wp_form form table tbody .form-group td .ninzuu{
+	width: 40px;
+	margin-right: 5px;
+}
+main .contents .mw_wp_form form table tbody .form-group #hopedays {
+	justify-content: flex-start;
+	font-size: 14px;
+}
+main .contents .mw_wp_form form table tbody .form-group #hopedays .hope-year {
+	height: 40px;
+    width: 75px;
+    border: 1px solid #838383;
+    font-size: 16px;
+    line-height: 2;
+	margin-right: 2px;
+}
+main .contents .mw_wp_form form table tbody .form-group #hopedays .hope-month {
+	height: 40px;
+    width: 55px;
+    border: 1px solid #838383;
+    font-size: 16px;
+    line-height: 2;
+	margin-right: 5px;
+	margin-left: 6px;
+}
+main .contents .mw_wp_form form table tbody .form-group #hopedays .hope-date {
+	height: 40px;
+    width: 55px;
+    border: 1px solid #838383;
+    font-size: 16px;
+    line-height: 2;
+	margin-right: 5px;
+	margin-left: 6px;
+}
+main .contents .mw_wp_form form table tbody .form-group #hopedays .hope-time {
+	height: 40px;
+    width: 55px;
+    border: 1px solid #838383;
+    font-size: 16px;
+    line-height: 2;
+	margin-right: 5px;
+	margin-left: 6px;
+}
+main .contents .mw_wp_form form table tbody .form-group td .naiyou{
+    width: 100%;
+	margin-right: 0px;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+main .contents .mw_wp_form form table tbody .form-group td .mwform-tel-field{
+	width: 100%;
+	justify-content: space-between;
+	display: inline-flex;
+	vertical-align: middle;
+	align-items: center;	
+}
+main .contents .mw_wp_form form table tbody .form-group td .telephone{
+	width: 28%;
+	margin-right: 0px;
+	box-sizing: border-box;	
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"], 
+input[type="url"], 
+input[type="search"], 
+input[type="password"] {
+    height: 40px;
+    font-size: 22px;
+    line-height: 38px;
+	border: 1px solid #838383;
+	padding: 0px 0px 0px 2%;
+	font-size: 16px;
+	line-height: 1.5;
+	box-sizing: border-box;
+	vertical-align: middle;
+	box-shadow: none;
+	border-radius: 3px !important;
+}
+textarea{
+	width: 100%;
+	line-height: 38px;
+	border: 1px solid #838383;
+	padding: 0px 0px 0px 2%;
+	font-size: 16px;
+	line-height: 1.5;
+	box-sizing: border-box;
+	box-shadow: none;
+	border-radius: 3px !important;
+}
+main .contents .mw_wp_form .form-line {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-left: 0;
+    float: left;
+	width: 100%;
+}
+main .contents .mw_wp_form #postnumber{
+	width: 100%;
+	margin-bottom: 15px;
+}
+main .contents .mw_wp_form form table tbody .form-group .button, .button-white {
+    display: inline-block;
+    line-height: 2;
+    padding: 0 0.6em;
+    color: #fff;
+    background-color: #7FBB1C;
+    border-radius: .3em;
+    text-decoration: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    font-size: 14px;
+}
+main .contents .mw_wp_form form table tbody .form-group .mwform-zip-field{
+	width: 50%;
+	justify-content: space-between;
+	display: inline-flex;
+	vertical-align: middle;
+	align-items: center;
+	margin-right: 5%;
+}
+main .contents .mw_wp_form form table tbody .form-group .mwform-zip-field .postnumber{
+	width: 45%;	
+}
+main .contents .mw_wp_form form table tbody .form-group .mwform-zip-field .postnumber:first-child{
+	width: 35%;	
+}
+main .contents .mw_wp_form form table tbody .form-group #auto-postnumber{
+	margin-top: 0px;
+	font-size: 13px;
+	line-height: 1.1;
+}
+main .contents .mw_wp_form .form-line > span {
+    white-space: nowrap;
+}
+main .contents .mw_wp_form .form-group:first-child .form-line input[type="text"] {
+    width: 36.5%;
+    margin-right: 30px;
+    margin-left: .5em;
+}
+main .contents .mw_wp_form .form-group:nth-child(2) .form-line input[type="text"] {
+    width: 36.5%;
+    margin-right: 0px;
+    margin-left: .5em;
+}
+main .contents .mw_wp_form #kakunin{
+	width: 100%;
+	float: left;
+}
+main .contents .mw_wp_form #kakunin .button {
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+    background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+    color: #fff;
+    transition: .5s;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    overflow: hidden;
+	border: none;
+}
+main .contents .mw_wp_form #kakunin .button:hover {
+	background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+	background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+}
+main .contents .mw_wp_form .error {
+    font-size: 14px!important;
+    color: #B70000;
+    display: block;
+	width: 100%;
+}
+main .contents .mw_wp_form_preview td{
+	font-size: 18px!important;
+	color: #000;
+}
+main .contents .mw_wp_form_preview p{
+	font-size: 18px!important;
+}
+main .contents .mw_wp_form_preview #postnumber .button{
+	display: none;
+}
+main .contents .mw_wp_form_preview #auto-postnumber{
+	display: none;
+}
+main .contents .mw_wp_form_preview .name{
+	display: none;
+}
+main .contents .mw_wp_form_preview .juusho{
+	display: none;
+}
+main .contents .mw_wp_form_preview #kakuninnmail{
+	display: none;
+}
+main .contents .mw_wp_form_preview .label-required{
+	display: none;
+}
+main .contents .mw_wp_form_preview tr:last-child{
+	border-bottom: 1px solid #838383;
+}
+main .contents .mw_wp_form_preview .backbtn{
+	display: inline-block;
+    padding: 7px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: -webkit-linear-gradient(45deg, #7FBB1C 0%, #38B300 100%);
+    background-image: linear-gradient(45deg, #7FBB1C 0%, #38B300 100%);
+    color: #fff;
+    transition: .5s;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    overflow: hidden;
+	border: none;
+	margin-right: 15px;
+}
+main .contents .mw_wp_form_preview .backbtn:hover {
+	background-image: -webkit-linear-gradient(45deg, #7FBB1C 0%, #27A200 100%);
+    background-image: linear-gradient(45deg, #7FBB1C 0%, #27A200 100%);
+}
+@media (min-width: 800px) {
+header a{
+	display: none;
+}
+}
+@media screen and (min-width: 360px) {
+.slider-img {
+    width: auto;
+	height: 587px ;
+}
+.site-logo{
+	z-index: 10;
+	position: relative;
+	margin-top: 0px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+.site-logo img{
+	width: 70%;
+	margin: 0 15%;
+	padding: 0;
+}
+.site-logo2 {
+    position: absolute;
+    width: 220px;
+    z-index: 3;
+    top: 75px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	margin: 0 auto;
+}
+.hokkaido-map {
+    position: absolute;
+    left: 5%;
+    width: 225px;
+    z-index: 3;
+    top: 370px;
+}
+#scroll-down {
+    top: 470px;
+}
+
+/*******************************
+mm-menu
+*******************************/
+.mm-listitem a{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	padding: 15px 0px 5px 0px;
+}
+.mm-panel {
+	padding: 0 60px;
+}
+.flexbox{
+	margin-top: 20px;
+}
+/*******************************
+top-slider
+*******************************/
+.slider-text {
+    top: 45%;
+}
+}
+@media screen and (min-width: 600px) {
+.site-logo img {
+    width: 80%;
+    margin: 0 10%;
+    padding: 0;
+}
+.site-logo {
+    padding-top: 50px;
+}
+.mm-panel {
+    padding: 0 100px;
+}
+.site-description {
+    font-size: 18px;
+}
+.slider-text {
+    font-size: 60px;
+	top: 42%;
+	margin: 0 auto 0 2%;
+}
+.slider-text span {
+    font-size: 36px;
+    line-height: 36px;
+}
+#jisedai{
+	font-size: 55px;
+}
+.slider-img {
+    width: auto;
+	height: 720px ;
+}
+.site-logo2 {
+    position: absolute;
+    width: 280px;
+    z-index: 3;
+    top: 75px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	margin: 0 auto;
+}
+.hokkaido-map {
+    width: 300px;
+    top: 450px;
+}
+#scroll-down {
+    top: 610px;
+}
+.sns .flexbox {
+	justify-content: center;
+}
+.sns .flexbox .snsicon{
+	margin: 0 20px;	
+}
+#sab-navi .sabnavi {
+    width: auto;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: bold;
+    font-size: 2.8vw;
+    width: 33.3%;
+    text-align: left;
+    margin-right: 0%;
+    line-height: 1.8;
+}
+#sab-navi .sabnavi::before{
+	content: "\f105";
+	font-family: FontAwesome;
+	font-size: 3vw;
+	color: #7FBB1C;
+	margin-right: 5px;
+}
+#address .site-logo3 {
+    width: 30%;
+    margin: 0 35%;
+}
+footer {
+   
+}
+#copyright{
+	float: left;
+    font-size: 10px;
+    bottom: 0;
+    height: 30px;
+	width: 100%;
+}
+}
+@media screen and (min-width: 768px) {
+main .contents table td small {
+    font-size: 1.2vw;
+}
+.sp{
+	display: none;	
+}
+.tab{
+	display: block;	
+}
+.mobile{
+	display: none;		
+}
+.nomobile{
+	display: block;		
+}
+.site-description {
+    font-size: 22px;
+}
+.slider-text {
+    font-size: 70px;
+	top: 42%;
+	margin: 0 auto 0 0%;
+}
+.slider-text span {
+    font-size: 36px;
+    line-height: 36px;
+}
+#jisedai{
+	font-size: 70px;
+}
+.slider-img {
+    width: auto;
+	height: 904px ;
+}
+.site-logo2 {
+    position: absolute;
+    width: 360px;
+    z-index: 3;
+    top: 90px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	margin: 0 auto;
+}
+.hokkaido-map {
+    width: 420px;
+    top: 540px;
+}
+#scroll-down {
+    top: 800px;
+}
+#topics {
+    background-color: rgba(127,187,28,1);
+    mix-blend-mode: multiply;
+    height: 120px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+#topics p br{
+	display: none;	
+}
+#topicsfooter{
+	display: block;	
+	float: left;
+	width: 100%;
+	color: #fff;
+	text-align: left;
+}
+#topicsfooter .flexbox {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+#topicsfooter .flexbox li{
+	margin-right: 15px;
+	font-size: 14px;
+}
+#sidebar {
+    display: flex;
+    flex-wrap: wrap;
+}
+#ecotour-appli {
+    float: left;
+    width: 48%;
+    height: auto;
+    background-color: #E2E5D7;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#ecotour-appli ul li {
+    font-size: 2.4vw;
+    text-align: center;
+    line-height: 1.7;
+}
+#ecotour-appli ul .svg-inline--fa {
+    font-size: 2.4vw;
+    margin-right: 3px;
+    color: #7FA75D;
+}
+#eco-banner {
+    float: left;
+    width: 48%;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 0px;
+	margin-left: 4%;
+}
+#eco-banner ul li a {
+    float: left;
+    display: block;
+    text-align: left;
+    font-size: 2.6vw;
+    color: #7FBB1C;
+    line-height: 1.1;
+    font-weight: bold;
+    margin: 0 5%;
+        margin-top: 0px;
+    width: auto;
+    margin-top: -2%;
+}
+#eco-banner ul li{
+	background-color: #fff;	
+}
+#eco-banner ul li a span {
+    font-size: 1.6vw;
+    color: #666;
+    line-height: 1;
+}
+#supporters-only {
+    float: left;
+    width: 48%;
+    height: auto;
+    background-color: #88AF49;
+    display: flex;
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+}
+#supporters-only a {
+    font-size: 2.8vw;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+}
+#supporters-only a .svg-inline--fa {
+    font-size: 3.5vw;
+    margin-right: 2px;
+}
+#staff-diary {
+    float: left;
+    width: 48%;
+    height: auto;
+    background-color: #85B972;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-left: 4%;
+}
+#staff-diary a {
+    font-size: 1.8vw;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    line-height: 1;
+}
+#staff-diary a .svg-inline--fa {
+    font-size: 1.8vw;
+    margin-right: 2px;
+}
+main section h3 {
+    text-align: left;
+    font-size: 22px;
+    font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif ,"Sawarabi Mincho";
+    line-height: 1;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #7FBB1C;
+    text-decoration: none;	
+}
+main section h3 a{
+	text-decoration: none!important;	
+}
+main section h3 span {
+    text-align: left;
+    font-size: 16px;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	
+}
+footer {
+
+}
+#copyright{
+	float: left;
+    font-size: 12px;
+    bottom: 0;
+    height: 30px;
+	width: 100%;
+}
+/*******************************
+cta
+*******************************/
+main .contents table .fishing-sp{
+	display: none;
+}
+main .contents .cta h4{
+	font-size: 2.5vw;
+
+}
+main .contents .cta h5 {
+    font-size: 2.2vw;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+main .contents table td{
+    border-top: thin solid rgba(0,0,0,1.00);
+    border-bottom: thin solid rgba(0,0,0,1.00);
+	font-size: 2vw;
+	padding: 2% 0;
+}
+main .contents .cta p{
+	font-size: 2.2vw;
+}
+main .contents .cta ul{
+	float: left;
+	margin-top: 2%;
+	margin-bottom: 5%;
+	width: 100%;
+}
+main .contents .cta li{
+	float: left;
+	font-size: 2.2vw;
+	width: 100%;
+	line-height: 1;
+	margin: 2% 0;
+}
+main .contents .cta li span{
+	color: #7FBB1C;
+}
+main .contents .cta .kashidashi li{
+    font-size: 2.2vw;
+    text-align: left;
+    list-style-position: outside;
+    list-style-type: disc;
+	margin: 1% 0 0 5%;
+}
+main .contents .cta .shugoubasho {
+    float: left;
+    width: 100%;
+    padding-top: 30px;
+    border-top: 1px dotted #000;
+    padding-bottom: 30px;
+    border-bottom: 1px dotted #000;
+    margin-bottom: 30px;
+}
+main .contents .cta .shugoubasho .shugouleft h6{
+	width: 100%;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 1.7vw;
+	text-align: left;
+	float: left;
+	color: #7FBB1C;
+	font-weight: bold;
+}
+main .contents .cta .shugoubasho .shugouleft p{
+	font-size: 1.6vw;
+	text-align: left;
+	line-height: 1.2;
+}
+main .contents .cta .shugoubasho .shugouleft{
+	float: left;
+	width: 30%;
+}
+main .contents .cta .shugoubasho .shugouright{
+	float: left;
+	width: 29.5%;
+}
+main .contents .cta .shugoubasho .shugoumap{
+	float: left;
+	width: 40%;
+}
+main .contents .course01{
+	width: 50%;
+	float: left;
+	border-collapse: collapse;
+	margin-bottom: 0%;
+	padding-right: 5%;
+	border-right: 1px dotted #555;
+	box-sizing: border-box;
+}
+main .contents .course02{
+	width: 45%;
+	float: left;
+	border-collapse: collapse;
+	margin-bottom: 0%;
+	margin-left: 5%;
+	box-sizing: border-box;
+}
+main .contents .course03 {
+    width: 100%;
+    float: left;
+    border-collapse: collapse;
+    margin-bottom: 0%;
+    padding-right: 0%;
+    box-sizing: border-box;
+}
+main .contents .course:nth-child(3){
+	border-bottom: 2px dotted #555;
+	width: 100%;
+	float: left;
+}
+main .contents .course:nth-child(4){
+	border-bottom: 2px dotted #555;
+	width: 100%;
+	float: left;
+}
+main .contents .course:nth-child(5){
+	border-bottom: 2px dotted #555;
+	width: 100%;
+	float: left;
+}
+main .contents .course:nth-child(4) h4{
+	padding-top: 30px	
+}
+main .contents .course:nth-child(5) h4{
+	padding-top: 30px	
+}
+main .contents .course:nth-child(6) h4{
+	padding-top: 30px	
+}
+	/**main .contents .course2:nth-child(3){
+	border-bottom: 2px dotted #555;
+	border-top: 2px dotted #555;
+	margin-top: 30px;
+	width: 100%;
+	float: left;
+}**/
+main .contents .course2:nth-child(3){
+	border-bottom: 2px dotted #555;
+	width: 100%;
+	float: left;
+}
+	main .contents .course2:nth-child(4){
+	border-bottom: 2px dotted #555;
+	width: 100%;
+	float: left;
+}
+main .contents .course2:nth-child(5){
+	border-bottom: 2px dotted #555;
+	width: 100%;
+	float: left;
+}
+main .contents .course2:nth-child(3) h4{
+	padding-top: 30px	
+}
+main .contents .course2:nth-child(4) h4{
+	padding-top: 30px	
+}
+main .contents .course2:nth-child(5) h4{
+	padding-top: 30px	
+}
+main .contents .course2:nth-child(6) h4{
+	padding-top: 30px	
+}
+main .contents .cta .course01{
+	margin-bottom: 0%;
+	border-bottom: 0px dotted #000;
+	padding-bottom: 0%;
+	text-align: center;
+}
+.contents .cta .contact .buttonarea {
+    margin-bottom: 10%;
+}
+main .contents .buttonarea {
+    width: 100%;
+    float: left;
+    margin-bottom: 20%;
+}
+/*******************************
+flow
+*******************************/
+main .contents .cta .flow .flexbox{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+main .contents .cta .flow .flexbox li{
+	text-align: center;	
+}
+main .contents .cta .flow .flexbox li:nth-child(2n+1) {
+    font-size: 2vw;
+}
+main .contents .cta .flow .flexbox li:nth-child(odd){
+	width: 16%;
+	border: 2px solid #7FBB1C;
+    box-sizing: border-box;
+   	padding: 3% 0 3%;
+	border-radius: 10px;
+	color: #7FBB1C;
+	font-size: 2vw;
+}
+main .contents .cta .flow .flexbox li:nth-child(even){
+	width: 5%;
+	color: #7FBB1C;
+}
+main .contents .cta .flow .flexbox li:nth-child(3),
+main .contents .cta .flow .flexbox li:nth-child(5){
+	padding: 4.5% 0 3%;
+}
+main .contents .cta .flow .flexbox li:nth-child(7){
+	padding: 4% 0 3%;	
+}
+main .contents .cta .flow .flexbox li:last-child{
+	padding: 5.5% 0 3%;
+}
+/*******************************
+aboutecoworkersnavi
+*******************************/
+#aboutecoworkersnavi ul{
+	font-size: 14px;
+	display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+	width: 100%;
+}
+#aboutecoworkersnavi ul li a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 1.2;
+    font-size: 2.8vw;
+    text-decoration: none;
+    font-weight: bold;
+	color: #7FBB1C;
+	padding: 22% 0;
+	display: inline-block;
+	cursor: pointer;
+	overflow: hidden;
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+#aboutecoworkersnavi ul li {
+    width: 12%;
+	margin-right: 2%;
+}
+#aboutecoworkersnavi ul li:first-child a{
+	font-size: 1.8vw;
+	line-height: 1.2;
+}
+#aboutecoworkersnavi ul li:nth-child(4){
+	margin-right: 2%;
+}
+#aboutecoworkersnavi ul li:last-child{
+	margin-right: 0%;
+}
+/*******************************
+aboutlakekutcharonavi
+*******************************/
+#aboutlakekutcharonavi ul{
+	font-size: 14px;
+	display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+	width: 100%;
+}
+#aboutlakekutcharonavi ul li a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 1.2;
+    font-size: 2.8vw;
+    text-decoration: none;
+    font-weight: bold;
+	color: #4082AE;
+	padding: 22% 0;
+	display: inline-block;
+	cursor: pointer;
+	overflow: hidden;
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+#aboutlakekutcharonavi ul li {
+    width: 12%;
+	margin-right: 2%;
+}
+#aboutlakekutcharonavi ul li:first-child a{
+	font-size: 1.6vw;
+	line-height: 1.2;
+	padding-top: 35%;
+}
+#aboutlakekutcharonavi ul li:nth-child(4) a {
+    padding-top: 28%;
+    font-size: 2vw;
+}
+#aboutlakekutcharonavi ul li:nth-child(5) a {
+    padding-top: 38%;
+    font-size: 2.5vw;
+}
+#aboutlakekutcharonavi ul li:nth-child(4){
+	margin-right: 2%;
+}
+#aboutlakekutcharonavi ul li:last-child{
+	margin-right: 0%;
+}
+/*******************************
+mw_wp_form
+*******************************/
+main .contents .mw_wp_form form table{
+	border-collapse: collapse;
+	box-sizing: border-box;
+	display: table;
+	margin-bottom: 0%;
+}
+main .contents .mw_wp_form form table tbody .form-group{
+    width: 100%;
+    float: none;
+}
+main .contents .mw_wp_form form table tbody .form-group th{
+    display: table-cell;
+    padding: 25px 15px 25px 0px;
+    font-size: 1.8vw;
+    line-height: 1.2;
+    border: 1px solid #838383;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: rgb(131, 131, 131);
+    border-left: none;
+    vertical-align: middle;
+    font-weight: normal;
+    box-sizing: border-box;
+    width: 30% !important;
+	text-align: left;
+}
+main .contents .mw_wp_form form table tbody .form-group td{
+	width: -webkit-calc(100% - 250px);
+    width: calc(100% - 250px);
+	width: 70%;
+	display: table-cell;
+    padding: 25px 0px 25px 15px;
+    font-size: 1.8vw;
+	line-height: 1.2;
+    border: 1px solid #838383;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: rgb(131, 131, 131);
+    border-right: none;
+    box-sizing: border-box;
+	float: none;
+	text-align: left;
+}
+main .contents .mw_wp_form .label-required{
+	color: #fff;
+    background-color: #D71C24;
+    display: inline-block;
+    line-height: 1.6;
+    padding: 0 .6em;
+    border-radius: .3em;
+	font-size: 1.2vw;
+	margin-right: 5px;
+	vertical-align: top;
+}
+main .contents .mw_wp_form form table tbody .form-group td .name:first-child{
+	margin-bottom: 0px;
+}
+main .contents .mw_wp_form form table tbody .form-group td .name{
+	width: 40px;
+	text-align: right;
+	display: inline-block;
+}
+main .contents .mw_wp_form form table tbody .form-group td .name01{
+	width: -webkit-calc(100% - 50px);
+    width: calc(100% - 50px);
+	padding-right: 0px;
+	margin-bottom: 20px;
+}
+main .contents .mw_wp_form form table tbody .form-group td .name02{
+	width: -webkit-calc(100% - 50px);
+    width: calc(100% - 50px);
+	padding-right: 0px;
+}
+main .contents .mw_wp_form form table tbody .form-group td .kana01{
+	width: -webkit-calc(100% - 50px);
+    width: calc(100% - 50px);
+	padding-right: 0px;
+	margin-bottom: 20px;
+}
+main .contents .mw_wp_form form table tbody .form-group td .kana02{
+	width: -webkit-calc(100% - 50px);
+    width: calc(100% - 50px);
+	padding-right: 0px;
+}
+main .contents .mw_wp_form form table tbody .form-group .mwform-zip-field{
+	width: 50%;
+	justify-content: space-between;
+	display: inline-flex;
+	vertical-align: middle;
+	align-items: center;
+	margin-right: 5%;
+}
+main .contents .mw_wp_form form table tbody .form-group .mwform-zip-field .postnumber{
+	width: 45%;	
+}
+main .contents .mw_wp_form form table tbody .form-group .mwform-zip-field .postnumber:first-child{
+	width: 35%;	
+}
+main .contents .mw_wp_form form table tbody .form-group .button, .button-white {
+    display: inline-block;
+    line-height: 2;
+    padding: 0 0.6em;
+    color: #fff;
+    background-color: #7FBB1C;
+    border-radius: .3em;
+    text-decoration: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    font-size: 1.8vw;
+}
+main .contents .mw_wp_form form table tbody .form-group #auto-postnumber{
+	margin-top: 20px;	
+}
+main .contents .mw_wp_form form table tbody .form-group #auto-postnumber .button-white{
+	background-color: #999;	
+	margin-right: 20px;
+}
+main .contents .mw_wp_form form table tbody #address-group .form-line{
+	margin-bottom: 15px;
+	justify-content: space-between;
+}
+main .contents .mw_wp_form form table tbody #address-group .form-line:last-child{
+	margin-bottom: 0px;
+}
+main .contents .mw_wp_form form table tbody .form-group #pref{
+    height: 40px;
+	width: 30%;
+    border: 1px solid #838383;
+    font-size: 1.8vw;
+    line-height: 2;
+}
+main .contents .mw_wp_form form table tbody .form-group td #addr01{
+	width: 80%;
+	margin-left: 2%;
+}
+main .contents .mw_wp_form form table tbody .form-group td #addr02{
+	width: 80%;
+	margin-left: 2%;
+}
+main .contents .mw_wp_form form table tbody .form-group td #addr03{
+	width: 80%;
+	margin-left: 2%;
+}
+main .contents .mw_wp_form form table tbody .form-group td .mail{
+	width: 100%;
+	margin-right: 0px;
+}
+main .contents .mw_wp_form form table tbody .form-group td .mail2{
+	width: 100%;
+	margin-right: 0px;
+}
+main .contents .mw_wp_form form table tbody .form-group td .naiyou{
+    width: 100%;
+	margin-right: 0px;
+	box-sizing: border-box;
+}
+main .contents .mw_wp_form form table tbody .form-group td .mwform-tel-field{
+	width: 100%;
+	justify-content: space-between;
+	display: inline-flex;
+	vertical-align: middle;
+	align-items: center;	
+}
+main .contents .mw_wp_form form table tbody .form-group td .telephone{
+	width: 28%;
+	margin-right: 0px;
+	box-sizing: border-box;	
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"], 
+input[type="url"], 
+input[type="search"], 
+input[type="password"] {
+    height: 40px;
+    font-size: 22px;
+    line-height: 38px;
+	border: 1px solid #838383;
+	padding: 0px 0px 0px 2%;
+	font-size: 16px;
+	line-height: 1.5;
+	box-sizing: border-box;
+	vertical-align: middle;
+	box-shadow: none;
+	border-radius: 3px !important;
+}
+main .contents .mw_wp_form .form-line {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-left: 0;
+    float: left;
+	width: 100%;
+}
+main .contents .mw_wp_form #postnumber{
+	width: 100%;
+	margin-bottom: 0px;
+}
+main .contents .mw_wp_form .form-line > span {
+    white-space: nowrap;
+}
+main .contents .mw_wp_form .form-group:first-child .form-line input[type="text"] {
+    width: 36.5%;
+    margin-right: 30px;
+    margin-left: .5em;
+}
+main .contents .mw_wp_form .form-group:nth-child(2) .form-line input[type="text"] {
+    width: 36.5%;
+    margin-right: 0px;
+    margin-left: .5em;
+}
+main .contents .mw_wp_form #kakunin {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+	margin-bottom: 30px;
+}
+.mw_wp_form .error {
+    width: 100%;
+    float: left;
+	font-size : 93%!important;
+}
+main .contents .mw_wp_form .form-group:first-child .error{
+	width: 97%;
+    float: left;
+	margin-left: 3%;
+}
+main .contents .mw_wp_form .form-group:nth-child(2) .error{
+	width: 97%;
+    float: left;
+	margin-left: 3%;
+}
+main .contents .mw_wp_form_preview td{
+	font-size: 18px!important;
+	color: #000;
+}
+main .contents .mw_wp_form_preview #postnumber .button{
+	display: none;
+}
+main .contents .mw_wp_form_preview #auto-postnumber{
+	display: none;
+}
+main .contents .mw_wp_form_preview .name{
+	display: none!important;
+}
+main .contents .mw_wp_form_preview .juusho{
+	display: none;
+}
+main .contents .mw_wp_form_preview #kakuninnmail{
+	display: none;
+}
+main .contents .mw_wp_form_preview .label-required{
+	display: none;
+}
+main .contents .mw_wp_form_preview .backbtn{
+	display: inline-block;
+    padding: 7px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: -webkit-linear-gradient(45deg, #7FBB1C 0%, #38B300 100%);
+    background-image: linear-gradient(45deg, #7FBB1C 0%, #38B300 100%);
+    color: #fff;
+    transition: .5s;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    overflow: hidden;
+	border: none;
+	margin-right: 15px;
+}
+main .contents .mw_wp_form_preview .backbtn:hover {
+	background-image: -webkit-linear-gradient(45deg, #7FBB1C 0%, #27A200 100%);
+    background-image: linear-gradient(45deg, #7FBB1C 0%, #27A200 100%);
+}
+}
+@media screen and (min-width: 920px) {
+main .contents table td small {
+    font-size: 9px;
+}
+.sp{
+	display: none;	
+}
+.tab{
+	display: none;	
+}
+.mobile{
+	display: none;		
+}
+.nomobile{
+	display: block;		
+}
+.pc{
+	display: block;		
+}
+.pc2{
+	display: none;		
+}
+.site-logo img {
+    width: 80%;
+    margin: 0 10%;
+    padding: 0;
+}
+.header a {
+    display: none;
+}
+.mm-wrapper_opened header a {
+    display: none;
+}
+#bg #iclose {
+    position: absolute !important;
+    z-index: 200 !important;
+    top: 5%;
+    right: 2%;
+	color: #fff;
+	cursor: pointer;
+}
+.modal {
+    display: block;
+    position: fixed!important;
+    min-width: 100%;
+    min-height: 100vh;
+    z-index: 100;
+    top: 0px;
+    background-color: rgba(0,0,0,0.90);
+    overflow: hidden;
+	background-blend-mode: multiply;
+}
+.modal video {
+	position: fixed;
+	right: -100%;
+	bottom: -100%;
+	top: -100%;
+	left: -100%;
+	max-width: inherit;
+	margin: auto;
+	width: 90%;
+	height: auto;
+	z-index: 100;
+}
+[class*="mm-wrapper_sidebar-expanded-"] .mm-menu_sidebar-expanded {
+    border-right-width: 0px;
+    border-right-style: none;
+    min-width: auto !important;
+    max-width: none !important;
+}
+[class*="mm-wrapper_sidebar-collapsed-"] .mm-menu_sidebar-collapsed, [class*="mm-wrapper_sidebar-expanded-"] .mm-menu_sidebar-expanded {
+    display: block !important;
+    top: 0 !important;
+    right: auto !important;
+    bottom: 0 !important;
+    left: 0 !important;
+}
+.mm-panel {
+    overflow-x: visible;
+    overflow-y: visible;
+    padding: 0 20px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    -webkit-transform: none;
+    transform: none;
+    transition: none;
+    -webkit-transform-origin: none;
+    -ms-transform-origin: none;
+    transform-origin: none;
+}
+.mm-wrapper_sidebar-expanded-30 .mm-menu_sidebar-expanded {
+    width: 260px !important;
+	float: left;
+	background-color: #fff;
+    background-image: url(images/bg-circle.svg);
+    background-repeat: left top repeat;
+	background-size: 50px 50px;
+	min-height: 800px;
+}
+.mm-panel {
+    padding: 0 40px;
+}
+.mm-panels {
+    overflow: visible;
+}
+.mm-menu {
+    background-color: #fff!important;
+    border-color: transparent!important;
+    color: #7FBB1C !important;
+    mix-blend-mode: normal !important;
+}
+.mm-listitem:first-child{
+	height: auto;	
+	}
+.mm-listitem a small {
+     color: #000;
+}
+.mm-menu_offcanvas {
+    display: none;
+    position: absolute;
+    right: auto;
+    z-index: 10;
+}
+.mm-panels, .mm-panels > .mm-panel {
+    position: static;
+	padding-bottom: 10px;
+}
+.mm-panel::after, .mm-panel::before {
+    content: none;
+    display: block;
+    height: auto;
+}
+.mm-panel::after, .mm-panel::before {
+    content: none;
+    display: block;
+    height: auto;
+}
+.mm-wrapper_sidebar-expanded-30:not(.mm-wrapper_sidebar-closed) .mm-slideout {
+    width: auto;
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+.mm-wrapper_opened header {
+    position: absolute;
+}
+.site-logo {
+    padding-top: 20px;
+}
+.mm-listview {
+    line-height: 1.2vw;
+}
+.mm-listitem::after {
+    left: 0px;
+    right: 0px;
+	border-color: #7FBB1C;
+	border-bottom-width: 2px;
+	transform: scale(0, 1);
+  	transform-origin: left top;
+  	transition: transform .3s;
+	left: 0;
+	position: absolute;
+}
+.mm-listitem:hover::after {
+	transform: scale(1, 1);
+}
+.mm-wrapper_opened h2 {
+    display: block;
+}
+.mm-hidden {
+    display: block!important;
+}
+.site-description {
+    line-height: 1;
+    position: absolute;
+    width: calc(100% - 260px);
+    padding: 0 0 0 260px;
+    text-align: ;
+    margin: 22px auto 0;
+    font-size: 14px;
+    font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif,"Sawarabi Mincho";
+    font-weight: normal;
+    text-shadow: 0px 0px 10px #000;
+    right: 0;
+	letter-spacing: 5px;
+}
+.site-logo2 {
+    display: none;
+}
+.hokkaido-map {
+	display: block;
+    width: 25%;
+    top: 28vw;
+    left: 275px;
+}
+*::-ms-backdrop, .hokkaido-map {
+	display: none;
+    width: 25%;
+    top: 28vw;
+    left: 275px;
+}
+.hokkaido-map-ie{
+	display: none;	
+}
+ /* IE11のみ */
+*::-ms-backdrop, .hokkaido-map-ie{
+	display: block;
+	width: 25%;
+    top: 28vw;
+    left: 275px;
+}
+#scroll-down {
+    top: 400px;
+	display: none;
+}
+.top-slider{
+	width: calc(100% - 260px);
+	margin-left: 260px;
+}
+.top-slider .swiper-container {
+    padding: 0 0;
+    width: 100%;
+    height: auto;
+}
+.slider-img {
+    width: 100%;
+    height: auto;
+}
+.swiper-slide-active .slider-img {
+	animation: none;
+}
+.slider-text {
+    display: block;
+    color: white;
+    font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif,"Sawarabi Mincho";
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    text-shadow: 0 0 1px #fff;
+    position: absolute;
+    font-size: 3vw;
+    line-height: 1.4;
+    letter-spacing: .3em;
+    margin: 0;
+    text-align: left;
+    text-shadow: none;
+}
+.slider-text {
+    top: 8vw;
+	-webkit-transform: translateX(-45%);
+	transform: translateX(-45%);
+	margin: 0 auto;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+
+	
+
+@supports (-ms-ime-align:auto) {
+.slider-text {
+    transform: translateX(22%);
+  }
+}
+}
+#jisedai {
+    font-size: 3vw;
+}
+.slider-text span {
+    font-size: 1.8vw;
+    line-height: 1;
+}
+.slide-5 .slider-text {
+    display: block;
+    color: white;
+    font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif,"Sawarabi Mincho";
+    -webkit-writing-mode: horizontal-tb;
+    -ms-writing-mode: horizontal-tb;
+    writing-mode: horizontal-tb;
+    text-shadow: 0 0 1px #fff;
+    position: absolute;
+    font-size: 3vw;
+    line-height: 1;
+    letter-spacing: .3em;
+    margin: 0;
+    text-align: center;
+    text-shadow: none;
+}
+*::-ms-backdrop,.slide-5 .slider-text{
+	writing-mode: lr-tb;	
+}
+.slide-5 .slider-text span{
+	letter-spacing: 0;	
+}
+.slide-5 .slider-text {
+    top: 12vw;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    margin: 0 auto;
+}
+.slide-5 .slider-text .fa-play-circle{
+	font-size: 14vw;
+	margin-bottom: 2vw;
+}
+.slide-5 #replay{
+	display: block;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+.slide-5 #replay:hover .slider-text {
+	color: #7FBB1C;
+	text-shadow: 0px 0px 10px #000;
+}
+.slide-5 #replay:hover .fa-play-circle {
+	text-shadow: 0px 0px 5px #000;
+}
+.slide-5 #replay:hover .slider-text span {
+	text-shadow: 0px 0px 5px #000;
+}
+#topics {
+    margin-left: 260px;
+	padding-right: 30px;
+}
+#topics h3 {
+    color: #fff;
+    float: left;
+    text-align: left;
+	width: -webkit-calc(100% - 74px);
+    width: calc(100% - 74px);
+    font-size: 12px;
+    font-weight: bold;
+    border-bottom: thin dotted #fff;
+    margin-top: 8px;
+}
+#topicslink {
+    position: relative;
+    right: 0;
+    top: 0;
+    float: right;
+    display: flex;
+    width: auto;
+    text-align: right;
+    color: #fff;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+	margin-top: 8px;
+	width: 74px;
+	border-bottom: thin dotted #fff;
+}
+#topicsfooter .flexbox li {
+    margin-right: 15px;
+    font-size: 13px;
+}
+#menu #ecotour-appli ul li a{
+	color: #666!important;	
+}
+#sidebar {
+    padding: 40px 20px 20px 20px;
+    width: -webkit-calc(100% - 40px);
+    width: auto;
+    float: left;
+}
+*::-ms-backdrop,#sidebar {
+    width: 100%;
+}
+#sidebar {
+    display: flex;
+    flex-wrap: wrap;
+}
+#sidebar .widget{
+	width: 100%;
+    float: left;	
+}
+#sidebar .widget_twitter_timeline{
+	margin-top: 20px;	
+}
+#sidebar #em_calendar-2{
+	background-color: #fff;
+	margin-top: 20px;
+	border: thin solid #7FA75D;
+	box-sizing: border-box;
+	padding: 10px;
+}
+#sidebar .widget .widget-title{
+	width: 100%;
+    float: left;
+	font-size: 16px;
+    font-weight: bold;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	color: #7FA75D;
+}
+#sidebar .widget .em-calendar{
+	display: flex;
+    flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
+}
+#sidebar .widget .em-calendar thead,#sidebar .widget .em-calendar tbody{
+	width: 100%;	
+}
+#sidebar .widget .em-calendar tr{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.widget .em-calendar tr td {
+    font-size: 13px;
+    border-radius: 50%;
+    width: 14.28%;
+    height: auto;
+    text-align: center;
+    display: block;
+    line-height: 1.5;
+    padding: 2%;
+}
+#sidebar .widget .em-calendar .month_name {
+    width: 60%;
+}
+main {
+    width: -webkit-calc(100% - 260px);
+    width: calc(100% - 260px);
+    height: auto;
+    float: right;
+}
+main section {
+    padding: 20px 30px 40px 0px;
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+    float: left;
+}
+main section img {
+    width: 100%;
+    float: left;
+}
+main section h3 {
+    color: #000;
+}
+main section h3 span{
+	color: #7FBB1C;	
+}	
+#sab-navi2 {
+    padding: 00px 20px 20px 0px;
+}
+#ecotour-appli {
+    float: left;
+    width: 100%;
+    height: auto;
+    background-color: #E2E5D7;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#ecotour-appli h3 {
+    font-size: 18px;
+}
+#ecotour-appli ul {
+    width: -webkit-calc(100% - 40%);
+    width: 80%;
+    height: auto;
+    margin: 0px 10% 10px 10%;
+}
+#ecotour-appli ul li {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.85;
+}
+#ecotour-appli ul .svg-inline--fa {
+    font-size: 16px;
+    margin-right: 3px;
+    color: #7FA75D;
+}
+#eco-banner {
+    float: left;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-left: 0;
+}
+#eco-banner ul li {
+    height: auto;
+    border-top: thin solid #7FA75D;
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+	border: 2px solid #7FA75D;	
+}
+#eco-banner ul li:last-child {
+	margin-top: 20px;
+	border: 2px solid #7FA75D;
+}
+#eco-banner ul li img {
+    margin: 0;
+    width: 100%;
+    float: left;
+}
+#eco-banner .bannerimage {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    float: left;
+    padding: 0;
+}
+#eco-banner ul li a {
+    float: left;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color: #7FBB1C;
+    line-height: 1.1;
+    font-weight: bold;
+    width: 100%;
+	margin: 0 0%;
+    margin-top: 2%;
+	margin-bottom: 5%;
+}
+#eco-banner ul li a span {
+    font-size: 12px;
+    color: #666;
+    line-height: 1;
+}
+#supporters-only {
+    float: left;
+    width: 100%;
+    height: auto;
+    background-color: #88AF49;
+    display: flex;
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+}
+#staff-diary {
+    float: left;
+    width: 100%;
+    height: auto;
+    background-color: #85B972;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-left: 0%;
+}
+#supporters-only a {
+    font-size: 18px;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    padding: 2% 0;
+	line-height: 2;
+}
+#supporters-only a .svg-inline--fa {
+    font-size: 20px;
+    margin-right: 2px;
+}
+#staff-diary a {
+    font-size: 14px;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 0;
+    line-height: 1;
+}
+#staff-diary a .svg-inline--fa {
+    font-size: 12px;
+    margin-right: 2px;
+}
+footer .sns, footer #sab-navi, footer #sab-navi2, footer #address {
+    padding: 0px 30px 10px 0px;
+    width: -webkit-calc(100% - 290px);
+    width: calc(100% - 290px);
+    float: right;
+}
+footer #address {
+    padding: 30px 30px 100px 0px;
+}
+#sab-navi .flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+#sab-navi .sabnavi{
+    width: auto;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: bold;
+	font-size: 16px;
+	width: auto;
+	text-align: left;
+	margin-right: 20px;
+	line-height: 1.8;
+}
+#sab-navi .sabnavi:last-child{
+	margin-right: 0px;	
+}
+#sab-navi .sabnavi::before{
+	content: "\f105";
+	font-family: FontAwesome;
+	font-size: 20px;
+	color: #7FBB1C;
+	margin-right: 5px;
+}
+#sab-navi2 .flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-top: 10px;
+}
+#sab-navi2 .sabnavi {
+    margin: 0px 20px 0px 0px;
+}
+#sab-navi2 .sabnavi {
+    font-size: 12px;
+}
+#sab-navi2 .sabnavi a {
+    color: #7FBB1C;
+}
+#sab-navi2 .sabnavi::before{
+    content: "|";
+    font-weight: 100;
+	margin-right: 15px;
+	color: #7FBB1C;
+}
+#sab-navi2 .sabnavi:last-child::after{
+	content: "|";
+    font-weight: 100;
+	margin-left: 15px;
+	color: #7FBB1C;
+	}
+#address .site-logo3 {
+    width: auto;
+    margin: 0 0;
+    float: left;
+    text-align: left;
+}
+#address .site-logo3 img{
+	width: 120px;
+	margin-right: 15px;
+	float: none;
+}
+*::-ms-backdrop, .site-logo3 img{
+	width: 140px;
+	height: 100px;
+}
+address {
+    font-size: 12px;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1.5;
+	width: auto;
+	float: left;
+	text-align: left;
+}
+/*******************************
+cta
+*******************************/
+main .contents .cta h4{
+	width: 100%;
+	font-size: 2vw;
+	text-align: left;
+	float: left;
+	color: #7FBB1C;
+}
+main .contents .cta h5 {
+    font-size: 1.6vw;
+}
+main .contents table td{
+    border-top: thin solid rgba(0,0,0,1.00);
+    border-bottom: thin solid rgba(0,0,0,1.00);
+	font-size: 14px;
+	padding: 10px 0;
+}
+main .contents .tabletitle{
+	width: 30%;
+}
+main .contents .cta p{
+	width: 100%;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 1.38vw;
+	text-align: justify;
+	float: left;
+	color: #000;
+	margin-bottom: 10px;
+}
+main .contents .cta ul{
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+main .contents .cta li{
+	float: left;
+	font-size: 1.12vw;
+	width: 100%;
+	line-height: 1;
+	margin: 2% 0;
+}
+main .contents .cta li span{
+	color: #7FBB1C;
+}
+main .contents .cta .kashidashi li{
+    font-size: 1.12vw;
+    text-align: left;
+    list-style-position: outside;
+    list-style-type: disc;
+	margin: 1% 0 0 5%;
+}
+main .contents .cta .shugoubasho{
+	float: left;
+	width: 100%;
+	padding-top: 30px;
+	border-top: 1px dotted #000;
+	padding-bottom: 30px;
+	border-bottom: 1px dotted #000;
+	margin-bottom: 30px;
+}
+main .contents .cta .shugoubasho .shugouleft{
+	float: left;
+	width: 30%;
+}
+main .contents .cta .shugoubasho .shugouleft h6{
+	width: 100%;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 1.2vw;
+	text-align: left;
+	float: left;
+	color: #7FBB1C;
+	font-weight: bold;
+}
+main .contents .cta .shugoubasho .shugouleft p{
+	font-size: 1.12vw;
+	text-align: left;
+	line-height: 1.2;
+}
+main .contents .cta .shugoubasho .shugouright{
+	float: left;
+	width: 29.5%;
+}
+main .contents .cta .shugoubasho .shugoumap{
+	float: left;
+	width: 40%;
+}
+main .contents .buttonarea {
+    margin-bottom: 30px;
+}
+main .contents .cta .contact .buttonarea {
+    margin-bottom: 30px;
+}
+/*******************************
+flow
+*******************************/
+main .contents .cta .flow .flexbox{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+main .contents .cta .flow .flexbox li:nth-child(2n+1) {
+    font-size: 1.4vw;
+}
+main .contents .cta .flow .flexbox li:nth-child(odd){
+	width: 16%;
+	border: 2px solid #7FBB1C;
+    box-sizing: border-box;
+   	padding: 3% 0 3%;
+	border-radius: 10px;
+	color: #7FBB1C;
+	font-size: 1.4vw;
+}
+main .contents .cta .flow .flexbox li:nth-child(3),
+main .contents .cta .flow .flexbox li:nth-child(5),
+main .contents .cta .flow .flexbox li:nth-child(7){
+	padding: 4% 0 3%;
+}
+main .contents .cta .flow .flexbox li:last-child{
+	padding: 5% 0 3%;
+}
+/*******************************
+aboutecoworkersnavi
+*******************************/
+#aboutecoworkersnavi{
+	padding: 0px 30px 0px 0px;
+	width: -webkit-calc(100% - 290px);
+    width: calc(100% - 290px);
+	margin-left: 260px;
+	float: left;
+	text-align: center;
+	display: block;
+	margin-bottom: 20px;
+}
+#aboutecoworkersnavi ul{
+	font-size: 14px;
+	display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+	width: 100%;
+	margin-top: 0px;
+}
+#aboutecoworkersnavi ul li a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 1.2;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+	color: #7FBB1C;
+	padding: 22% 0;
+	display: inline-block;
+	cursor: pointer;
+	overflow: hidden;
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+#aboutecoworkersnavi ul li {
+    width: 80px;
+	margin-right: 9px;
+}
+#aboutecoworkersnavi ul li:first-child a{
+	font-size: 13px;
+	line-height: 1.2;
+}
+#aboutecoworkersnavi ul li:nth-child(4){
+	margin-right: 10px;
+}
+#aboutecoworkersnavi ul li:last-child{
+	margin-right: 0%;
+}
+#aboutecoworkersnavi ul li:active {
+	-webkit-transform: rotateY(360deg);
+	-ms-transform: rotateY(360deg);
+	transform: rotateY(360deg);
+}
+/*******************************
+aboutlakekutcharonavi
+*******************************/
+#aboutlakekutcharonavi{
+	padding: 0px 30px 0px 0px;
+	width: -webkit-calc(100% - 290px);
+    width: calc(100% - 290px);
+	margin-left: 260px;
+	float: left;
+	text-align: center;
+	display: block;
+	margin-bottom: 20px;
+}
+#aboutlakekutcharonavi ul{
+	font-size: 14px;
+	display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+	width: 100%;
+	margin-top: 0px;
+}
+#aboutlakekutcharonavi ul li a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 1.2;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+	color: #4082AE;
+	padding: 22% 0;
+	display: inline-block;
+	cursor: pointer;
+	overflow: hidden;
+	border-radius: 50%;
+	box-sizing: border-box;
+	height: 100%;
+}
+#aboutlakekutcharonavi ul li {
+    width: 80px;
+	margin-right: 9px;
+}
+#aboutlakekutcharonavi ul li:first-child a{
+	font-size: 12px;	
+	line-height: 1.2;
+	padding-top: 34%;
+}
+#aboutlakekutcharonavi ul li:nth-child(4) a {
+    padding-top: 28%;
+    font-size: 16px;
+    line-height: 1.0;
+}
+#aboutlakekutcharonavi ul li:nth-child(5) a {
+    padding-top: 38%;
+    font-size: 18px;
+}
+#aboutlakekutcharonavi ul li:nth-child(4){
+	margin-right: 10px;
+}
+#aboutlakekutcharonavi ul li:last-child{
+	margin-right: 0%;
+}
+#aboutlakekutcharonavi ul li:active {
+	-webkit-transform: rotateY(360deg);
+	-ms-transform: rotateY(360deg);
+	transform: rotateY(360deg);
+}
+/*******************************
+mw_wp_form
+*******************************/
+main .contents .mw_wp_form form table tbody .form-group th {
+	font-size: 1.4vw;
+}
+main .contents .mw_wp_form form table tbody .form-group td {
+	font-size: 1.4vw;
+}
+main .contents .mw_wp_form .label-required {
+	font-size: 1vw;
+}
+main .contents .mw_wp_form form table tbody .form-group td .name{
+	width: 60px;
+	text-align: right;
+}
+main .contents .mw_wp_form form table tbody .form-group td .name01 {
+   width: -webkit-calc(100% - 70px);
+    width: calc(100% - 70px);
+	padding-right: 0px;
+	margin-bottom: 20px;
+}
+main .contents .mw_wp_form form table tbody .form-group td .name02 {
+    width: -webkit-calc(100% - 70px);
+    width: calc(100% - 70px);
+	padding-right: 0px;
+}
+main .contents .mw_wp_form form table tbody .form-group td .kana01{
+	width: -webkit-calc(100% - 70px);
+    width: calc(100% - 70px);
+	padding-right: 0px;
+	margin-bottom: 20px;
+}
+main .contents .mw_wp_form form table tbody .form-group td .kana02{
+	width: -webkit-calc(100% - 70px);
+    width: calc(100% - 70px);
+	padding-right: 0px;
+}
+main .contents .mw_wp_form form table tbody .form-group .button, .button-white {
+    font-size: 1.4vw;
+}
+main .contents .mw_wp_form form table tbody .form-group #pref {
+    font-size: 1.4vw;
+}
+main .contents .mw_wp_form #kakunin {
+	text-align: center;
+}
+main .contents .mw_wp_form_preview td{
+	font-size: 18px!important;
+	color: #000;
+}
+main .contents .mw_wp_form_preview #postnumber .button{
+	display: none;
+}
+main .contents .mw_wp_form_preview #auto-postnumber{
+	display: none;
+}
+main .contents .mw_wp_form_preview .name{
+	display: none!important;
+}
+main .contents .mw_wp_form_preview .juusho{
+	display: none;
+}
+main .contents .mw_wp_form_preview #kakuninnmail{
+	display: none;
+}
+main .contents .mw_wp_form_preview .label-required{
+	display: none;
+}
+main .contents .mw_wp_form_preview .backbtn{
+	display: inline-block;
+    padding: 7px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: -webkit-linear-gradient(45deg, #7FBB1C 0%, #38B300 100%);
+    background-image: linear-gradient(45deg, #7FBB1C 0%, #38B300 100%);
+    color: #fff;
+    transition: .5s;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    overflow: hidden;
+	border: none;
+	margin-right: 15px;
+}
+main .contents .mw_wp_form_preview .backbtn:hover {
+	background-image: -webkit-linear-gradient(45deg, #7FBB1C 0%, #27A200 100%);
+    background-image: linear-gradient(45deg, #7FBB1C 0%, #27A200 100%);
+}
+}
+@media screen and (min-width: 1200px) {
+main .contents table td small {
+    font-size: 12px;
+}
+.tab2{
+	display: block;		
+}
+.pc{
+	display: none;	
+}
+.pc2{
+	display: block;		
+}
+.site-logo img {
+    width: 100%;
+    margin: 0 0%;
+    padding: 0;
+}
+.mm-wrapper_opened h2{
+	font-size: 16px;	
+}
+.mm-listview {
+    line-height: 1.2vw;
+}
+.mm-listitem {
+    height: auto;
+}
+.mm-listitem a{
+    font-size: 18px;
+}
+.mm-listitem a small {
+    font-size: 12px;
+}
+.slider-text {
+    top: 11vw;
+}
+.slide-5 .slider-text {
+    top: 14vw;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    margin: 0 auto;
+}
+.hokkaido-map {
+	display: block;
+    width: 28vw;
+    top: 29vw;
+}
+*::-ms-backdrop, .hokkaido-map {
+	display: none;
+    width: 28vw;
+    top: 29vw;
+}
+.hokkaido-map-ie{
+	display: none;	
+}
+ /* IE11のみ */
+*::-ms-backdrop, .hokkaido-map-ie{
+	display: block;
+	width: 28vw;
+    top: 29vw;
+}
+main section h3 {
+    color: #000;
+	font-size: 28px;
+}
+main section h3 span{
+	color: #7FBB1C;
+	font-size: 18px;
+}
+main section img {
+    width: 33.3%;
+    float: left;
+}
+footer {
+	height: auto;
+}
+footer #address {
+    padding: 30px 30px 140px 0px;
+}
+footer section {
+    padding: 20px 20px 20px 0px;
+    width: -webkit-calc(100% - 280px);
+    width: calc(100% - 280px);
+    float: left;
+    margin-left: 260px;
+
+}
+#sab-navi .sabnavi{
+	font-size: 18px;
+}
+#sab-navi2 .sabnavi {
+    font-size: 14px;
+}
+#copyright{
+	color: #fff;
+    float: left;
+    bottom: 0;
+    height: 100px;
+    background-color: #7FBB1C;
+    mix-blend-mode: multiply;
+    display: block;
+    margin-top: -100px;
+    padding-top: 10px;
+	margin-bottom: 0;
+}
+.footersquare{
+    width: 0px;
+    height: 0px;
+    border-top: 150px solid transparent;
+  	border-right: 150px solid #7FBB1C;
+	border-bottom: 150px solid #7FBB1C;
+	border-left: 150px solid transparent;
+	position: absolute;
+    right: 0;
+    margin-top: -300px;
+}
+/*******************************
+cta
+*******************************/
+main .contents .cta p {
+    font-size: 1.12vw;
+}
+main .contents table td{
+	font-size: 16px;
+}
+}
+@media screen and (min-width: 1500px) {
+.mm-wrapper_opened h2{
+	font-size: 18px;	
+}
+.hokkaido-map {
+	display: block;
+    width: 28vw;
+    top: 31vw;
+}
+*::-ms-backdrop, .hokkaido-map {
+	display: none;
+    width: 28vw;
+    top: 31vw;
+}
+.hokkaido-map-ie{
+	display: none;	
+}
+ /* IE11のみ */
+*::-ms-backdrop, .hokkaido-map-ie{
+	display: block;
+	width: 28vw;
+    top: 31vw;
+}
+.mm-listview .flexbox{
+	margin-top: 3vw;	
+}
+main .contents .mw_wp_form form table tbody .form-group td .name{
+	width: 60px;
+	text-align: right;
+}
+main .contents .mw_wp_form form table tbody .form-group td .name01 {
+   width: -webkit-calc(100% - 70px);
+    width: calc(100% - 70px);
+	padding-right: 0px;
+	margin-bottom: 20px;
+}
+main .contents .mw_wp_form form table tbody .form-group td .name02 {
+    width: -webkit-calc(100% - 70px);
+    width: calc(100% - 70px);
+	padding-right: 0px;
+}
+main .contents .mw_wp_form form table tbody .form-group td .kana01{
+	width: -webkit-calc(100% - 70px);
+    width: calc(100% - 70px);
+	padding-right: 0px;
+	margin-bottom: 20px;
+}
+main .contents .mw_wp_form form table tbody .form-group td .kana02{
+	width: -webkit-calc(100% - 70px);
+    width: calc(100% - 70px);
+	padding-right: 0px;
+}
+main .contents .mw_wp_form_preview td{
+	font-size: 18px!important;
+	color: #000;
+}
+main .contents .mw_wp_form_preview #postnumber .button{
+	display: none;
+}
+main .contents .mw_wp_form_preview #auto-postnumber{
+	display: none;
+}
+main .contents .mw_wp_form_preview .name{
+	display: none!important;
+}
+main .contents .mw_wp_form_preview .juusho{
+	display: none;
+}
+main .contents .mw_wp_form_preview #kakuninnmail{
+	display: none;
+}
+main .contents .mw_wp_form_preview .label-required{
+	display: none;
+}
+main .contents .mw_wp_form_preview .backbtn{
+	display: inline-block;
+    padding: 7px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: -webkit-linear-gradient(45deg, #7FBB1C 0%, #38B300 100%);
+    background-image: linear-gradient(45deg, #7FBB1C 0%, #38B300 100%);
+    color: #fff;
+    transition: .5s;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    overflow: hidden;
+	border: none;
+	margin-right: 15px;
+}
+main .contents .mw_wp_form_preview .backbtn:hover {
+	background-image: -webkit-linear-gradient(45deg, #7FBB1C 0%, #27A200 100%);
+    background-image: linear-gradient(45deg, #7FBB1C 0%, #27A200 100%);
+}
+}
+main .kuiki{
+	width: 100%;
+	float: left
+}
+.movie-wrap {
+     position: relative;
+     padding-bottom: 56.25%; /*アスペクト比 16:9の場合の縦幅*/
+     height: 0;
+     overflow: hidden;
+}
+ 
+.movie-wrap iframe {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+}
