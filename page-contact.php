@@ -5,14 +5,6 @@ Template Name: page-contact
 ?>
 <?php get_header();?>
 	<div id="page-headernav">
-		<?php
-				wp_nav_menu( array(
-					'theme_location' => 'global-submenu',
-					'container' => false,
-					'menu_class' => 'flexbox',
-					'menu_id' => 'flexbox'
-				));
-		?>
 	</div>
 	<div id="page-image">
 	<img class="animate5" src="<?php echo( get_stylesheet_directory_uri() ); ?>/images/contact_header_pc.jpg" alt="<?php echo get_the_title(); ?>"/>

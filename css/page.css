@@ -24,12 +24,17 @@ main #page-title-inner-icon {
 	transition: all 1s;
 	cursor: pointer;
 }
+main #page-title-inner-icon:hover {
+    transform-origin: center;
+    transform: scale(1.2);
+    transition: all 1s;
+}
 main #page-title-aminal01 {
     position: absolute;
     z-index: 2;
-    right: 60px;
-    top: 0;
-    width: 160px;
+    left: 40px;
+	bottom: 20px;
+	width: 80px;
 	transform:scale(1);
 	transition: all 1s;
 	cursor: pointer;
@@ -37,9 +42,9 @@ main #page-title-aminal01 {
 main #page-title-aminal02 {
     position: absolute;
     z-index: 2;
-    left: 60px;
-    bottom: 40px;
-    width: 140px;
+    right: 40px;
+	bottom: 20px;
+	width: 80px;
 	transform:scale(1);
 	transition: all 1s;
 	cursor: pointer;
@@ -54,7 +59,7 @@ main #page-title-aminal03 {
 	transition: all 1s;
 	cursor: pointer;
 }
-main #page-title-inner-icon:hover {
+main #page-title-aminal02:hover {
 	transform-origin:center;
 	transform:scale(1.2);
 	transition: all 1s;
@@ -64,50 +69,43 @@ main #page-title-aminal01:hover {
 	transform:scale(1.2);
 	transition: all 1s;
 }
-main #page-title-aminal02:hover {
-	transform-origin:center;
-	transform:scale(1.2);
-	transition: all 1s;
-}
 main #page-title-aminal03:hover {
 	transform-origin:center;
 	transform:scale(1.2);
 	transition: all 1s;
 }
+
 main #page-title-inner-bg{
     position: relative;
+}
+main #page-title-inner-bg-image {
+    width: 400px;
 }
 main #page-title-inner-bg-text{
 	position: absolute;
     text-align: center;
     width: 100%;
-    top: 80px;
+    top: 40px;
 	display: flex;
 	flex-flow: column;
 }
 main #page-title-inner-bg h1 {
-    font-size: 38px;
+    font-size: 20px;
     font-weight: bold;
     color: #4a9143;
     letter-spacing: 5px;
 	line-height: 1;
 }
 main #page-title-inner-bg span {
-    font-size: 14px;
+    font-size: 10px;
     color: #513813;
     letter-spacing: 2px;
     font-weight: bold;
     margin-top: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 main #page-title-inner-bg-sentences {
-    height: 84px;
-}
-main .container h3{
-	font-size: 24px;
-    font-weight: bold;
-    color: #4a9143;
-    letter-spacing: 5px;
+    height: 40px;
 }
 main .container #page-content {
     display: flex;
@@ -453,10 +451,328 @@ main .container #cta .button a:hover span::after {
 	transition: border 2s;
 }
 @media only screen and (min-width: 600px) {
+main #page-title-inner{
+    width: 862px;
+}
+main #page-title-inner-icon {
+    left: 60px;
+    width: 160px;
+}
+main #page-title-aminal01 {
+    right: 60px;
+    width: 160px;
+}
+main #page-title-aminal02 {
+    left: 60px;
+    bottom: 40px;
+    width: 140px;
+}
+main #page-title-aminal03 { 
+    right: 60px;
+    bottom: 60px;
+    width: 140px;
+}
+main #page-title-inner-bg-text{
+	position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 80px;
+	display: flex;
+	flex-flow: column;
+}
+main #page-title-inner-bg h1 {
+    font-size: 38px;
+    letter-spacing: 5px;
+	line-height: 1;
+}
+main #page-title-inner-bg span {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+main #page-title-inner-bg-sentences {
+    height: 84px;
+}
+main .container h3{
+	font-size: 24px;
+    letter-spacing: 5px;
+}
+main .container #page-content {
+	padding: 100px 0;
+	margin: 0 auto 136px;
+}
+main .container #page-content::before{
+	width: 960px;
+	height: 50px;
+	top:0;
+}
+main .container #page-content::after{
+	width: 960px;
+	height: 50px;
+}
+main .container #page-content-inner {
+    width: 100%;
+    margin-top: 50px;
+}
+main .container #page-content-inner li {
+	margin-bottom: 80px;
+}
+main .container #page-content-inner li .page-content-inner-block .page-content-icon {
+    width: 80px;
+    z-index: 2;
+}
+main .container #page-content-inner li:hover .page-content-inner-block .page-content-icon {
+    width: 80px;
+}
+main .container #page-content-inner li .page-content-inner-block .page-content-speechbubble {
+    width: 200px;
+	z-index: 2;
+}
+main .container #page-content-inner li:hover .page-content-inner-block .page-content-speechbubble {
+    left: 0;
+    top: 0;
+    width: 200px;
+	z-index: 2;
+}
+main .container #page-content-inner li .page-content-inner-block .page-content-image {
+    width: 440px;
+}
+main .container #page-content-inner li p.page-content-inner-text{
+	font-size: 20px;
+	letter-spacing: 5px;
+	line-height: 1.2;
+	margin-top: 10px;
+}
+main .container #performance #performance-title {
+    padding: 13px;
+    border-radius: 25px;
+}
+main .container #performance #performance-title span{
+	font-size: 14px;
+}
+main .container #performance ul {
+	margin-top: 50px;
+}
+main .container #performance ul li {
+    width: 444px;
+	margin-bottom: 65px;
+}
+main .container #performance ul li .page-performance-title-block {
+	height: 110px;
+}
+main .container #performance ul li .page-performance-title-block img{
+	height: 120px;
+}
+main .container #performance ul li .page-performance-title-block img.page-performance-title-aichi{
+	height: 110px;
+}
+main .container #performance ul li .page-performance-title-block h2 {
+    font-size: 24px;
+    letter-spacing: 3px;
+    margin: 0 0 0 10px;
+	line-height: 1.2;
+}
+main .container #performance ul li .page-performance-image {
+    width: 100%;
+}
+main .container #performance ul li h3 {
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-top: 15px;
+	height: 50px;
+	line-height: 1.2;
+}
+main .container #performance ul li p.page-performance-subtitle {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+main .container #cta {
+    margin: 110px auto auto;
+    display: flex;
+}
+main .container #cta h2{
+	font-size: 24px;
+    letter-spacing: 4px;
+}
+main .container #cta img{
+	height: 54px;
+	margin: 20px auto 30px;
+}
+main .container #cta .button {
+    width: 100%;
+}
+main .container #cta .button a{
+	height: 60px;
+	font-size: 24px;
+}
+main .container #cta .button a span::after {
+    width: 14px;
+    height: 14px;
+}
 }
 @media only screen and (min-width: 1024px) {
-
-
+main #page-title-inner{
+    width: 862px;
+}
+main #page-title-inner-icon {
+    left: 60px;
+    width: 160px;
+}
+main #page-title-aminal01 {
+    right: 60px;
+    width: 160px;
+}
+main #page-title-aminal02 {
+    left: 60px;
+    bottom: 40px;
+    width: 140px;
+}
+main #page-title-aminal03 { 
+    right: 60px;
+    bottom: 60px;
+    width: 140px;
+}
+main #page-title-inner-bg-text{
+	position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 80px;
+	display: flex;
+	flex-flow: column;
+}
+main #page-title-inner-bg h1 {
+    font-size: 38px;
+    letter-spacing: 5px;
+	line-height: 1;
+}
+main #page-title-inner-bg span {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+main #page-title-inner-bg-sentences {
+    height: 84px;
+}
+main .container h3{
+	font-size: 24px;
+    letter-spacing: 5px;
+}
+main .container #page-content {
+	padding: 100px 0;
+	margin: 0 auto 136px;
+}
+main .container #page-content::before{
+	width: 960px;
+	height: 50px;
+	top:0;
+}
+main .container #page-content::after{
+	width: 960px;
+	height: 50px;
+}
+main .container #page-content-inner {
+    width: 100%;
+    margin-top: 50px;
+}
+main .container #page-content-inner li {
+	margin-bottom: 80px;
+}
+main .container #page-content-inner li .page-content-inner-block .page-content-icon {
+    width: 80px;
+    z-index: 2;
+}
+main .container #page-content-inner li:hover .page-content-inner-block .page-content-icon {
+    width: 80px;
+}
+main .container #page-content-inner li .page-content-inner-block .page-content-speechbubble {
+    width: 200px;
+	z-index: 2;
+}
+main .container #page-content-inner li:hover .page-content-inner-block .page-content-speechbubble {
+    left: 0;
+    top: 0;
+    width: 200px;
+	z-index: 2;
+}
+main .container #page-content-inner li .page-content-inner-block .page-content-image {
+    width: 440px;
+}
+main .container #page-content-inner li p.page-content-inner-text{
+	font-size: 20px;
+	letter-spacing: 5px;
+	line-height: 1.2;
+	margin-top: 10px;
+}
+main .container #performance #performance-title {
+    padding: 13px;
+    border-radius: 25px;
+}
+main .container #performance #performance-title span{
+	font-size: 14px;
+}
+main .container #performance ul {
+	margin-top: 50px;
+}
+main .container #performance ul li {
+    width: 444px;
+	margin-bottom: 65px;
+}
+main .container #performance ul li .page-performance-title-block {
+	height: 110px;
+}
+main .container #performance ul li .page-performance-title-block img{
+	height: 120px;
+}
+main .container #performance ul li .page-performance-title-block img.page-performance-title-aichi{
+	height: 110px;
+}
+main .container #performance ul li .page-performance-title-block h2 {
+    font-size: 24px;
+    letter-spacing: 3px;
+    margin: 0 0 0 10px;
+	line-height: 1.2;
+}
+main .container #performance ul li .page-performance-image {
+    width: 100%;
+}
+main .container #performance ul li h3 {
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-top: 15px;
+	height: 50px;
+	line-height: 1.2;
+}
+main .container #performance ul li p.page-performance-subtitle {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+main .container #cta {
+    margin: 110px auto auto;
+    display: flex;
+}
+main .container #cta h2{
+	font-size: 24px;
+    letter-spacing: 4px;
+}
+main .container #cta img{
+	height: 54px;
+	margin: 20px auto 30px;
+}
+main .container #cta .button {
+    width: 100%;
+}
+main .container #cta .button a{
+	height: 60px;
+	font-size: 24px;
+}
+main .container #cta .button a span::after {
+    width: 14px;
+    height: 14px;
+}
 }
 @media only screen and (min-width: 1281px) {
 main #page-title-inner{

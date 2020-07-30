@@ -199,7 +199,6 @@ a {
 	color: #005499;
 	transition: all 1s;
 	opacity: 1;
-	text-decoration: none;
 }
 a:hover {
 	transition: all 1s;
@@ -856,7 +855,7 @@ a.main-nav-link img{
 	opacity:0;
 }
 50%{
-
+	
 }
 100%{
 	transform:translate(0,0)scale(100%);
@@ -1001,8 +1000,4 @@ main .container #sns-block-top .sns-block-inner {
     width: 440px;
     height: 500px;
     background-color: #fff;
-}
-}
-@media only screen and (min-width: 1281px) {
-
 }
