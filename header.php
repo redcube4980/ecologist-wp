@@ -19,7 +19,6 @@
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/lecture.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lightbox.min.css">
 <?php elseif(is_page('consulting')): ?>
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/page.css">
 <?php elseif(is_page('csr')): ?>
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/csr.css">

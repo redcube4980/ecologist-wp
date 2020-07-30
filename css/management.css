@@ -387,7 +387,7 @@ main .container #cta h2{
 }
 main .container #cta img{
 	height: 54px;
-	width: 60%;
+	width: 80%;
 	margin: 20px auto 30px;
 }
 main .container #cta .button{
@@ -1021,7 +1021,6 @@ main .container #cta .button a span::after {
     display: none;
 }
 }
-}
 @media only screen and (min-width: 1281px) {
 main {
     height: auto;
@@ -1041,9 +1040,6 @@ main #page-title-aminal03 {
     right: 60px;
 	bottom: 50px;
 	width: 111px;
-}
-main #page-title-inner-bg{
-    position: relative;
 }
 #page-title-inner-bg-image {
     width: 861px;
