@@ -10,19 +10,19 @@ main #page-title{
 main #page-title-inner{
     display: block;
     position: relative;
-    width: 862px;
+    width: 435px;
     text-align: center;
     margin: 0 auto;
 }
 main #page-title-inner-icon {
-	position: absolute;
-	z-index: 2;
-	left: 0px;
-	top: 70px;
-	width: 160px;
-	transform: scale(1);
-	transition: all 1s;
-	cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    left: 20px;
+    top: 40px;
+    width: 70px;
+    transform: scale(1);
+    transition: all 1s;
+    cursor: pointer;
 }
 main #page-title-inner-icon:hover {
     transform-origin: center;
@@ -32,12 +32,11 @@ main #page-title-inner-icon:hover {
 main #page-title-aminal03 {
     position: absolute;
     z-index: 2;
-    right: 10px;
-	bottom: 55px;
-	width: 200px;
-	transform:scale(1);
-	transition: all 1s;
-	cursor: pointer;
+    right: 40px;
+    bottom: 20px;
+    width: 80px;
+    transform: scale(1);
+    transition: all 1s;
 }
 main #page-title-aminal03:hover {
 	transform-origin:center;
@@ -47,37 +46,42 @@ main #page-title-aminal03:hover {
 main #page-title-inner-bg{
     position: relative;
 }
+#page-title-inner-bg-image {
+    width: 400px;
+}
 main #page-title-inner-bg-text{
 	position: absolute;
     text-align: center;
     width: 100%;
-    top: 80px;
+    top: 40px;
 	display: flex;
 	flex-flow: column;
 }
 main #page-title-inner-bg h1 {
-    font-size: 38px;
+    font-size: 20px;
     font-weight: bold;
     color: #4a9143;
     letter-spacing: 5px;
-	line-height: 1;
+    line-height: 1;
 }
 main #page-title-inner-bg span {
-    font-size: 14px;
+    font-size: 10px;
     color: #513813;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: bold;
     margin-top: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 main #page-title-inner-bg-sentences {
-    height: 84px;
+    height: 30px;
 }
-main .container h3{
-	font-size: 24px;
+main .container h3 {
+    font-size: 18px;
     font-weight: bold;
     color: #4a9143;
     letter-spacing: 5px;
+    text-align: center;
+    line-height: 1.2;
 }
 main .container #page-content-inner {
     width: 100%;
@@ -119,27 +123,28 @@ main .container #page-content::after{
 	background-size: cover;
 }
 main .container #page-content-inner ul {
-	flex-flow: nowrap;
+	flex-flow: row wrap;
 	display: flex;
 	justify-content: space-between;
 }
 main .container #page-content-inner li {
-	margin-bottom: 0;
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-	text-align: center;
-	cursor: pointer;
+    margin: 30px 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    width: 160px;
 }
 main .container #page-content-inner li .page-content-inner-block {
     position: relative;
-	height: 150px;
+    height: 150px;
 }
 .page-collabo-content-image {
     transform: scale(1);
     transition: all 1s;
     cursor: pointer;
-	width: 90%;
+    width: 80%;
 }
 .page-collabo-content-image:hover {
     transform-origin: center;
@@ -235,13 +240,13 @@ main .container #page-content-inner li:hover .page-content-inner-block .page-con
 main .container #page-content-inner li .page-content-inner-block .page-content-image {
     width: 230px;
 }
-main .container #page-content-inner li p.page-content-inner-text{
-	font-size: 20px;
-	font-weight: bold;
-	color: #000;
-	letter-spacing: 0;
-	line-height: 1.6;
-	margin: 10px 0 0;
+main .container #page-content-inner li p.page-content-inner-text {
+    font-size: 13px;
+    font-weight: bold;
+    color: #000;
+    letter-spacing: 0;
+    line-height: 1.6;
+    margin: 0;
 }
 main .container #performance{
 	
@@ -259,22 +264,19 @@ main .container #performance #performance-title span{
 main .container #performance ul {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 405px;
     flex-flow: row wrap;
 	margin-top: 50px;
 }
 main .container #performance ul li {
 	width: 444px;
-	height: 180px;
+	height: 200px;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	margin-bottom: 65px;
 }
 main .container #performance ul li:nth-last-child(2) {
-	margin-bottom: 0;
-}
-main .container #performance ul li:nth-last-child(3){
 	margin-bottom: 0;
 }
 main .container #performance ul li .page-performance-title-block {
@@ -307,11 +309,10 @@ main .container #performance ul li .page-performance-right-block {
     align-items: flex-start;
 }
 main .container #performance ul li .page-performance-image {
-    width: 220px;
-	height: 180px;
+   width: 205px;
 }
 .page-performance-ex {
-    font-size: 0.9rem;
+    font-size: 8px;
     margin-top: 10px;
 }
 main .container #performance ul li h3 {
@@ -330,28 +331,28 @@ main .container #performance ul li p.page-performance-subtitle {
 	line-height: 1.6;
 	text-align: justify;
 	margin: 10px 0 0 0px;
-	width: 200px;
+	width: 180px;
 }
 main .container #cta {
     margin: 110px auto auto;
-    text-align: center;
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
+	text-align: center;
 }
 main .container #cta h2{
-	font-size: 24px;
+	font-size: 18px;
     font-weight: bold;
     color: #f04f4c;
     letter-spacing: 4px;
 }
 main .container #cta img{
 	height: 54px;
-	width: auto;
+	width: 80%;
 	margin: 20px auto 30px;
 }
 main .container #cta .button{
-	width: 100%;
+	width: 60%;
 	height: auto;
 	transition: background-color 2s;
 	display: block;
@@ -394,12 +395,12 @@ main .container #cta .button:hover::before {
 }
 main .container #cta .button a{
 	width: 100%;
-	height: 60px;
+	height: auto;
+	font-size: 15px;
 	max-width: 320px;
 	color: #fff;
 	display: block;
 	margin: 0 auto;
-	font-size: 24px;
     font-weight: bold;
 	position: relative;
 	background-color: #fd9945;
@@ -422,8 +423,9 @@ main .container #cta .button a span {
 }
 main .container #cta .button a span::after {
     content: "";
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
+    right: 20px;
     border: 0px;
     border-top: solid 2px #fff;
     border-right: solid 2px #fff;
@@ -433,7 +435,6 @@ main .container #cta .button a span::after {
     position: absolute;
     top: 50%;
     margin-top: -7px;
-	right: 30px;
 	transition: border 2s;
 }
 main .container #cta .button a:hover span::after {
@@ -441,12 +442,648 @@ main .container #cta .button a:hover span::after {
     border-right: solid 2px #fd9945;
 	transition: border 2s;
 }
+.br-sp {
+    display: none;
+}
 @media only screen and (min-width: 600px) {
-
+main {
+    height: auto;
+    padding-top: 170px;
+    padding-bottom: 30px;
+    max-width: 600px;
+}
+main #page-title-inner{
+    width: 600px;
+}
+main #page-title-inner-icon {
+    left: 20px;
+    top: 20px;
+    width: 110px;
+}
+main #page-title-aminal03 {
+    right: 50px;
+    bottom: 30px;
+    width: 130px;
+}
+main #page-title-inner-bg-image {
+    width: 600px;
+}
+main #page-title-inner-bg-text{
+    top: 40px;
+}
+main #page-title-inner-bg h1 {
+    font-size: 28px;
+}
+main #page-title-inner-bg span {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+main #page-title-inner-bg-sentences {
+    height: 50px;
+    margin-top: 5px;
+}
+main .container {
+    width: 600px;
+	padding: 0;
+}
+main .container h3{
+	font-size: 20px;
+	padding: 50px 0 0 0;
+}
+main .container #page-content-inner {
+    width: 600px;
+    margin: 30px 0;
+}
+main .container #page-content {
+    padding: 50px 0;
+    margin: 0 auto 50px;
+}
+main .container #page-content::before{
+	width: 600px;
+	height: 50px;
+}
+main .container #page-content::after{
+	width: 600px;
+	height: 50px;
+}
+main .container #page-content-inner li {
+    width: 120px;
+}
+main .container #page-content-inner li .page-content-inner-block {
+    height: 130px;
+}
+.page-collabo-content-image {
+    width: 70%;
+}
+main .container #page-content-inner li .page-content-inner-block .page-content-icon {
+    width: 80px;
+}
+main .container #page-content-inner li:hover .page-content-inner-block .page-content-icon {
+    width: 80px;
+}
+main .container #page-content-inner li .page-content-inner-block .page-content-image {
+    width: 230px;
+}
+main .container #page-content-inner li p.page-content-inner-text{
+	font-size: 15px;
+	line-height: 1.6;
+	margin: 10px 0 0;
+}
+main .container #performance #performance-title {
+    padding: 13px;
+}
+main .container #performance #performance-title span{
+	font-size: 14px;
+}
+main .container #performance ul {
+    width: 444px;
+    margin: 50px auto 0;
+}
+main .container #performance ul li {
+	width: 444px;
+	height: 180px;
+	margin-bottom: 65px;
+}
+main .container #performance ul li .page-performance-title-block {
+	height: 0px;
+	width: 200px;
+}
+main .container #performance ul li .page-performance-title-block img{
+	height: 120px;
+}
+main .container #performance ul li .page-performance-title-block img.page-performance-title-aichi{
+	height: 110px;
+}
+main .container #performance ul li .page-performance-title-block h2 {
+    font-size: 24px;
+	letter-spacing: -0.6px;
+	margin: 0 0 0 0px;
+	line-height: 1.2;
+	width: 200px;
+}
+main .container #performance ul li .page-performance-image {
+    width: 220px;
+	height: 180px;
+}
+.page-performance-ex {
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+main .container #performance ul li h3 {
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-top: 15px;
+	height: 50px;
+	line-height: 1.2;
+}
+main .container #performance ul li p.page-performance-subtitle {
+    font-size: 13px;
+	line-height: 1.6;
+	margin: 10px 0 0 0px;
+	width: 200px;
+}
+main .container #cta {
+    margin: 110px auto auto;
+}
+main .container #cta h2{
+	font-size: 24px;
+    letter-spacing: 4px;
+}
+main .container #cta img{
+	height: 54px;
+	width: auto;
+	margin: 20px auto 30px;
+}
+main .container #cta .button{
+	width: 100%;
+	height: auto;
+	max-width: 320px;
+	margin: 0 auto;
+}
+main .container #cta .button::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+main .container #cta .button a{
+	width: 100%;
+	height: 60px;
+	max-width: 320px;
+	margin: 0 auto;
+	font-size: 24px;
+}
+main .container #cta .button a span {
+    width: 100%;
+    height: 100%;
+    line-height: 2.5;
+}
+main .container #cta .button a span::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 0px;
+    top: 50%;
+    margin-top: -7px;
+	right: 20px;
+}
+.br-sp {
+    display: block;
+}
+.sp-br{
+	display: none;
+}
 }
 @media only screen and (min-width: 1024px) {
-
+main {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 100%;
+}
+main #page-title-inner{
+    width: 862px;
+}
+main #page-title-inner-icon {
+    left: 0px;
+    top: 70px;
+    width: 160px;
+}
+main #page-title-aminal03 {
+    right: 10px;
+    bottom: 55px;
+    width: 200px;
+}
+main #page-title-inner-bg-image {
+    width: 861px;
+}
+main #page-title-inner-bg-text{
+    width: 100%;
+    top: 80px;
+}
+main #page-title-inner-bg h1 {
+    font-size: 38px;
+}
+main #page-title-inner-bg span {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+main #page-title-inner-bg-sentences {
+    height: 84px;
+	margin-top: 0;
+}
+main .container {
+    width: 960px;
+    margin: 80px auto 0;
+    padding: 0;
+}
+main .container h3{
+	font-size: 24px;
+    letter-spacing: 5px;
+}
+main .container #page-content-inner {
+    width: 100%;
+    margin-top: 50px;
+}
+main .container #page-content {
+	height: auto;
+	padding: 100px 0;
+	margin: 0 auto 136px;
+}
+main .container #page-content::before{
+	content: "";
+	position: absolute;
+	width: 960px;
+	height: 50px;
+	top:0;
+	background-image: url("../images/top-about-overline.svg");
+	left: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+main .container #page-content::after{
+	content: "";
+	position: absolute;
+	width: 960px;
+	height: 50px;
+	bottom:0;
+	background-image: url("../images/top-about-underline.svg");
+	left: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+main .container #page-content-inner li {
+	width: 200px;
+}
+main .container #page-content-inner li .page-content-inner-block {
+    position: relative;
+	height: 150px;
+}
+.page-collabo-content-image {
+	width: 90%;
+}
+main .container #page-content-inner li .page-content-inner-block .page-content-icon {
+    width: 80px;
+    bottom: 0;
+    left: 0;
+}
+main .container #page-content-inner li:hover .page-content-inner-block .page-content-icon {
+    width: 80px;
+    bottom: 0;
+    left: 0;
+}
+main .container #page-content-inner li .page-content-inner-block .page-content-image {
+    width: 230px;
+}
+main .container #page-content-inner li p.page-content-inner-text{
+	font-size: 20px;
+	letter-spacing: 0;
+	line-height: 1.6;
+	margin: 10px 0 0;
+}
+main .container #performance{
+	
+}
+main .container #performance #performance-title {
+    padding: 13px;
+    border-radius: 25px;
+}
+main .container #performance #performance-title span{
+	font-size: 14px;
+}
+main .container #performance ul {
+    width: 100%;
+	margin-top: 50px;
+}
+main .container #performance ul li {
+	width: 444px;
+	height: 180px;
+	margin-bottom: 65px;
+}
+main .container #performance ul li:nth-last-child(2) {
+	margin-bottom: 0;
+}
+main .container #performance ul li:nth-last-child(3){
+	margin-bottom: 0;
+}
+main .container #performance ul li .page-performance-title-block {
+	height: 0px;
+	width: 200px;
+}
+main .container #performance ul li .page-performance-title-block img{
+	height: 120px;
+}
+main .container #performance ul li .page-performance-title-block img.page-performance-title-aichi{
+	height: 110px;
+}
+main .container #performance ul li .page-performance-title-block h2 {
+    font-size: 24px;
+	letter-spacing: -0.6px;
+	margin: 0 0 0 0px;
+	line-height: 1.2;
+	width: 220px;
+}
+main .container #performance ul li .page-performance-image {
+    width: 220px;
+	height: 180px;
+}
+.page-performance-ex {
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+main .container #performance ul li h3 {
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-top: 15px;
+	height: 50px;
+	line-height: 1.2;
+}
+main .container #performance ul li p.page-performance-subtitle {
+    font-size: 13px;
+	line-height: 1.6;
+	margin: 10px 0 0 0px;
+	width: 200px;
+}
+main .container #cta {
+    margin: 110px auto auto;
+}
+main .container #cta h2{
+	font-size: 24px;
+    letter-spacing: 4px;
+}
+main .container #cta img{
+	height: 54px;
+	margin: 20px auto 30px;
+}
+main .container #cta .button{
+	width: 100%;
+	max-width: 320px;
+	margin: 0 auto;
+	transform-origin: 0 0 0;
+}
+main .container #cta .button:hover{
+	border-radius: 31px;
+}
+main .container #cta .button::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+main .container #cta .button a{
+	width: 100%;
+	height: 60px;
+	max-width: 320px;
+	margin: 0 auto;
+	font-size: 24px;
+}
+main .container #cta .button a span {
+    width: 100%;
+    height: 100%;
+    line-height: 2.5;
+}
+main .container #cta .button a span::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 0px;
+    top: 50%;
+    margin-top: -7px;
+	right: 30px;
+}
+.br-sp {
+    display: block;
+}
 }
 @media only screen and (min-width: 1281px) {
-
+main {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 100%;
+}
+main #page-title-inner{
+    width: 862px;
+}
+main #page-title-inner-icon {
+    left: 0px;
+    top: 70px;
+    width: 160px;
+}
+main #page-title-aminal03 {
+    right: 10px;
+    bottom: 55px;
+    width: 200px;
+}
+main #page-title-inner-bg-image {
+    width: 861px;
+}
+main #page-title-inner-bg-text{
+    width: 100%;
+    top: 80px;
+}
+main #page-title-inner-bg h1 {
+    font-size: 38px;
+}
+main #page-title-inner-bg span {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+main #page-title-inner-bg-sentences {
+    height: 84px;
+	margin-top: 0;
+}
+main .container {
+    width: 960px;
+    margin: 80px auto 0;
+    padding: 0;
+}
+main .container h3{
+	font-size: 24px;
+    letter-spacing: 5px;
+}
+main .container #page-content-inner {
+    width: 100%;
+    margin-top: 50px;
+}
+main .container #page-content {
+	height: auto;
+	padding: 100px 0;
+	margin: 0 auto 136px;
+}
+main .container #page-content::before{
+	content: "";
+	position: absolute;
+	width: 960px;
+	height: 50px;
+	top:0;
+	background-image: url("../images/top-about-overline.svg");
+	left: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+main .container #page-content::after{
+	content: "";
+	position: absolute;
+	width: 960px;
+	height: 50px;
+	bottom:0;
+	background-image: url("../images/top-about-underline.svg");
+	left: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+main .container #page-content-inner li {
+	width: 200px;
+}
+main .container #page-content-inner li .page-content-inner-block {
+    position: relative;
+	height: 150px;
+}
+.page-collabo-content-image {
+	width: 90%;
+}
+main .container #page-content-inner li .page-content-inner-block .page-content-icon {
+    width: 80px;
+    bottom: 0;
+    left: 0;
+}
+main .container #page-content-inner li:hover .page-content-inner-block .page-content-icon {
+    width: 80px;
+    bottom: 0;
+    left: 0;
+}
+main .container #page-content-inner li .page-content-inner-block .page-content-image {
+    width: 230px;
+}
+main .container #page-content-inner li p.page-content-inner-text{
+	font-size: 20px;
+	letter-spacing: 0;
+	line-height: 1.6;
+	margin: 10px 0 0;
+}
+main .container #performance{
+	
+}
+main .container #performance #performance-title {
+    padding: 13px;
+    border-radius: 25px;
+}
+main .container #performance #performance-title span{
+	font-size: 14px;
+}
+main .container #performance ul {
+    width: 100%;
+	margin-top: 50px;
+}
+main .container #performance ul li {
+	width: 444px;
+	height: 180px;
+	margin-bottom: 65px;
+}
+main .container #performance ul li:nth-last-child(2) {
+	margin-bottom: 0;
+}
+main .container #performance ul li:nth-last-child(3){
+	margin-bottom: 0;
+}
+main .container #performance ul li .page-performance-title-block {
+	height: 0px;
+	width: 200px;
+}
+main .container #performance ul li .page-performance-title-block img{
+	height: 120px;
+}
+main .container #performance ul li .page-performance-title-block img.page-performance-title-aichi{
+	height: 110px;
+}
+main .container #performance ul li .page-performance-title-block h2 {
+    font-size: 24px;
+	letter-spacing: -0.6px;
+	margin: 0 0 0 0px;
+	line-height: 1.2;
+	width: 220px;
+}
+main .container #performance ul li .page-performance-image {
+    width: 220px;
+	height: 180px;
+}
+.page-performance-ex {
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+main .container #performance ul li h3 {
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-top: 15px;
+	height: 50px;
+	line-height: 1.2;
+}
+main .container #performance ul li p.page-performance-subtitle {
+    font-size: 13px;
+	line-height: 1.6;
+	margin: 10px 0 0 0px;
+	width: 200px;
+}
+main .container #cta {
+    margin: 110px auto auto;
+}
+main .container #cta h2{
+	font-size: 24px;
+    letter-spacing: 4px;
+}
+main .container #cta img{
+	height: 54px;
+	margin: 20px auto 30px;
+}
+main .container #cta .button{
+	width: 100%;
+	max-width: 320px;
+	margin: 0 auto;
+	transform-origin: 0 0 0;
+}
+main .container #cta .button:hover{
+	border-radius: 31px;
+}
+main .container #cta .button::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+main .container #cta .button a{
+	width: 100%;
+	height: 60px;
+	max-width: 320px;
+	margin: 0 auto;
+	font-size: 24px;
+}
+main .container #cta .button a span {
+    width: 100%;
+    height: 100%;
+    line-height: 2.5;
+}
+main .container #cta .button a span::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 0px;
+    top: 50%;
+    margin-top: -7px;
+	right: 30px;
+}
+.br-sp {
+    display: block;
+}
+.sp-br{
+	display: none;
+}
 }

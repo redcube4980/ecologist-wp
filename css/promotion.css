@@ -1,4 +1,22 @@
 @charset "UTF-8";
-#page-title-inner-bg {
+main #page-title-inner-bg {
     text-align: center;
+}
+#page-title-inner-bg-sentences {
+    width: 400px;
+}
+@media only screen and (min-width: 600px) {
+main #page-title-inner-bg-sentences {
+    width: 600px;
+}
+}
+@media only screen and (min-width: 1024px) {
+main #page-title-inner-bg-sentences {
+    width: 861px;
+}
+}
+@media only screen and (min-width: 1281px) {
+main #page-title-inner-bg-sentences {
+    width: 861px;
+}
 }

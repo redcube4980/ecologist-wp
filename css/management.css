@@ -17,11 +17,12 @@ main #page-title-inner{
 main #page-title-inner-icon {
     position: absolute;
     z-index: 2;
-    left: 40px;
+    left: 20px;
     top: 30px;
     width: 80px;
     transform: scale(1);
     transition: all 1s;
+    cursor: pointer;
 }
 main #page-title-inner-icon:hover {
     transform-origin: center;
@@ -884,9 +885,11 @@ main .container #performance #performance-title span{
 }
 main .container #performance ul {
     display: flex;
-    width: 100%;
+    max-width: 960px;
     flex-flow: row wrap;
-	margin-top: 50px;
+    margin: 50px 0 0 0;
+    justify-content: space-between;
+	width: 960px;
 }
 main .container #performance ul li {
 	display: flex;
@@ -1024,7 +1027,6 @@ main .container #cta .button a span::after {
 @media only screen and (min-width: 1281px) {
 main {
     height: auto;
-    padding-top: 170px;
     padding-bottom: 30px;
     max-width: 100%;
 }
@@ -1150,9 +1152,11 @@ main .container #performance #performance-title span{
 }
 main .container #performance ul {
     display: flex;
-    width: 100%;
+    max-width: 960px;
     flex-flow: row wrap;
-	margin-top: 50px;
+    margin: 50px 0 0 0;
+    justify-content: space-between;
+	width: 960px;
 }
 main .container #performance ul li {
 	display: flex;
@@ -1236,10 +1240,6 @@ main .container #performance ul li p.page-performance-subtitle {
 }
 main .container #cta {
     margin: 110px auto auto;
-    text-align: center;
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
 }
 main .container #cta h2{
 	font-size: 24px;
@@ -1252,9 +1252,12 @@ main .container #cta img{
 }
 main .container #cta .button{
 	width: 100%;
-	height: auto;
 	max-width: 320px;
 	margin: 0 auto;
+	transform-origin: 0 0 0;
+}
+main .container #cta .button:hover{
+	border-radius: 31px;
 }
 main .container #cta .button::before {
     top: 0;
@@ -1281,9 +1284,6 @@ main .container #cta .button a span::after {
     border: 0px;
     top: 50%;
     margin-top: -7px;
-	right: 20px;
-}
-.sp-br {
-    display: none;
+	right: 30px;
 }
 }

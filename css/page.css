@@ -151,7 +151,6 @@ main .container #page-content::after{
 	background-position: center;
 	background-size: cover;
 }
-
 main .container #page-content-inner ul {
 	flex-flow: column;
 	display: flex;
