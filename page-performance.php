@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: lecture
+Template Name: performance
 */
 ?>
 <?php get_header();?>
@@ -30,4 +30,3 @@ Template Name: lecture
 	<?php endif; ?>
 </main>
 <?php get_footer(); ?>
-		</main>

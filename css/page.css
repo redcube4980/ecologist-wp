@@ -36,7 +36,7 @@ main #page-title-aminal01 {
     width: 70px;
 	transform:scale(1);
 	transition: all 1s;
-	cursor: pointer;
+	cursor: default;
 }
 main #page-title-aminal01:hover {
 	transform-origin:center;
@@ -51,7 +51,7 @@ main #page-title-aminal02 {
     width: 60px;
     transform: scale(1);
     transition: all 1s;
-    cursor: pointer;
+    cursor: default;
 }
 main #page-title-aminal02:hover {
 	transform-origin:center;
@@ -162,7 +162,7 @@ main .container #page-content-inner li {
 	flex-flow: column;
 	align-items: center;
 	text-align: center;
-	cursor: pointer;
+	cursor: default;
 }
 main.content-main-image {
     margin-top: 10px;
@@ -414,6 +414,7 @@ main .container #cta .button a{
 	position: relative;
 	background-color: #fd9945;
 	overflow: hidden;
+	text-decoration: none;
 }
 main .container #cta .button:hover a {
     color: #fd9945;

@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: contact
+Template Name: performance
 */
 ?>
 <?php get_header();?>
@@ -8,7 +8,7 @@ Template Name: contact
 <div id="page-title">
 	<div id="page-title-inner">
 		<h1 class=""><?php echo get_the_title(); ?></h1>
-		<span>contact</span>
+		<span>PRIVACY POLICY</span>
 	</div>
 	</div>
 <?php if (have_posts()): ?>

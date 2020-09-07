@@ -37,6 +37,14 @@
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/overview.css">
 <?php elseif(is_page('contact')): ?>
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/contact.css">
+<?php elseif(is_page('kakunin')): ?>
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/contact-kakunin.css">
+<?php elseif(is_page('error')): ?>
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/contact-error.css">
+<?php elseif(is_page('kanryo')): ?>
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/contact-kanryo.css">
+<?php elseif(is_page('privacy')): ?>
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/privacy.css">
 <?php endif; ?>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.typekit.net/tpe3qzy.css">
@@ -82,7 +90,7 @@
 		<li><a href="<?php echo esc_url( home_url( '/csr/' ) ); ?>">CSR展開 CSR</a></li>
 		<li><a href="<?php echo esc_url( home_url( '/promotion/' ) ); ?>">環境プロモーション PROMOTION</a></li>
 		<li><a href="<?php echo esc_url( home_url( '/collaboration/' ) ); ?>">学生連携 COLLABORATION</a></li>
-		<li><a href="<?php echo( get_template_directory_uri() ); ?>">環境教育 EDUCATION</a></li>
+		<li><a href="<?php echo esc_url( home_url( '/education/' ) ); ?>">環境教育 EDUCATION</a></li>
 		<li><a href="<?php echo esc_url( home_url( '/management/' ) ); ?>">イベント運営 MANAGEMENT</a></li>
 		<li><a href="<?php echo esc_url( home_url( '/performance/' ) ); ?>">活動実績 PERFORMANCE</a></li>
 	</ul>

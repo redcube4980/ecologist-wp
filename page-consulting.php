@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: lecture
+Template Name: consulting
 */
 ?>
 <?php get_header();?>

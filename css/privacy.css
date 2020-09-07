@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*******************************
+mw_wp_form
+*******************************/
+#mw_wp_form_mw-wp-form-55{
+	width: 100%;
+}
+main .container {
+    padding: 100px 0;
+	width: 405px;
+}
+main .container #page-content::before {
+    content: "";
+    position: absolute;
+    width: 405px;
+    height: 50px;
+    top: 0;
+    background-image: url("../images/top-about-overline.svg");
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#page-title-inner {
+    text-align: center;
+}
+main h1 {
+    font-weight: bold;
+    color: #4a9143;
+    letter-spacing: 5px;
+    line-height: 1;
+    font-size: 20px;
+	margin: 0 0 20px;
+}
+main span {
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: #513813;
+}
+#page-content li {
+    margin-bottom: 50px;
+}
+h3 {
+    font-weight: bold;
+    color: #418b8e;
+    font-size: 20px;
+}
+body p{
+	text-align: justify;
+    margin-top: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+@media screen and (min-width: 600px) {
+main h1 {
+    font-size: 24px;
+}
+main span {
+    font-size: 18px;
+}
+main .container {
+    width: 600px;
+}
+main .container #page-content::before {
+    width: 600px;
+    height: 50px;
+}
+h3 {
+    font-size: 20px;
+}
+body p {
+    font-size: 16px;
+}
+}
+@media screen and (min-width: 1024px) {
+main h1 {
+    font-size: 38px;
+}
+main span {
+    font-size: 20px;
+}
+main .container {
+	width: 960px;
+}
+main .container #page-content::before {
+    width: 960px;
+    height: 50px;
+}
+h3 {
+    font-size: 28px;
+}
+body p {
+    font-size: 1.6rem;
+}
+}
+@media screen and (min-width: 1281px) {
+main h1 {
+    font-size: 38px;
+}
+main span {
+    font-size: 20px;
+}
+main .container {
+	width: 960px;
+}
+main .container #page-content::before {
+    width: 960px;
+    height: 50px;
+}
+h3 {
+    font-size: 28px;
+}
+body p {
+    font-size: 1.6rem;
+}
+}
