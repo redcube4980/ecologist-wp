@@ -130,28 +130,35 @@ main .container #page-content-inner ul li {
 main .container #page-content-inner li .page-content-inner-block {
     position: relative;
 }
+main .container #page-content-inner .page-contnt-subtitle-inner-bg-text {
+    position: absolute;
+    width: 280px;
+    height: 50%;
+    z-index: 2;
+    top: 50%;
+}
 main .container #page-content-inner li .page-collabo-content-image {
     width: 280px;
 }
 .container #page-content-inner li .page-content-inner-bg-sentences01 {
     position: absolute;
     width: 230px;
-    top: 60%;
-    translate: -50%;
+    top: 45%;
     left: 50%;
+	transform: translate(-50%,-50%);
 }
 main .container #page-content-inner li .page-content-inner-bg-sentences02 {
     position: absolute;
 	width: 180px;
-	top: 60%;
-	translate: -50%;
+	top: 45%;
+	transform: translate(-50%,-50%);
     left: 50%;
 }
 main .container #page-content-inner li .page-content-inner-bg-sentences03 {
     position: absolute;
 	width: 220px;
-	top: 60%;
-	translate: -50%;
+	top: 45%;
+	transform: translate(-50%,-50%);
     left: 50%;
 }
 main .container #page-content-inner li .page-content-inner-block .page-content-icon {
@@ -465,27 +472,6 @@ main .container #page-content-inner li {
 main .container #page-content-inner li .page-collabo-content-image {
     width: 280px;
 }
-.container #page-content-inner li .page-content-inner-bg-sentences01 {
-    position: absolute;
-    width: 230px;
-    top: 60%;
-    translate: -50%;
-    left: 50%;
-}
-main .container #page-content-inner li .page-content-inner-bg-sentences02 {
-    position: absolute;
-	width: 180px;
-	top: 60%;
-	translate: -50%;
-    left: 50%;
-}
-main .container #page-content-inner li .page-content-inner-bg-sentences03 {
-    position: absolute;
-	width: 220px;
-	top: 60%;
-	translate: -50%;
-    left: 50%;
-}
 main .container #page-content-inner li .page-content-inner-block .page-content-icon {
     width: 80px;
 }
@@ -713,18 +699,6 @@ main .container #page-content-inner li {
 main .container #page-content-inner li .page-collabo-content-image {
     width: 280px;
 }
-main .container #page-content-inner li .page-content-inner-bg-sentences01 {
-	width: 230px;
-	top: 60%;
-}
-main .container #page-content-inner li .page-content-inner-bg-sentences02 {
-	width: 180px;
-	top: 60%;
-}
-main .container #page-content-inner li .page-content-inner-bg-sentences03 {
-	width: 220px;
-	top: 60%;
-}
 main .container #page-content-inner li .page-content-inner-block .page-content-icon {
     width: 80px;
 }
@@ -946,18 +920,6 @@ main .container #page-content-inner li {
 }
 main .container #page-content-inner li .page-collabo-content-image {
     width: 280px;
-}
-main .container #page-content-inner li .page-content-inner-bg-sentences01 {
-	width: 230px;
-	top: 60%;
-}
-main .container #page-content-inner li .page-content-inner-bg-sentences02 {
-	width: 180px;
-	top: 60%;
-}
-main .container #page-content-inner li .page-content-inner-bg-sentences03 {
-	width: 220px;
-	top: 60%;
 }
 main .container #page-content-inner li .page-content-inner-block .page-content-icon {
     width: 80px;

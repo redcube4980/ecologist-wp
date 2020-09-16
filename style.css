@@ -1,4 +1,4 @@
-@charset "UTF-8";
+2@charset "UTF-8";
 /*
 Theme Name: 日本エコロジスト支援協会
 Theme URI: 
@@ -195,10 +195,10 @@ a[href^="tel"]{
     color:inherit;
 }
 a {
-	-webkit-tap-highlight-color:rgba(0,0,0,0);
-	color: #005499;
-	transition: all 1s;
-	opacity: 1;
+    color: #005499;
+    transition: all 1s;
+    opacity: 1;
+    text-decoration: none;
 }
 a:hover {
 	transition: all 1s;

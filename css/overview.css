@@ -733,6 +733,7 @@ person-box {
 }
 #page-performance-block03 {
     padding: 50px 0;
+	position: relative;
 }
 #page-performance-block03 h3 {
     margin-bottom: 50px;
@@ -766,13 +767,14 @@ person-box {
 
 #page-performance-block04 {
     padding: 100px 0;
+	position: relative;
 }
 #page-performance-block04::before {
     content: "";
     position: absolute;
     width: 405px;
     height: 50px;
-    top: 83.3%;
+    top: 0;
     background-image: url("../images/top-about-overline.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -809,7 +811,6 @@ person-box {
 @media only screen and (min-width: 600px) {
 main {
     height: auto;
-    padding-top: 170px;
     padding-bottom: 30px;
     max-width: 600px;
 }
@@ -1038,7 +1039,6 @@ main .tab::after {
 }
 #page-performance-block04::before {
     width: 600px;
-    top: 82%;
 }
 .page-performance-block04-list ul {
     margin: 0 auto;
@@ -1060,6 +1060,7 @@ main .tab::after {
 @media only screen and (min-width: 1024px) {
 main {
     max-width: 960px;
+	height: 5100px;
 }
 main #page-title-inner{
     width: 862px;
@@ -1131,6 +1132,7 @@ main #performance-button {
     display: flex;
     flex-flow: row wrap;
 	justify-content: space-between;
+    margin: 0;
 }
 main .tab {
     padding: 100px 0;
@@ -1397,6 +1399,7 @@ person-box {
 @media only screen and (min-width: 1281px) {
 main {
     max-width: 960px;
+	height: 5300px;
 }
 main #page-title-inner{
     width: 862px;
@@ -1700,8 +1703,12 @@ person-box {
 .position-list ul li:last-child {
 	margin-bottom: 0;
 }
+#page-performance-block04 {
+    padding: 200px 0;
+}
 #page-performance-block04::before {
     width: 960px;
+	top: 0;
 }
 .page-performance-block03-list {
     width: 960px;
