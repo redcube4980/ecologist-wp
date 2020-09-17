@@ -114,7 +114,7 @@ main .container #page-content {
 main .container #page-content::before{
 	content: "";
 	position: absolute;
-	width: 405px;
+	width: 100%;
 	height: 50px;
 	top:0;
 	background-image: url("../images/top-about-overline.svg");
@@ -126,7 +126,7 @@ main .container #page-content::before{
 main .container #page-content::after{
 	content: "";
 	position: absolute;
-	width: 405px;
+	width: 100%;
 	height: 50px;
 	bottom:0;
 	background-image: url("../images/top-about-underline.svg");
@@ -139,6 +139,7 @@ main .container #page-content-inner ul {
     flex-flow: column;
     display: flex;
     justify-content: space-between;
+	padding: 0;
 }
 main .container #page-content-inner li {
     margin-bottom: 50px;
@@ -259,7 +260,7 @@ main .container #performance ul li {
 	display: flex;
 	flex-flow: column;
 	margin-bottom: 65px;
-	width: 405px;
+	width: 100%;
 }
 main .page-performance-block {
 	width: 444px;
@@ -330,14 +331,14 @@ main .container #performance ul li .page-performance-title-block h2 {
 	flex-flow: row;
 	margin-top: 10px;
 	align-items: center;
-	width: 405px;
+	width: 100%;
 }
 .page-performance-centence {
     font-size: 13px;
     line-height: 1.6;
     text-align: justify;
     margin: 10px 0 0 0px;
-    width: 405px;
+    width: 100%;
 }
 .page-performance-centence p {
     font-size: 13px;
@@ -510,7 +511,7 @@ main .container #cta .button a:hover span::after {
 main {
    height: auto;
    padding-bottom: 30px;
-   width: 600px;
+   max-width: 600px;
 }
 main #page-title-inner{
     width: 600px;
@@ -562,14 +563,6 @@ main .container #page-content-inner {
 main .container #page-content {
     padding: 50px 0;
     margin: 0 auto 50px;
-}
-main .container #page-content::before{
-	width: 600px;
-	height: 50px;
-}
-main .container #page-content::after{
-	width: 600px;
-	height: 50px;
 }
 main .container #page-content-inner ul {
     flex-flow: column;
@@ -815,7 +808,7 @@ main .container #cta .button a span::after {
 }
 @media only screen and (min-width: 1024px) {
 main {
-    width: 960px;
+    max-width: 100%;
 }
 main #page-title{
 	margin: 0 auto;
@@ -877,12 +870,6 @@ main .container #page-content {
 	height: auto;
 	padding: 100px 0;
 	margin: 0 auto 136px;
-}
-main .container #page-content::before{
-	width: 960px;
-}
-main .container #page-content::after{
-	width: 960px;
 }
 main .container #page-content-inner ul {
     flex-flow: nowrap;
@@ -1193,7 +1180,6 @@ main .container #cta .button a:hover span::after {
 }
 @media only screen and (min-width: 1281px) {
 main {
-    width: 960px;
 }
 main #page-title{
 	margin: 0 auto;
@@ -1258,12 +1244,6 @@ main .container #page-content {
 	height: auto;
 	padding: 100px 0;
 	margin: 0 auto 136px;
-}
-main .container #page-content::before{
-	width: 960px;
-}
-main .container #page-content::after{
-	width: 960px;
 }
 main .container #page-content-inner ul {
     flex-flow: nowrap;

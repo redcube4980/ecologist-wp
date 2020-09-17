@@ -94,7 +94,7 @@ main .container #page-content {
 main .container #page-content::before{
 	content: "";
 	position: absolute;
-	width: 405px;
+	width: 100%;
 	height: 50px;
 	top:0;
 	background-image: url("../images/top-about-overline.svg");
@@ -106,7 +106,7 @@ main .container #page-content::before{
 main .container #page-content::after{
 	content: "";
 	position: absolute;
-	width: 405px;
+	width: 100%;
 	height: 50px;
 	bottom:0;
 	background-image: url("../images/top-about-underline.svg");
@@ -451,14 +451,6 @@ main .container #page-content {
 	padding: 100px 0;
 	margin: 0 auto 136px;
 }
-main .container #page-content::before{
-	width: 600px;
-	height: 50px;
-}
-main .container #page-content::after{
-	width: 600px;
-	height: 50px;
-}
 main .container #page-content-inner ul {
 	flex-flow: column;
 	display: flex;
@@ -616,7 +608,7 @@ main .container #cta .button a span::after {
 main {
     height: auto;
     padding-bottom: 30px;
-    max-width: 100%;
+    width: 100%;
 	padding-top: 0;
 }
 main #page-title-inner{
@@ -670,14 +662,6 @@ main .container #page-content {
     flex-flow: column;
 	padding: 100px 0;
 	margin: 0 auto 136px;
-}
-main .container #page-content::before{
-	width: 960px;
-	height: 50px;
-}
-main .container #page-content::after{
-	width: 960px;
-	height: 50px;
 }
 main .container #page-content h3 {
     font-size: 24px;
@@ -892,14 +876,6 @@ main .container #page-content {
     flex-flow: column;
 	padding: 100px 0;
 	margin: 0 auto 136px;
-}
-main .container #page-content::before{
-	width: 960px;
-	height: 50px;
-}
-main .container #page-content::after{
-	width: 960px;
-	height: 50px;
 }
 main .container #page-content h3 {
     font-size: 24px;
