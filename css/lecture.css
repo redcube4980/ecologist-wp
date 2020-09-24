@@ -262,8 +262,12 @@ main .container #page-content-inner li p.page-content-inner-text{
 	line-height: 1.6;
 	margin: 10px 0 0;
 }
+main .page-performance-centence-image-sp {
+	display: block;
+	margin: 50px 0;
+}
 main .page-performance-centence-image {
-    margin: 50px 0 0;
+    display: none;
 }
 main .container #performance #performance-title {
     background-color: #418b8e;
@@ -394,10 +398,14 @@ main .container #cta h2 {
     color: #f04f4c;
     letter-spacing: 0;
 }
-main .container #cta img{
-	height: 54px;
-	width: 80%;
-	margin: 20px auto 30px;
+main .page-cta-centence-sp {
+   height: auto;
+    width: 80%;
+    margin: 20px auto 30px;
+	display: block;
+}
+main .page-cta-centence {
+    display: none;
 }
 main .container #cta .button {
     width: 100%;
@@ -642,10 +650,6 @@ main .container #cta {
 main .container #cta h2{
 	font-size: 24px;
 }
-main .container #cta img {
-    height: auto;
-    width: 600px;
-}
 main .container #cta .button{
 	width: 100%;
 	max-width: 320px;
@@ -686,6 +690,13 @@ main {
 }
 main .container {
     width: 960px;
+}
+main .page-performance-centence-image-sp{
+	display: none;
+}
+main .page-performance-centence-image{
+	display: block;
+	margin: 50px 0;
 }
 main #page-title-inner-icon {
 	left: 200px;
@@ -812,10 +823,14 @@ main .container #performance ul li p.page-performance-subtitle {
 main .container #cta {
 	margin: 110px auto auto;
 }
-main .container #cta img{
-	height: 54px;
-	width: auto;
-	margin: 20px auto 30px;
+main .page-cta-centence-sp {
+   display: none;
+}
+main .page-cta-centence {
+    height: 54px;
+    width: auto;
+    margin: 20px auto 30px;
+	display: block;
 }
 main .container #cta .button{
 	width: 100%;
@@ -961,9 +976,6 @@ main .container #page-content-inner li p.page-content-inner-text{
 	line-height: 1.6;
 	margin: 10px 0 0;
 }
-main .page-performance-centence-image {
-    margin: 50px 0 0;
-}
 main .container #performance #performance-title {
     padding: 13px;
 }
@@ -1031,11 +1043,6 @@ main .container #performance ul li p.page-performance-subtitle {
 main .container #cta h2{
 	font-size: 24px;
     letter-spacing: 4px;
-}
-main .container #cta img{
-	height: 54px;
-	width: auto;
-	margin: 20px auto 30px;
 }
 main .container #cta .button{
 	width: 100%;

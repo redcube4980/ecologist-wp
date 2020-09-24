@@ -17,9 +17,9 @@ main #page-title-inner{
 main #page-title-inner-icon {
     position: absolute;
     z-index: 2;
-    left: 40px;
+    left: 28px;
     top: 20px;
-    width: 70px;
+    width: 16%;
     transform: scale(1);
     transition: all 1s;
 }
@@ -41,9 +41,9 @@ main #page-title-inner-icon:hover {
 main #page-title-aminal01 {
     position: absolute;
     z-index: 2;
-    right: 60px;
-    top: 0;
-    width: 70px;
+    right: 40px;
+    top: 20px;
+    width: 16%;
 	transform:scale(1);
 	transition: all 1s;
 	cursor: default;
@@ -66,9 +66,9 @@ main #page-title-aminal01:hover {
 main #page-title-aminal02 {
     position: absolute;
     z-index: 2;
-    left: 60px;
+    left: 28px;
     bottom: 10px;
-    width: 60px;
+    width: 12%;
     transform: scale(1);
     transition: all 1s;
     cursor: default;
@@ -90,9 +90,9 @@ main #page-title-aminal02:hover {
 main #page-title-aminal03 {
     position: absolute;
     z-index: 2;
-    right: 60px;
+    right: 40px;
     bottom: 20px;
-    width: 70px;
+    width: 18%;
     transform: scale(1);
     transition: all 1s;
 }
@@ -125,14 +125,14 @@ main #page-title-inner-bg-text{
 	flex-flow: column;
 }
 main #page-title-inner-bg h1 {
-    font-size: 20px;
+    font-size: 4vw;
     font-weight: bold;
     color: #4a9143;
     letter-spacing: 5px;
     line-height: 1;
 }
 main #page-title-inner-bg span {
-    font-size: 14px;
+    font-size: 3vw;
     color: #513813;
     letter-spacing: 2px;
     font-weight: bold;
@@ -140,10 +140,10 @@ main #page-title-inner-bg span {
     margin-bottom: 10px;
 }
 main #page-title-inner-bg-sentences {
-    height: 40px;
+    height: 11vw;
 }
 main .container h3 {
-    font-size: 18px;
+    font-size: 5vw;
     font-weight: bold;
     color: #4a9143;
     letter-spacing: 5px;
@@ -162,7 +162,7 @@ main .container #page-content {
 	height: auto;
 	background-blend-mode: multiply;
 	position: relative;
-	padding: 50px 0;
+	padding: 100px 0 50px;
 	margin: 0 auto 50px;
 }
 main .container #page-content::before{
@@ -298,7 +298,7 @@ main .container #page-content-inner li .page-content-inner-block .page-content-i
 	mix-blend-mode: multiply;
 }
 main .container #page-content-inner li p.page-content-inner-text{
-	font-size: 18px;
+	font-size: 3.6vw;
 	font-weight: bold;
 	color: #000;
 	letter-spacing: 5px;
@@ -316,7 +316,7 @@ main .container #performance #performance-title {
     text-align: center;
 }
 main .container #performance #performance-title span{
-	font-size: 11px;
+	font-size: 70%;
 }
 .br-sp {
     display: block;
@@ -329,7 +329,7 @@ main .container #performance ul {
 	margin-top: 50px;
 }
 main .container #performance ul li {
-    width: 444px;
+    width: 100%;
     height: auto;
 	display: flex;
 	flex-flow: column;
@@ -353,7 +353,7 @@ main .container #performance ul li .page-performance-title-block img.page-perfor
 	height: 110px;
 }
 main .container #performance ul li .page-performance-title-block h2 {
-    font-size: 20px;
+    font-size: 4vw;
     font-weight: bold;
     color: #418b8e;
     letter-spacing: 3px;
@@ -365,7 +365,7 @@ main .container #performance ul li .page-performance-image {
 	margin: 0 auto;
 }
 main .container #performance ul li h3 {
-    font-size: 20px;
+    font-size: 5vw;
     font-weight: bold;
     color: #418b8e;
     letter-spacing: 4px;
@@ -375,7 +375,7 @@ main .container #performance ul li h3 {
 	line-height: 1.2;
 }
 main .container #performance ul li p.page-performance-subtitle {
-    font-size: 14px;
+    font-size: 3vw;
     line-height: 1.6;
     text-align: justify;
 	margin-top: 10px;
@@ -399,7 +399,7 @@ main .container #cta img{
 	margin: 20px auto 30px;
 }
 main .container #cta .button{
-	width: 60%;
+	width: 100%;
 	height: auto;
 	transition: background-color 2s;
 	display: block;
@@ -443,8 +443,8 @@ main .container #cta .button:hover::before {
 main .container #cta .button a{
 	width: 100%;
 	height: auto;
-	font-size: 15px;
-	max-width: 320px;
+	font-size: 4vw;
+	max-width: 360px;
 	color: #fff;
 	display: block;
 	margin: 0 auto;
