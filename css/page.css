@@ -10,7 +10,7 @@ main #page-title{
 main #page-title-inner{
     display: block;
     position: relative;
-    width: 435px;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
 }
@@ -23,6 +23,16 @@ main #page-title-inner-icon {
     transform: scale(1);
     transition: all 1s;
 }
+body.Win main #page-title-inner-icon {
+    position: absolute;
+    z-index: 2;
+    left: 13px;
+    bottom: 20px;
+    width: 70px;
+    transform: scale(1);
+    transition: all 1s;
+	top: 5px;
+}
 main #page-title-inner-icon:hover {
     transform-origin: center;
     transform: scale(1.2);
@@ -32,6 +42,16 @@ main #page-title-aminal01 {
     position: absolute;
     z-index: 2;
     right: 60px;
+    top: 0;
+    width: 70px;
+	transform:scale(1);
+	transition: all 1s;
+	cursor: default;
+}
+body.Win main #page-title-aminal01 {
+    position: absolute;
+    z-index: 2;
+    right: 13px;
     top: 0;
     width: 70px;
 	transform:scale(1);
@@ -53,6 +73,15 @@ main #page-title-aminal02 {
     transition: all 1s;
     cursor: default;
 }
+body.Win main #page-title-aminal02 {
+    position: absolute;
+    z-index: 2;
+    left: 13px;
+    bottom: 10px;
+    width: 70px;
+    transform: scale(1);
+    transition: all 1s;
+}
 main #page-title-aminal02:hover {
 	transform-origin:center;
 	transform:scale(1.2);
@@ -67,6 +96,15 @@ main #page-title-aminal03 {
     transform: scale(1);
     transition: all 1s;
 }
+body.Win main #page-title-aminal03 {
+	position: absolute;
+    z-index: 2;
+    right: 13px;
+    bottom: 20px;
+    width: 70px;
+    transform: scale(1);
+    transition: all 1s;
+}
 main #page-title-aminal03:hover {
 	transform-origin:center;
 	transform:scale(1.2);
@@ -76,7 +114,7 @@ main #page-title-inner-bg{
     position: relative;
 }
 #page-title-inner-bg-image {
-    width: 400px;
+    width: 100%;
 }
 main #page-title-inner-bg-text{
 	position: absolute;
@@ -130,7 +168,7 @@ main .container #page-content {
 main .container #page-content::before{
 	content: "";
 	position: absolute;
-	width: 405px;
+	width: 100%;
 	height: 50px;
 	top:0;
 	background-image: url("../images/top-about-overline.svg");
@@ -142,7 +180,7 @@ main .container #page-content::before{
 main .container #page-content::after{
 	content: "";
 	position: absolute;
-	width: 405px;
+	width: 100%;
 	height: 50px;
 	bottom:0;
 	background-image: url("../images/top-about-underline.svg");
@@ -513,15 +551,6 @@ main .container #page-content {
 	padding: 100px 0;
 	margin: 0 auto 136px;
 }
-main .container #page-content::before{
-	width: 600px;
-	height: 50px;
-}
-main .container #page-content::after{
-	width: 600px;
-	height: 50px;
-}
-
 main .container #page-content-inner {
     width: 350px;
     margin-top: 30px;
@@ -701,14 +730,6 @@ main .container #page-content {
 	padding: 100px 0;
 	margin: 0 auto 136px;
 }
-main .container #page-content::before{
-	width: 960px;
-	height: 50px;
-}
-main .container #page-content::after{
-	width: 960px;
-	height: 50px;
-}
 main .container #page-content-inner {
     width: 100%;
     margin-top: 50px;
@@ -887,14 +908,6 @@ main .container h3{
 main .container #page-content {
 	padding: 100px 0;
 	margin: 0 auto 136px;
-}
-main .container #page-content::before{
-	width: 960px;
-	height: 50px;
-}
-main .container #page-content::after{
-	width: 960px;
-	height: 50px;
 }
 main .container #page-content-inner {
     width: 100%;

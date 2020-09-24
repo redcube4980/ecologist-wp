@@ -10,7 +10,7 @@ main #page-title{
 main #page-title-inner{
     display: block;
     position: relative;
-    width: 435px;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
 }
@@ -47,7 +47,7 @@ main #page-title-inner-bg{
     position: relative;
 }
 #page-title-inner-bg-image {
-    width: 400px;
+    width: 100%;
 }
 main #page-title-inner-bg-text{
 	position: absolute;
@@ -280,12 +280,7 @@ main .container #performance ul li:nth-last-child(2) {
 	margin-bottom: 0;
 }
 main .container #performance ul li .page-performance-title-block {
-    display: flex;
-	justify-content: flex-start;
-	flex-flow: column;
-	align-items: flex-start;
-	height: 0px;
-	width: 200px;
+   height: auto;
 }
 main .container #performance ul li .page-performance-title-block img{
 	height: 120px;
@@ -309,7 +304,7 @@ main .container #performance ul li .page-performance-right-block {
     align-items: flex-start;
 }
 main .container #performance ul li .page-performance-image {
-   width: 205px;
+   width: 100%;
 }
 .page-performance-ex {
     font-size: 8px;
@@ -466,9 +461,6 @@ main #page-title-aminal03 {
     bottom: 30px;
     width: 130px;
 }
-main #page-title-inner-bg-image {
-    width: 600px;
-}
 main #page-title-inner-bg-text{
     top: 40px;
 }
@@ -536,23 +528,6 @@ main .container #performance ul li {
 	width: 100%;
 	height: 180px;
 	margin-bottom: 65px;
-}
-main .container #performance ul li .page-performance-title-block {
-	height: 0px;
-	width: 200px;
-}
-main .container #performance ul li .page-performance-title-block img{
-	height: 120px;
-}
-main .container #performance ul li .page-performance-title-block img.page-performance-title-aichi{
-	height: 110px;
-}
-main .container #performance ul li .page-performance-title-block h2 {
-    font-size: 24px;
-	letter-spacing: -0.6px;
-	margin: 0 0 0 0px;
-	line-height: 1.2;
-	width: 200px;
 }
 main .container #performance ul li .page-performance-image {
     width: 220px;
@@ -647,9 +622,6 @@ main #page-title-aminal03 {
     bottom: 55px;
     width: 200px;
 }
-main #page-title-inner-bg-image {
-    width: 861px;
-}
 main #page-title-inner-bg-text{
     width: 100%;
     top: 80px;
@@ -738,23 +710,6 @@ main .container #performance ul li:nth-last-child(2) {
 }
 main .container #performance ul li:nth-last-child(3){
 	margin-bottom: 0;
-}
-main .container #performance ul li .page-performance-title-block {
-	height: 0px;
-	width: 200px;
-}
-main .container #performance ul li .page-performance-title-block img{
-	height: 120px;
-}
-main .container #performance ul li .page-performance-title-block img.page-performance-title-aichi{
-	height: 110px;
-}
-main .container #performance ul li .page-performance-title-block h2 {
-    font-size: 24px;
-	letter-spacing: -0.6px;
-	margin: 0 0 0 0px;
-	line-height: 1.2;
-	width: 220px;
 }
 main .container #performance ul li .page-performance-image {
     width: 220px;
@@ -848,9 +803,6 @@ main #page-title-aminal03 {
     bottom: 55px;
     width: 200px;
 }
-main #page-title-inner-bg-image {
-    width: 861px;
-}
 main #page-title-inner-bg-text{
     width: 100%;
     top: 80px;
@@ -939,23 +891,6 @@ main .container #performance ul li:nth-last-child(2) {
 }
 main .container #performance ul li:nth-last-child(3){
 	margin-bottom: 0;
-}
-main .container #performance ul li .page-performance-title-block {
-	height: 0px;
-	width: 200px;
-}
-main .container #performance ul li .page-performance-title-block img{
-	height: 120px;
-}
-main .container #performance ul li .page-performance-title-block img.page-performance-title-aichi{
-	height: 110px;
-}
-main .container #performance ul li .page-performance-title-block h2 {
-    font-size: 24px;
-	letter-spacing: -0.6px;
-	margin: 0 0 0 0px;
-	line-height: 1.2;
-	width: 220px;
 }
 main .container #performance ul li .page-performance-image {
     width: 220px;

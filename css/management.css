@@ -47,7 +47,7 @@ main #page-title-inner-bg{
     position: relative;
 }
 #page-title-inner-bg-image {
-    width: 400px;
+    width: 100%;
 }
 main #page-title-inner-bg-text{
 	position: absolute;
@@ -144,13 +144,13 @@ main .container #page-content-inner li .page-content-inner-block {
 }
 .page-content-text-box {
     display: flex;
-    width: 405px;
+    width: 100%;
     justify-content: space-between;
     bottom: 55px;
     position: inherit;
 }
 .content-image-circle {
-    width: 95px;
+    width: 90%;
     vertical-align: bottom;
 	transform: translateY(0px);
 	transition-duration: 0.5s;
@@ -510,9 +510,6 @@ main #page-title-aminal03 {
 main #page-title-inner-bg{
     position: relative;
 }
-#page-title-inner-bg-image {
-    width: 600px;
-}
 main #page-title-inner-bg-text{
     top: 40px;
 }
@@ -776,9 +773,6 @@ main #page-title-aminal03 {
 main #page-title-inner-bg{
     position: relative;
 }
-#page-title-inner-bg-image {
-    width: 861px;
-}
 main #page-title-inner-bg-text{
     width: 100%;
     top: 80px;
@@ -1035,9 +1029,6 @@ main #page-title-aminal03 {
     right: 60px;
 	bottom: 50px;
 	width: 111px;
-}
-#page-title-inner-bg-image {
-    width: 861px;
 }
 main #page-title-inner-bg-text{
     width: 100%;

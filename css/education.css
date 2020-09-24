@@ -60,7 +60,7 @@ main #page-title-inner-bg{
     position: relative;
 }
 #page-title-inner-bg-image {
-    width: 400px;
+    width: 100%;
 }
 main #page-title-inner-bg-text{
 	position: absolute;
@@ -532,9 +532,6 @@ main #page-title-aminal03 {
     right: 50px;
     bottom: 30px;
     width: 130px;
-}
-main #page-title-inner-bg-image {
-    width: 600px;
 }
 main #page-title-inner-bg-text{
     top: 40px;
@@ -1221,9 +1218,6 @@ main #page-title-inner-bg span {
     letter-spacing: 2px;
     margin-top: 5px;
     margin-bottom: 20px;
-}
-main #page-title-inner-bg-image {
-    width: 861px;
 }
 main #page-title-inner-bg-sentences {
     height: 84px;

@@ -24,6 +24,9 @@ main #page-title-inner-icon {
     transition: all 1s;
     cursor: default;
 }
+body.Win main #page-title-inner-icon {
+    top: 0px;
+}
 main #page-title-inner-icon:hover {
     transform-origin: center;
     transform: scale(1.2);
@@ -39,6 +42,9 @@ main #page-title-aminal03 {
     transition: all 1s;
     cursor: default;
 }
+body.Win main #page-title-aminal03 {
+    right: 10px;
+}
 main #page-title-aminal03:hover {
 	transform-origin:center;
 	transform:scale(1.2);
@@ -48,7 +54,7 @@ main #page-title-inner-bg{
     position: relative;
 }
 #page-title-inner-bg-image {
-    width: 400px;
+    width: 100%;
 }
 main #page-title-inner-bg-text{
 	position: absolute;
@@ -148,7 +154,7 @@ main .page-content-inner-text {
 }
 #performance-button {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column;
     align-items: center;
     margin-bottom: 30px;
     width: 100%;
@@ -163,7 +169,7 @@ main .page-content-inner-text {
 			ボタン1
 *******************************/
 .active .performance-button-name01 {
-    width: 120px;
+    width: 50%;
 	height: auto;
 	border-radius: 31px;
 	border: 2px solid #fff;
@@ -172,6 +178,7 @@ main .page-content-inner-text {
 	flex-flow: row;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 5px;
 }
 .active .btn-link01 {
     width: 100%;
@@ -188,7 +195,7 @@ main .page-content-inner-text {
 	background-color: #418b8e;
 }
 .performance-button-name01 {
-    width: 120px;
+    width: 50%;
 	height: auto;
 	border-radius: 31px;
 	border: 2px solid #418b8e;
@@ -202,6 +209,7 @@ main .page-content-inner-text {
 	align-items: center;
 	transform-origin: 0 0 0;
 	cursor: pointer;
+	margin-bottom: 5px;
 }
 .performance-button-name01:hover {
     border-radius: 31px;
@@ -271,7 +279,7 @@ main .page-content-inner-text {
 			ボタン2
 *******************************/
 .active .performance-button-name02 {
-    width: 120px;
+    width: 50%;
 	height: auto;
 	border-radius: 31px;
 	border: 2px solid #fff;
@@ -280,6 +288,7 @@ main .page-content-inner-text {
 	flex-flow: row;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 5px;
 }
 .active .btn-link02 {
     width: 100%;
@@ -296,7 +305,7 @@ main .page-content-inner-text {
 	background-color: #418b8e;
 }
 .performance-button-name02 {
-    width: 120px;
+    width: 50%;
 	height: auto;
 	border-radius: 31px;
 	border: 2px solid #418b8e;
@@ -310,6 +319,7 @@ main .page-content-inner-text {
 	align-items: center;
 	transform-origin: 0 0 0;
 	cursor: pointer;
+	margin-bottom: 5px;
 }
 .performance-button-name02:hover {
     border-radius: 31px;
@@ -379,7 +389,7 @@ main .page-content-inner-text {
 			ボタン3
 *******************************/
 .active .performance-button-name03 {
-    width: 120px;
+    width: 50%;
 	height: auto;
 	border-radius: 31px;
 	border: 2px solid #fff;
@@ -388,6 +398,7 @@ main .page-content-inner-text {
 	flex-flow: row;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 5px;
 }
 .active .btn-link03 {
     width: 100%;
@@ -404,7 +415,7 @@ main .page-content-inner-text {
 	background-color: #418b8e;
 }
 .performance-button-name03 {
-    width: 120px;
+    width: 50%;
 	height: auto;
 	border-radius: 31px;
 	border: 2px solid #418b8e;
@@ -418,6 +429,7 @@ main .page-content-inner-text {
 	align-items: center;
 	transform-origin: 0 0 0;
 	cursor: pointer;
+	margin-bottom: 5px;
 }
 .performance-button-name03:hover {
     border-radius: 31px;
@@ -901,9 +913,6 @@ main #page-title-inner-bg span {
 main #page-title-inner-bg-sentences {
     height: 40px;
 }
-main #page-title-inner-bg-image {
-    width: 600px;
-}
 main .page-content-inner-text{
 	font-size: 10px;
 }
@@ -915,16 +924,18 @@ main .container #page-content {
     font-size: 18px;
 }
 #performance-button {
-    flex-flow: wrap;
+    flex-flow: row wrap;
 	margin-bottom: 100px;
 }
 main .performance-button-name01.active {
-	width: 180px;
+	width: 30%;
 	height: auto;
+	margin-bottom: 0;
 }
 main .performance-button-name01 {
-	width: 180px;
+	width: 30%;
 	height: auto;
+	margin-bottom: 0;
 }
 main .performance-button-name01 a {
     font-size: 15px;
@@ -933,12 +944,14 @@ main .active .btn-link01 {
     font-size: 15px;
 }
 main .performance-button-name02 .active {
-	width: 180px;
+	width: 30%;
 	height: auto;
+	margin-bottom: 0;
 }
 main .performance-button-name02 {
-	width: 180px;
+	width: 30%;
 	height: auto;
+	margin-bottom: 0;
 }
 main .performance-button-name02 a {
     font-size: 15px;
@@ -947,12 +960,14 @@ main .active .btn-link02 {
     font-size: 15px;
 }
 main .performance-button-name03 .active {
-	width: 180px;
+	width: 30%;
 	height: auto;
+	margin-bottom: 0;
 }
 main .performance-button-name03 {
-	width: 180px;
+	width: 30%;
 	height: auto;
+	margin-bottom: 0;
 }
 main .performance-button-name03 a {
     font-size: 15px;
@@ -1021,9 +1036,6 @@ main #page-title-aminal03:hover {
 	transform:scale(1.2);
 	transition: all 1s;
 }
-main #page-title-inner-bg-image {
-    width: 861px;
-}
 main #page-title-inner-bg{
     position: relative;
 }
@@ -1060,15 +1072,12 @@ main .page-content-inner-block {
 #tab-content {
 	height: 1500px;
 }
-#performance-button {
-    flex-flow: row wrap;
-}
 main .performance-button-name01.active {
-	width: 300px;
+	width: 30%;
 	height: 50px;
 }
 main .performance-button-name01 {
-	width: 300px;
+	width: 30%;
 	height: 50px;
 }
 main .performance-button-name01 a {
@@ -1078,11 +1087,11 @@ main .active .btn-link01 {
     font-size: 24px;
 }
 main .performance-button-name02 .active {
-	width: 300px;
+	width: 30%;
 	height: 50px;
 }
 main .performance-button-name02 {
-	width: 300px;
+	width: 30%;
 	height: 50px;
 }
 main .performance-button-name02 a {
@@ -1092,11 +1101,11 @@ main .active .btn-link02 {
     font-size: 24px;
 }
 main .performance-button-name03 .active {
-	width: 300px;
+	width: 30%;
 	height: 50px;
 }
 main .performance-button-name03 {
-	width: 300px;
+	width: 30%;
 	height: 50px;
 }
 main .performance-button-name03 a {
@@ -1296,9 +1305,6 @@ main #page-title-aminal03:hover {
 	transform:scale(1.2);
 	transition: all 1s;
 }
-main #page-title-inner-bg-image {
-    width: 861px;
-}
 main #page-title-inner-bg{
     position: relative;
 }
@@ -1332,15 +1338,12 @@ main .page-content-inner-block {
 #tab-content {
 	height: 1500px;
 }
-#performance-button {
-    flex-flow: row wrap;
-}
 main .performance-button-name01.active {
-	width: 300px;
+	width: 30%;
 	height: 50px;
 }
 main .performance-button-name01 {
-	width: 300px;
+	width: 30%;
 	height: 50px;
 }
 main .performance-button-name01 a {
@@ -1350,11 +1353,11 @@ main .active .btn-link01 {
     font-size: 24px;
 }
 main .performance-button-name02 .active {
-	width: 300px;
+	width: 30%;
 	height: 50px;
 }
 main .performance-button-name02 {
-	width: 300px;
+	width: 30%;
 	height: 50px;
 }
 main .performance-button-name02 a {
@@ -1364,11 +1367,11 @@ main .active .btn-link02 {
     font-size: 24px;
 }
 main .performance-button-name03 .active {
-	width: 300px;
+	width: 30%;
 	height: 50px;
 }
 main .performance-button-name03 {
-	width: 300px;
+	width: 30%;
 	height: 50px;
 }
 main .performance-button-name03 a {
