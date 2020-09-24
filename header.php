@@ -49,6 +49,15 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.typekit.net/tpe3qzy.css">
 <?php wp_head(); ?>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178886235-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-178886235-1');
+</script>
 </head>
 <body>
 <div id="wrapper">
@@ -84,6 +93,7 @@
 		</div>
 	</div>
 	<nav id="header-navi">
+    <div class="header-navi">
 	<ul>
 		<li><a href="<?php echo esc_url( home_url( '/lecture/' ) ); ?>">講演依頼 LECTURE</a></li>
 		<li><a href="<?php echo esc_url( home_url( '/consulting/' ) ); ?>">コンサル依頼 CONSULTING</a></li>
@@ -94,5 +104,6 @@
 		<li><a href="<?php echo esc_url( home_url( '/management/' ) ); ?>">イベント運営 MANAGEMENT</a></li>
 		<li><a href="<?php echo esc_url( home_url( '/performance/' ) ); ?>">活動実績 PERFORMANCE</a></li>
 	</ul>
+    </div>
 	</nav>
 </header>
