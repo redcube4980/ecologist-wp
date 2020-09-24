@@ -8,15 +8,15 @@ Template Name: front-page
 <div class="swiper-container">
     <div class="swiper-wrapper">
         <div class="swiper-slide">
-		<a href="#"><img src="<?php echo( get_template_directory_uri() ); ?>/images/top-slider01.png" alt="若者力の伸ばし方活かし方 無限の可能性を秘めた若者たちの力を見つけ、
+		<a href="<?php echo esc_url( home_url( '/collaboration/' ) ); ?>"><img src="<?php echo( get_template_directory_uri() ); ?>/images/top-slider01.png" alt="若者力の伸ばし方活かし方 無限の可能性を秘めた若者たちの力を見つけ、
 引き出し、伸ばす。そして環境保全に活かす方法"></a>
 		</div>
         <div class="swiper-slide">
-		<a href="#"><img src="<?php echo( get_template_directory_uri() ); ?>/images/top-slider02.png" alt="Session GAIA 学生が中心となって愛知県全域の活動をつなぎ、広め、促進する
+		<a href="<?php echo esc_url( home_url( '/performance/' ) ); ?>"><img src="<?php echo( get_template_directory_uri() ); ?>/images/top-slider02.png" alt="Session GAIA 学生が中心となって愛知県全域の活動をつなぎ、広め、促進する
 全く新しい仕組みと仕掛け"></a>
 		</div>
         <div class="swiper-slide">
-		<a href="#"><img src="<?php echo( get_template_directory_uri() ); ?>/images/top-slider03.png" alt="命をつなぐPROJECT 学生ならではの“つなぐ力”を引き出して多様な主体による
+		<a href="<?php echo esc_url( home_url( '/performance/' ) ); ?>"><img src="<?php echo( get_template_directory_uri() ); ?>/images/top-slider03.png" alt="命をつなぐPROJECT 学生ならではの“つなぐ力”を引き出して多様な主体による
 生態系ネットワークを構築"></a>
 		</div>
     </div>
@@ -46,18 +46,7 @@ Template Name: front-page
 			<div id="instagram">
 			<h3>instagram</h3>
 			<div class="sns-block-inner"></div>
-				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
+				<?php dynamic_sidebar( 'sidebar-3' ); ?>
 			</div>
 		</div>
 	</section>

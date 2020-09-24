@@ -10,7 +10,7 @@ main #page-title{
 main #page-title-inner{
     display: block;
     position: relative;
-    width: 435px;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
 }
@@ -289,6 +289,7 @@ main .container #performance .box {
     align-items: center;
 	width: 86px;
 	border-radius: 5px;
+	margin-right: 10px;
 }
 main .container #performance .page-performance-subtitle-01 {
     color: #fff;
@@ -370,11 +371,12 @@ main .container #performance .page-performance-img-block ul {
 	margin-top: 10px;
 }
 .page-performance-img-right {
-    width: 145px;
+    width: auto;
 	margin-bottom: 10px;
 }
 main .container #performance ul li .page-performance-image {
     height: auto;
+	width: 63%;
 }
 main .container #performance ul li h3 {
     font-size: 20px;

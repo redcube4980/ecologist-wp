@@ -10,7 +10,7 @@ main #page-title{
 main #page-title-inner{
     display: block;
     position: relative;
-    width: 435px;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
 }
@@ -157,7 +157,7 @@ main .page-content-inner-text {
     justify-content: space-between;
 }
 .page-performance-bg-img {
-    width: 405px;
+    width: 100%;
 }
 /*******************************
 			ボタン1
