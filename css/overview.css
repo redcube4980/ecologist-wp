@@ -13,16 +13,16 @@ main #page-title{
 main #page-title-inner{
     display: block;
     position: relative;
-    width: 435px;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
 }
 main #page-title-aminal01 {
     position: absolute;
     z-index: 2;
-    right: 50px;
-    top: 40px;
-    width: 60px;
+    right: 20px;
+    top: 65px;
+    width: 18%;
     transform: scale(1);
     transition: all 1s;
     cursor: pointer;
@@ -35,9 +35,9 @@ main #page-title-aminal01:hover {
 main #page-title-aminal02 {
     position: absolute;
     z-index: 2;
-    left: 60px;
+    left: 40px;
     bottom: 20px;
-    width: 50px;
+    width: 10%;
     transform: scale(1);
     transition: all 1s;
     cursor: pointer;
@@ -51,7 +51,7 @@ main #page-title-inner-bg{
     position: relative;
 }
 #page-title-inner-bg-image {
-    width: 400px;
+    width: 100%;
 }
 main #page-title-inner-bg-text{
 	position: absolute;
@@ -62,14 +62,14 @@ main #page-title-inner-bg-text{
 	flex-flow: column;
 }
 main #page-title-inner-bg h1 {
-    font-size: 20px;
+    font-size: 4vw;
     font-weight: bold;
     color: #4a9143;
     letter-spacing: 5px;
     line-height: 1;
 }
 main #page-title-inner-bg span {
-    font-size: 10px;
+    font-size: 3vw;
     color: #513813;
     letter-spacing: 1px;
     font-weight: bold;
@@ -77,10 +77,10 @@ main #page-title-inner-bg span {
     margin-bottom: 10px;
 }
 main #page-title-inner-bg-sentences {
-    height: 30px;
+    height: 7vw;
 }
 main .container h3 {
-    font-size: 18px;
+    font-size: 5vw;
     font-weight: bold;
     color: #4a9143;
     letter-spacing: 5px;
@@ -103,13 +103,14 @@ main .container #page-content {
 	padding: 100px 0;
 	margin: 0 auto 136px;
 }
-main .tab {
+ main .container #tab {
     padding: 100px 0;
+	position: relative;
 }
-main .tab::before {
+ main .container #tab::before {
     content: "";
     position: absolute;
-    width: 405px;
+    width: 100%;
     height: 50px;
     top: 0;
     background-image: url("../images/top-about-overline.svg");
@@ -117,10 +118,10 @@ main .tab::before {
     background-position: center;
     background-size: cover;
 }
-main .tab::after {
+main .container #tab::after {
     content: "";
     position: absolute;
-    width: 405px;
+    width: 100%;
     height: 50px;
     bottom: 0;
     background-image: url("../images/top-about-underline.svg");
@@ -159,7 +160,7 @@ main #performance-button {
     color: #fff;
     display: block;
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 4vw;
     font-weight: bold;
     position: relative;
     overflow: hidden;
@@ -323,6 +324,7 @@ main #performance-button {
     line-height: 2.5;
     position: relative;
     overflow: hidden;
+    font-size: 4vw;
 }
 .performance-button-name02 a {
     width: 100%;
@@ -433,6 +435,7 @@ main #performance-button {
     line-height: 2.5;
     position: relative;
     overflow: hidden;
+    font-size: 4vw;
 }
 .performance-button-name03 a {
     width: 100%;
@@ -545,6 +548,7 @@ main #performance-button {
     line-height: 2.5;
     position: relative;
     overflow: hidden;
+    font-size: 4vw;
 }
 .performance-button-name04 a {
     width: 100%;
@@ -669,7 +673,7 @@ person-box {
 #page-performance-block02::before {
     content: "";
     position: absolute;
-    width: 405px;
+    width: 100%;
     height: 50px;
     top: 0;
     background-image: url("../images/top-about-overline.svg");
@@ -681,7 +685,7 @@ person-box {
 #page-performance-block02::after {
     content: "";
     position: absolute;
-    width: 405px;
+    width: 100%;
     height: 50px;
     bottom: 0;
     background-image: url("../images/top-about-underline.svg");
@@ -718,7 +722,7 @@ person-box {
 	margin: 0 0 0 100px;
 }
 .page-performance-history-text {
-    width: 405px;
+    width: 100%;
 }
 .page-performance-history-text p {
     font-size: 12px;
@@ -747,7 +751,7 @@ person-box {
     width: 150px;
 }
 .position-list h2 {
-    font-size: 15px;
+    font-size: 3vw;
     font-weight: bold;
     color: #418b8e;
 }
@@ -759,7 +763,7 @@ person-box {
 }
 .name-list p {
     margin: 0 0 10px 0;
-	font-size: 12px;
+	font-size: 3vw;
 }
 .position-list ul li:last-child {
 	margin-bottom: 0;
@@ -772,7 +776,7 @@ person-box {
 #page-performance-block04::before {
     content: "";
     position: absolute;
-    width: 405px;
+    width: 100%;
     height: 50px;
     top: 0;
     background-image: url("../images/top-about-overline.svg");
@@ -794,12 +798,12 @@ person-box {
     margin: 0 50px 50px;
 }
 .page-performance-block04-list h2 {
-    font-size: 15px;
+    font-size: 4vw;
     font-weight: bold;
     color: #418b8e;
 }
 .address p {
-    font-size: 12px;
+    font-size: 3vw;
     font-weight: bold;
     margin-top: 10px;
     line-height: 1.3;

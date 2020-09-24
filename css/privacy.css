@@ -7,14 +7,14 @@ mw_wp_form
 #mw_wp_form_mw-wp-form-55{
 	width: 100%;
 }
-main .container {
+main .container #page-content {
+    position: relative;
     padding: 100px 0;
-	width: 405px;
 }
 main .container #page-content::before {
     content: "";
     position: absolute;
-    width: 405px;
+    width: 100%;
     height: 50px;
     top: 0;
     background-image: url("../images/top-about-overline.svg");
@@ -25,6 +25,7 @@ main .container #page-content::before {
 }
 #page-title-inner {
     text-align: center;
+	width: 100%;
 }
 main h1 {
     font-weight: bold;
@@ -48,13 +49,16 @@ main span {
 h3 {
     font-weight: bold;
     color: #418b8e;
-    font-size: 20px;
+    font-size: 4vw;
 }
 body p{
 	text-align: justify;
     margin-top: 10px;
     font-weight: bold;
     letter-spacing: 2px;
+	line-height: 1.5;
+	font-size: 3vw;
+	width: 100%;
 }
 @media screen and (min-width: 600px) {
 main h1 {

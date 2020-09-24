@@ -13,7 +13,7 @@ Template Name: csr
 	<div id="page-title-inner-bg">
 		<div id="page-title-inner-bg-text">
 		<h1 class=""><?php echo get_the_title(); ?></h1>
-		<span>CORPORATE SOCIAL RESPONSIBILITY</span>
+		<span>CSR</span>
 		<img id="page-title-inner-bg-sentences" src="<?php echo get_template_directory_uri(); ?>/images/csr/title-sentences.svg" alt="環境活動団体の支援や、自社緑地を活用した環境イベント、自社緑地の生物多様性向上、イベント協賛等々、企業による環境CSRのお手伝いをいたします。">
 		</div>
 		<img id="page-title-inner-bg-image" src="<?php echo get_template_directory_uri(); ?>/images/csr/title-bg.png" alt="">

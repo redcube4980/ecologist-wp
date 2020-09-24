@@ -58,14 +58,14 @@ main #page-title-inner-bg-text{
 	flex-flow: column;
 }
 main #page-title-inner-bg h1 {
-    font-size: 20px;
+    font-size: 4vw;
     font-weight: bold;
     color: #4a9143;
     letter-spacing: 5px;
     line-height: 1;
 }
 main #page-title-inner-bg span {
-    font-size: 10px;
+    font-size: 3vw;
     color: #513813;
     letter-spacing: 1px;
     font-weight: bold;
@@ -73,10 +73,10 @@ main #page-title-inner-bg span {
     margin-bottom: 10px;
 }
 main #page-title-inner-bg-sentences {
-    height: 30px;
+    height: 9vw;
 }
 main .container h3 {
-    font-size: 18px;
+    font-size: 5vw;
     font-weight: bold;
     color: #4a9143;
     letter-spacing: 5px;
@@ -241,7 +241,7 @@ main .container #page-content-inner li .page-content-inner-block .page-content-i
     width: 230px;
 }
 main .container #page-content-inner li p.page-content-inner-text {
-    font-size: 13px;
+    font-size: 2.9vw;
     font-weight: bold;
     color: #000;
     letter-spacing: 0;
@@ -259,7 +259,7 @@ main .container #performance #performance-title {
     text-align: center;
 }
 main .container #performance #performance-title span{
-	font-size: 14px;
+	font-size: 70%;
 }
 main .container #performance ul {
     display: flex;
@@ -289,7 +289,7 @@ main .container #performance ul li .page-performance-title-block img.page-perfor
 	height: 110px;
 }
 main .container #performance ul li .page-performance-title-block h2 {
-    font-size: 24px;
+    font-size: 18px;
 	font-weight: bold;
 	color: #418b8e;
 	letter-spacing: -0.6px;
@@ -307,8 +307,11 @@ main .container #performance ul li .page-performance-image {
    width: 100%;
 }
 .page-performance-ex {
-    font-size: 8px;
+    font-size: 2.4vw;
     margin-top: 10px;
+}
+.pc {
+    display: none;
 }
 main .container #performance ul li h3 {
     font-size: 20px;
@@ -322,7 +325,7 @@ main .container #performance ul li h3 {
 	line-height: 1.2;
 }
 main .container #performance ul li p.page-performance-subtitle {
-    font-size: 13px;
+    font-size: 3vw;
 	line-height: 1.6;
 	text-align: justify;
 	margin: 10px 0 0 0px;
@@ -347,7 +350,7 @@ main .container #cta img{
 	margin: 20px auto 30px;
 }
 main .container #cta .button{
-	width: 60%;
+	width: 100%;
 	height: auto;
 	transition: background-color 2s;
 	display: block;
@@ -718,6 +721,9 @@ main .container #performance ul li .page-performance-image {
 .page-performance-ex {
     font-size: 0.9rem;
     margin-top: 10px;
+}
+.pc {
+    display: block;
 }
 main .container #performance ul li h3 {
     font-size: 20px;
