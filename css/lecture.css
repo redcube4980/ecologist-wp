@@ -164,6 +164,7 @@ main .container #page-content-inner li:hover .page-lecture-content-animetion {
 }
 .page-lecture-content-image {
     width: 90%;
+	height: auto;
 }
 main .container #page-content-inner li .page-content-inner-block .page-content-icon {
     width: 80px;
@@ -552,9 +553,6 @@ main .container #page-content-inner ul {
 main .container #page-content-inner li {
     width: calc(100%/3);
 }
-main .container #page-content-inner li .page-lecture-content-image {
-    width: 90%;
-}
 main .page-content-inner-bg-sentences {
     margin-bottom: 0;
     height: 3vw;
@@ -765,9 +763,6 @@ main .page-content-inner-bg-sentences {
 main .container #page-content-inner li .page-lecture-content-image {
     width: 270px;
 }
-main .container #page-content-inner li .page-lecture-content-animetion{
-	 margin: 20px auto 0;
-}
 main .container #page-content-inner li:hover .page-lecture-content-animetion {
     width: 100%;
 }
@@ -970,12 +965,6 @@ main .page-content-inner-bg-sentences {
     margin-bottom: 10px;
     height: 40px;
     width: auto;
-}
-main .container #page-content-inner li .page-lecture-content-image {
-    width: 270px;
-}
-main .container #page-content-inner li .page-lecture-content-animetion{
-	 margin: 20px auto 0;
 }
 main .container #page-content-inner li:hover .page-lecture-content-animetion {
     width: 100%;

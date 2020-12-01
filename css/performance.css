@@ -19,13 +19,10 @@ main #page-title-inner-icon {
     z-index: 2;
     left: 30px;
     top: 50px;
-    width: 80px;
+    width: 16%;
     transform: scale(1);
     transition: all 1s;
     cursor: default;
-}
-body.Win main #page-title-inner-icon {
-    top: 0px;
 }
 main #page-title-inner-icon:hover {
     transform-origin: center;
@@ -37,13 +34,10 @@ main #page-title-aminal03 {
     z-index: 2;
     right: 60px;
     bottom: 20px;
-    width: 90px;
+    width: 18%;
     transform: scale(1);
     transition: all 1s;
     cursor: default;
-}
-body.Win main #page-title-aminal03 {
-    right: 10px;
 }
 main #page-title-aminal03:hover {
 	transform-origin:center;
@@ -65,14 +59,14 @@ main #page-title-inner-bg-text{
 	flex-flow: column;
 }
 main #page-title-inner-bg h1 {
-    font-size: 20px;
+    font-size: 4vw;
     font-weight: bold;
     color: #4a9143;
     letter-spacing: 5px;
     line-height: 1;
 }
 main #page-title-inner-bg span {
-    font-size: 14px;
+    font-size: 3vw;
     color: #513813;
     letter-spacing: 2px;
     font-weight: bold;
@@ -80,13 +74,12 @@ main #page-title-inner-bg span {
     margin-bottom: 10px;
 }
 main #page-title-inner-bg-sentences {
-    height: 30px;
+    height: 7vw;
 }
 main .container #page-content-inner {
     margin-top: 50px;
 	width: 280px;
 }
-
 main .container #page-content {
     display: flex;
     flex-flow: column;
@@ -95,8 +88,8 @@ main .container #page-content {
 	height: auto;
 	background-blend-mode: multiply;
 	position: relative;
-	padding: 50px 0;
 	margin: 0 auto 50px;
+    padding: 100px 0 100px 0;
 }
 main .container #page-content::before{
 	content: "";
@@ -133,7 +126,7 @@ main .page-content-inner-block {
 main .page-content-inner-text {
     text-align: center;
     line-height: 2;
-    font-size: 12px;
+    font-size: 3vw;
     font-weight: bold;
 }
 #tab-content {
@@ -142,11 +135,20 @@ main .page-content-inner-text {
 	height: 1500px;
 }
 #page-content h3 {
-    font-size: 13px;
+    font-size: 5vw;
     font-weight: bold;
     color: #4a9143;
     letter-spacing: 5px;
     line-height: 1;
+    text-align: center;
+}
+#page-lecture-content-animetion {
+    width: 100%;
+    margin-bottom: 5%;
+	text-align: center;
+}
+.page-content-inner-bg-sentences {
+    width: 100%;
 }
 #performance {
     display: flex;
@@ -183,11 +185,11 @@ main .page-content-inner-text {
 .active .btn-link01 {
     width: 100%;
     height: auto;
-    max-width: 320px;
+    max-width: 100%;
     color: #fff;
     display: block;
     margin: 0 auto;
-    font-size: 10px;
+    font-size: 3vw;
     font-weight: bold;
     position: relative;
     overflow: hidden;
@@ -248,7 +250,7 @@ main .page-content-inner-text {
     color: #418b8e;
     display: block;
     margin: 0 auto;
-    font-size: 10px;
+    font-size: 3vw;
     font-weight: bold;
     position: relative;
     overflow: hidden;
@@ -265,11 +267,11 @@ main .page-content-inner-text {
 .btn-link01 {
     width: 100%;
     height: auto;
-    max-width: 320px;
+    max-width: 100%;
     color: #418b8e;
     display: block;
     margin: 0 auto;
-    font-size: 10px;
+    font-size: 3vw;
     font-weight: bold;
     position: relative;
     overflow: hidden;
@@ -293,11 +295,11 @@ main .page-content-inner-text {
 .active .btn-link02 {
     width: 100%;
     height: auto;
-    max-width: 320px;
+    max-width: 100%;
     color: #fff;
     display: block;
     margin: 0 auto;
-    font-size: 10px;
+    font-size: 3vw;
     font-weight: bold;
     position: relative;
     overflow: hidden;
@@ -354,11 +356,11 @@ main .page-content-inner-text {
 .performance-button-name02 a {
     width: 100%;
     height: auto;
-    max-width: 320px;
+    width: 100%;
     color: #418b8e;
     display: block;
     margin: 0 auto;
-    font-size: 10px;
+    font-size: 3vw;
     font-weight: bold;
     position: relative;
     overflow: hidden;
@@ -375,11 +377,11 @@ main .page-content-inner-text {
 .btn-link02 {
     width: 100%;
     height: auto;
-    max-width: 320px;
+    width: 100%;
     color: #418b8e;
     display: block;
     margin: 0 auto;
-    font-size: 10px;
+    font-size: 3vw;
     font-weight: bold;
     position: relative;
     overflow: hidden;
@@ -403,11 +405,11 @@ main .page-content-inner-text {
 .active .btn-link03 {
     width: 100%;
     height: auto;
-    max-width: 320px;
+    max-width: 100%;
     color: #fff;
     display: block;
     margin: 0 auto;
-    font-size: 10px;
+    font-size: 3vw;
     font-weight: bold;
     position: relative;
     overflow: hidden;
@@ -468,7 +470,7 @@ main .page-content-inner-text {
     color: #418b8e;
     display: block;
     margin: 0 auto;
-    font-size: 10px;
+    font-size: 3vw;
     font-weight: bold;
     position: relative;
     overflow: hidden;
@@ -489,7 +491,7 @@ main .page-content-inner-text {
     color: #418b8e;
     display: block;
     margin: 0 auto;
-    font-size: 10px;
+    font-size: 3vw;
     font-weight: bold;
     position: relative;
     overflow: hidden;
@@ -518,11 +520,12 @@ main .page-content-inner-text {
 	margin: 0;
 }
 .page-performance-title h2 {
-font-size: 20px;
+font-size: 4vw;
 font-weight: bold;
 color: #418b8e;
 letter-spacing: 3px;
 line-height: 1.2;
+margin-top: 3%;
 }
 .page-performance-title-text {
     margin-bottom: 10px;
@@ -530,7 +533,7 @@ line-height: 1.2;
 .page-performance-text {
     line-height: 1.8;
 	text-align: justify;
-	font-size: 13px;
+	font-size: 3vw;
 }
 .page-performance-img-block-title {
 	background-color: #513813;
@@ -540,7 +543,7 @@ line-height: 1.2;
 }
 .page-performance-img-block h2 {
 	color: #fff;
-	font-size: 15px;
+	font-size: 4vw;
 	font-weight: bold;
 	letter-spacing: 5px;
 	margin: 30px 0;
@@ -553,29 +556,35 @@ line-height: 1.2;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    width: 280px;
+    width: 100%;
     margin: 0 auto;
 }
 .page-performance-img-block ul li {
     margin-bottom: 50px;
 }
+.page-performance-img {
+    width: 100%;
+}
 .page-performance-img-ex {
-    width: 280px;
+    width: 100%;
     text-align: justify;
     margin-top: 10px;
 	line-height: 1.6;
 }
+.page-performance-img-text {
+    text-align: center;
+}
 .page-performance-img-text01 {
-    width: 200px;
-    margin: 0 40px 10px;
+    width: 80%;
+    margin: 0 0 10px;
 }
 .page-performance-img-text02 {
-    width: 200px;
-    margin: 0 40px 10px;
+    width: 80%;
+    margin: 0 0 10px;
 }
 .page-performance-img-text03 {
-    width: 260px;
-    margin: 0 10px 10px;
+    width: 80%;
+    margin: 0 0 10px;
 }
 
 /*選択されているタブのコンテンツのみを表示*/
@@ -666,13 +675,14 @@ main .container #page-content-inner li:hover .page-content-inner-block .page-con
 }
 }
 #location {
-    padding: 100px 0;
+    padding: 50px 0;
     margin: 0 auto 136px;
+    position: relative;
 }
 .location-title {
     text-align: center;
     margin: 0 0 30px;
-    font-size: 13px;
+    font-size: 5vw;
     font-weight: bold;
     color: #4a9143;
     letter-spacing: 5px;
@@ -681,12 +691,15 @@ main .container #page-content-inner li:hover .page-content-inner-block .page-con
 .location-contener {
     display: flex;
     flex-flow: column;
-    width: 280px;
-    margin: 0 auto;
+    width: 100%;
+    /*! margin: 0 auto; */
 }
-.location-content-img {
-    width: 280px;
-    margin: 0 auto 50px;
+.location-content-img-box {
+    width: 100%;
+    margin: 0 0 50px;
+}
+.location-content-img-box #location-contener-img {
+    width: 100%;
 }
 .location-content:last-child {
     margin-bottom: 0;
@@ -707,12 +720,12 @@ main .container #page-content-inner li:hover .page-content-inner-block .page-con
 }
 .location-content-title-text {
     color: #fff;
-    font-size: 10px;
+    font-size: 4vw;
     font-weight: bold;
     line-height: 1.5;
 }
 .location-content-title-text span {
-    font-size: 14px;
+    font-size: 3vw;
 }
 #award {
     padding: 100px 0;
@@ -721,7 +734,7 @@ main .container #page-content-inner li:hover .page-content-inner-block .page-con
 .award-title {
     text-align: center;
     margin: 0 0 30px;
-    font-size: 13px;
+    font-size: 5vw;
     font-weight: bold;
     color: #4a9143;
     letter-spacing: 5px;
@@ -744,7 +757,7 @@ main .container #page-content-inner li:hover .page-content-inner-block .page-con
     justify-content: space-around;
 }
 .aword-contener-img {
-    width: 100px;
+    width: 20vw;
 	margin-bottom: 10px;
 }
 #award .button{
@@ -812,12 +825,14 @@ main .container #page-content-inner li:hover .page-content-inner-block .page-con
 	background-color: transparent;
 }
 #award .button a span {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     display: block;
     line-height: 2.5;
 	position: relative;
 	overflow: hidden;
+    font-size: 3vw;
+	margin: 4px 0;
 }
 #award .button a span::after {
     content: "";
@@ -841,30 +856,31 @@ main .container #page-content-inner li:hover .page-content-inner-block .page-con
 	transition: border 2s;
 }
 .page-performance-img-text01-2 {
-    width: 200px;
-    margin: 0 40px 10px;
+    width: 80%;
+    margin: 0 0 10px;
 }
 .page-performance-img-text02-2 {
-    width: 220px;
-    margin: 0 20px 10px;
+    width: 80%;
+    margin: 0 0 10px;
 }
 .page-performance-img-text03-2 {
-    width: 200px;
-    margin: 0 40px 10px;
+    width: 80%;
+    margin: 0 0 10px;
 }
 .page-performance-block03 {
     margin: 0 0 136px;
 }
 .page-performance-img-text01-3 {
-    width: 220px;
-    margin: 0 20px 10px;
+    width: 80%;
+    margin: 0 0 10px;
 }
 .page-performance-img-text02-3 {
-    width: 260px;
-    margin: 0 10px 10px;
+    width: 80%;
+    margin: 0 0 10px;
 }
 .page-performance-img-text03-3 {
-    margin: 0 0 10px 0;
+    width: 80%;
+    margin: 0 0 10px;
 }
 /*******************************
 			タブ設定
@@ -883,49 +899,61 @@ main .container #page-content-inner li:hover .page-content-inner-block .page-con
     order: -1;
 }
 #footer-block {
-    padding-top: 2000px;
+    padding-top: 2700px;
 }
 @media only screen and (min-width: 600px) {
 main {
-    width: 600px;
+    width: 100%;
+    padding: 170px 30px 30px;
 }
 main #page-title-inner {
-    width: 600px;
+    width: 100%;
 }
 main #page-title-inner-icon {
-    width: 100px;
+    left: 100px;
 }
 main #page-title-aminal03 {
-	width: 120px;
 	bottom: 40px;
-	right: 60px;
+	right: 120px;
 }
 main #page-title-inner-bg-text {
     top: 60px;
 }
 main #page-title-inner-bg h1 {
-    font-size: 20px;
+    font-size: 3.2vw;
 }
 main #page-title-inner-bg span {
-    font-size: 10px;
-	margin-bottom: 10px;
+    font-size: 2vw;
+    margin-bottom: 2%;
 }
 main #page-title-inner-bg-sentences {
-    height: 40px;
+    height: 4vw;
+}
+#page-title-inner-bg-image {
+    width: 80%;
+}
+main .container {
+    padding: 50px 0 0 0;
 }
 main .page-content-inner-text{
-	font-size: 10px;
+	font-size: 1.4vw;
 }
 main .container #page-content {
     flex-flow: column;
     margin: 0 auto 100px;
 }
+#page-lecture-content-animetion {
+    text-align: center;
+}
 #page-content h3 {
-    font-size: 18px;
+    font-size: 24px;
 }
 #performance-button {
     flex-flow: row wrap;
 	margin-bottom: 100px;
+}
+.page-content-inner-bg-sentences {
+    width: 80%;
 }
 main .performance-button-name01.active {
 	width: 30%;
@@ -977,11 +1005,43 @@ main .active .btn-link03 {
 }
 .page-performance-title {
     width: 480px;
+	margin: 0 auto;
+}
+.page-performance-img-block ul {
+    flex-flow: row nowrap;
+}
+
+.page-performance-img-block ul li {
+    margin-bottom: 50px;
+	width: 30%
 }
 .page-performance-content-block {
-    width: 480px;
-    margin: 0 auto;
+    width: 100%;
 	height: auto;
+}
+.page-performance-content-img {
+    margin: 0 auto;
+}
+.page-performance-bg-img {
+    width: 480px;
+}
+.page-performance-title h2 {
+    font-size: 2vw;
+}
+.page-performance-text {
+    font-size: 1.5vw;
+}
+.page-performance-img-block h2 {
+    font-size: 2.6vw;
+}
+.page-performance-img-text01 {
+    height: 2vw;
+}
+.page-performance-img-text02 {
+    height: 2vw;
+}
+.page-performance-img-text03 {
+    height: 2vw;
 }
 .location-contener {
     display: flex;
@@ -990,14 +1050,21 @@ main .active .btn-link03 {
 }
 .location-content {
     margin-right: 0;
+	width: 45%;
+}
+.location-content-title-text {
+    font-size: 1vw;
+}
+.location-content-title-text span {
+    font-size: 2vw;
 }
 .location-title {
-    font-size: 18px;
+    font-size: 24px;
 }
 .aword-contener-img {
-    width: 150px;
+    width: 21vw;
 }
-#award .button a {
+#award .button a span {
     font-size: 18px;
 }
 #footer-block {
@@ -1006,7 +1073,8 @@ main .active .btn-link03 {
 }
 @media only screen and (min-width: 1024px) {
 main{
-	width: 960px
+	width: 960px;
+	padding: 30px 0;
 }
 main #page-title{
 	margin: 0 auto;
@@ -1047,6 +1115,9 @@ main #page-title-inner-bg h1 {
 }
 main #page-title-inner-bg span {
     font-size: 14px;
+}
+#page-title-inner-bg-image {
+    width: 100%;
 }
 main .container h3{
 	font-size: 24px;
@@ -1188,6 +1259,7 @@ main .container #page-content-inner li:hover .page-content-inner-block .page-con
 }
 .location-content {
     margin: 0 60px 20px 0;
+	width: auto;
 }
 .location-content-title {
     border-radius: 30px;
@@ -1230,6 +1302,9 @@ main .container #page-content-inner li:hover .page-content-inner-block .page-con
     width: 14px;
     height: 14px;
 }
+.page-performance-text {
+    font-size: 16px;
+}
 .page-performance-img-text01-2 {
     width: 200px;
     margin: 0 40px 10px;
@@ -1269,14 +1344,14 @@ main .container #page-content-inner li:hover .page-content-inner-block .page-con
     display: flex;
     flex-wrap: wrap;
 }
+#award .button a span {
+    margin:8px 0;
+}
 #footer-block {
     padding-top: 300px;
 }
 }
 @media only screen and (min-width: 1281px) {
-main{
-	width: 960px
-}
 main #page-title{
 	margin: 0 auto;
 	text-align: center;

@@ -23,16 +23,6 @@ main #page-title-inner-icon {
     transform: scale(1);
     transition: all 1s;
 }
-body.Win main #page-title-inner-icon {
-    position: absolute;
-    z-index: 2;
-    left: 13px;
-    bottom: 20px;
-    width: 70px;
-    transform: scale(1);
-    transition: all 1s;
-	top: 5px;
-}
 main #page-title-inner-icon:hover {
     transform-origin: center;
     transform: scale(1.2);
@@ -44,16 +34,6 @@ main #page-title-aminal01 {
     right: 40px;
     top: 20px;
     width: 16%;
-	transform:scale(1);
-	transition: all 1s;
-	cursor: default;
-}
-body.Win main #page-title-aminal01 {
-    position: absolute;
-    z-index: 2;
-    right: 13px;
-    top: 0;
-    width: 70px;
 	transform:scale(1);
 	transition: all 1s;
 	cursor: default;
@@ -73,15 +53,6 @@ main #page-title-aminal02 {
     transition: all 1s;
     cursor: default;
 }
-body.Win main #page-title-aminal02 {
-    position: absolute;
-    z-index: 2;
-    left: 13px;
-    bottom: 10px;
-    width: 70px;
-    transform: scale(1);
-    transition: all 1s;
-}
 main #page-title-aminal02:hover {
 	transform-origin:center;
 	transform:scale(1.2);
@@ -93,15 +64,6 @@ main #page-title-aminal03 {
     right: 40px;
     bottom: 20px;
     width: 18%;
-    transform: scale(1);
-    transition: all 1s;
-}
-body.Win main #page-title-aminal03 {
-	position: absolute;
-    z-index: 2;
-    right: 13px;
-    bottom: 20px;
-    width: 70px;
     transform: scale(1);
     transition: all 1s;
 }
@@ -393,10 +355,12 @@ main .container #cta h2{
     color: #f04f4c;
     letter-spacing: 4px;
 }
-main .page-cta-centence-sp{
-	height: auto;
-	width: 47%;
-	margin: 20px auto 30px;
+main .page-cta-centence-sp {
+    height: auto;
+    width: 50%;
+    margin: 20px auto 30px;
+    display: block;
+    max-width: 400px;
 }
 main .page-cta-centence{
 	display: none;
@@ -495,58 +459,53 @@ main .container #cta .button a:hover span::after {
 }
 @media only screen and (min-width: 600px) {
 main {
-    height: auto;
-    padding-top: 170px;
-    padding-bottom: 30px;
-    max-width: 600px;
-}
-main #page-title-inner{
-    width: 600px;
+	width: 100%;
+    padding: 170px 30px 30px;
 }
 main #page-title-inner-icon {
-    left: 40px;
-    width: 100px;
+    left: 90px;
+    width: 15%;
+    top: 0;
 }
 main #page-title-aminal01 {
-    right: 60px;
+    right: 80px;
     top: 0;
-    width: 110px;
+    width: 18%;
 }
 main #page-title-aminal02 {
-    left: 30px;
-    bottom: 40px;
-    width: 90px;
+    left: 120px;
+    width: 10%;
+    bottom: 25px;
 }
 main #page-title-aminal03 {
-    right: 70px;
+    right: 85px;
 	bottom: 40px;
-	width: 80px;
+	width: 17%;
 }
 main #page-title-inner-bg{
     position: relative;
 }
 #page-title-inner-bg-image {
-    width: 600px;
+    width: 80%;
 }
 main #page-title-inner-bg-text{
-    top: 40px;
+    top: 10%;
 }
 main #page-title-inner-bg h1 {
-    font-size: 28px;
+    font-size: 3vw;
 }
 main #page-title-inner-bg span {
-    font-size: 14px;
+    font-size: 2vw;
 }
 main #page-title-inner-bg-sentences {
-    height: 50px;
+    height: 7vw;
 	margin-top: 10px;
 }
 main .container {
-    width: 600px;
 	padding: 0;
 }
 main .container h3{
-	font-size: 20px;
+	font-size: 24px;
 }
 main .container #page-content {
     display: flex;
@@ -555,11 +514,9 @@ main .container #page-content {
 	margin: 0 auto 136px;
 }
 main .container #page-content-inner {
-    width: 350px;
-    margin-top: 30px;
     display: flex;
     flex-flow: column;
-    margin: 30px auto;
+    margin: 80px auto;
 }
 main .container #page-content-inner li {
 	margin-bottom: 80px;
@@ -579,17 +536,10 @@ main .container #page-content-inner li:hover .page-content-inner-block .page-con
     width: 200px;
 }
 main .container #page-content-inner li .page-content-inner-block .page-content-image {
-    width: 440px;
+    width: 100%;
 }
 main .container #page-content-inner li p.page-content-inner-text{
 	font-size: 20px;
-	margin-top: 10px;
-}
-main .container #performance #performance-title {
-    padding: 13px;
-}
-main .container #performance #performance-title span{
-	font-size: 14px;
 }
 main .container #performance ul {
     width: 100%;
@@ -638,12 +588,6 @@ main .container #cta {
 main .container #cta h2{
 	font-size: 24px;
 }
-main .container #cta .button{
-	width: 100%;
-	overflow: hidden;
-	max-width: 320px;
-	margin: 0 auto;
-}
 main .container #cta .button a{
 	width: 100%;
 	height: 60px;
@@ -663,6 +607,9 @@ main .container #cta .button a span::after {
 }
 .br-sp {
     display: none;
+}
+main .page-cta-centence-sp {
+    width: 34%;
 }
 }
 @media only screen and (min-width: 1024px) {
@@ -826,10 +773,9 @@ main .page-cta-centence-sp{
 	display: none;
 }
 main .page-cta-centence{
-    height: auto;
-	width: 100%;
-	margin: 20px auto 30px;
+	width: 60%;
 	display: block;
+	margin: 30px auto 20px;
 }
 main .container #cta .button{
 	width: 100%;

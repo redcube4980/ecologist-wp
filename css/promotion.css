@@ -18,6 +18,7 @@ main #page-title-inner-bg {
 	width: 100%;
 }
 @media only screen and (min-width: 600px) {
+	main #page-title-inner { width: 80%;}
 }
 @media only screen and (min-width: 1024px) {
 	main #page-title-inner { width: 861px;}
