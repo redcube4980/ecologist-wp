@@ -1473,6 +1473,7 @@ main .active .btn-link03 {
 }
 .page-performance-title h2 {
 font-size: 24px;
+margin-top: 0;
 }
 .page-performance-img-block h2 {
 	font-size: 20px;

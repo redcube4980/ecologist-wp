@@ -7,10 +7,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
 <meta name="description" content="">
 <meta name="keywords" content="">
-
 <link rel="apple-touch-icon" href="#">
 <link rel="icon" type="image/x-icon" href="#">
-
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>">
 	
 <?php if( is_front_page() ): ?>

@@ -128,7 +128,6 @@ main .container #tab::after {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    top: 340px;
 }
 main .tab-contener {
     display: flex;
@@ -157,7 +156,7 @@ main #performance-button {
     width: 100%;
     height: auto;
     max-width: 320px;
-    color: #fff;
+    color: #418b8e;
     display: block;
     margin: 0 auto;
     font-size: 4vw;
@@ -165,7 +164,7 @@ main #performance-button {
     position: relative;
     overflow: hidden;
     text-align: center;
-	background-color: #418b8e;
+	background-color: #fff;
 	text-decoration: none;
 }
 .performance-button-name01 {
@@ -324,7 +323,6 @@ main #performance-button {
     line-height: 2.5;
     position: relative;
     overflow: hidden;
-    font-size: 4vw;
 }
 .performance-button-name02 a {
     width: 100%;
@@ -435,7 +433,6 @@ main #performance-button {
     line-height: 2.5;
     position: relative;
     overflow: hidden;
-    font-size: 4vw;
 }
 .performance-button-name03 a {
     width: 100%;
@@ -548,7 +545,6 @@ main #performance-button {
     line-height: 2.5;
     position: relative;
     overflow: hidden;
-    font-size: 4vw;
 }
 .performance-button-name04 a {
     width: 100%;
@@ -1655,7 +1651,7 @@ person-box {
     margin: 30px 0 0 0;
 }
 .page-performance-year {
-    width: 100px;
+    width: 120px;
 }
 .page-performance-history-title {
     margin: 0 0 10px 0;
